@@ -36,7 +36,7 @@ dependencies {
 	runtime "org.slf4j:jcl-over-slf4j:1.7.12"
 	compile 'ch.qos.logback:logback-core:' + logbackVersion
 	compile 'ch.qos.logback:logback-classic:' + logbackVersion
-	compile "org.hibernate:hibernate-validator:4.3.0.Final"
+	compile "org.hibernate:hibernate-validator:5.4.1.Final"
 	compile "commons-dbcp:commons-dbcp:1.4"
 	compile "commons-pool:commons-pool:1.6"
 	compile "io.utility:validate:0.0.4"

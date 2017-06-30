@@ -1,9 +1,17 @@
-package com.abilists.bean.model;
+package com.abilists.bean.model.user;
 
 import java.io.Serializable;
 import java.util.Date;
 
-public class UsersNoti implements Serializable {
+/**
+ * 0.0.2
+ * TODO
+ * Not used this version.
+ * 
+ * @author joonk
+ *
+ */
+public class UsersNotiModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	private int unNo;

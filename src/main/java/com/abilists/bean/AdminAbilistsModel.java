@@ -4,9 +4,9 @@ import java.util.List;
 
 import com.abilists.bean.admin.TaskBean;
 import com.abilists.bean.model.CommonModel;
-import com.abilists.bean.model.UserTaskModel;
 import com.abilists.bean.model.sum.AdminProjectsSumByStatusModel;
 import com.abilists.bean.model.sum.AdminUsersSumByMonthModel;
+import com.abilists.bean.model.user.UserTaskModel;
 
 public class AdminAbilistsModel extends CommonModel {
 

@@ -1,6 +1,6 @@
 package com.abilists.bean.admin;
 
-import com.abilists.bean.model.UserTaskModel;
+import com.abilists.bean.model.user.UserTaskModel;
 
 public class TaskBean {
 

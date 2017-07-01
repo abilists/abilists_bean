@@ -12,6 +12,7 @@ import com.abilists.bean.model.join.MIndustryJoinUserProjectsModel;
 import com.abilists.bean.model.join.MTechJoinUserTechModel;
 import com.abilists.bean.model.join.UserProjectsJoinTechModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
+import com.abilists.bean.model.user.UserCarrerModel;
 import com.abilists.bean.model.user.UserProjectTechModel;
 import com.abilists.bean.model.user.UserProjectsModel;
 import com.abilists.bean.model.user.UserTaskModel;
@@ -57,6 +58,9 @@ public class AbilistsModel extends CommonModel {
 	private List<MTechJoinUserTechModel> mTechJoinUserTechList;
 	private List<MIndustryJoinUserProjectsModel> mIndustryJoinUserProjectsList;
 	private List<UserProjectsJoinTechModel> userProjectsJoinTechList;
+
+	private UserCarrerModel userCarrer;
+	private List<UserCarrerModel> userCarrerList;
 
 	public UserTemp getUserTemp() {
 		return userTemp;
@@ -264,6 +268,22 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserProjectsJoinTechList(List<UserProjectsJoinTechModel> userProjectsJoinTechList) {
 		this.userProjectsJoinTechList = userProjectsJoinTechList;
+	}
+
+	public UserCarrerModel getUserCarrer() {
+		return userCarrer;
+	}
+
+	public void setUserCarrer(UserCarrerModel userCarrer) {
+		this.userCarrer = userCarrer;
+	}
+
+	public List<UserCarrerModel> getUserCarrerList() {
+		return userCarrerList;
+	}
+
+	public void setUserCarrerList(List<UserCarrerModel> userCarrerList) {
+		this.userCarrerList = userCarrerList;
 	}
 
 }

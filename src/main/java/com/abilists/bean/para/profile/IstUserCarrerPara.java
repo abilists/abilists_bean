@@ -14,10 +14,10 @@ public class IstUserCarrerPara extends CommonPara {
     @Size(min = 1, max = 100, message = "parameter.error.size.max100.message")
 	private String ucCompanyName;
 	private String ucPresent;
-	private String startMonth;
-	private String startYear;
-	private String endMonth;
-	private String endYear;
+	private String ucStartMonth;
+	private String ucStartYear;
+	private String ucEndMonth;
+	private String ucEndYear;
 	private String ucTitle;
 	private String ucContents;
 	private String ucImg;
@@ -35,29 +35,29 @@ public class IstUserCarrerPara extends CommonPara {
 	public void setUcPresent(String ucPresent) {
 		this.ucPresent = ucPresent;
 	}
-	public String getStartMonth() {
-		return startMonth;
+	public String getUcStartMonth() {
+		return ucStartMonth;
 	}
-	public void setStartMonth(String startMonth) {
-		this.startMonth = startMonth;
+	public void setUcStartMonth(String ucStartMonth) {
+		this.ucStartMonth = ucStartMonth;
 	}
-	public String getStartYear() {
-		return startYear;
+	public String getUcStartYear() {
+		return ucStartYear;
 	}
-	public void setStartYear(String startYear) {
-		this.startYear = startYear;
+	public void setUcStartYear(String ucStartYear) {
+		this.ucStartYear = ucStartYear;
 	}
-	public String getEndMonth() {
-		return endMonth;
+	public String getUcEndMonth() {
+		return ucEndMonth;
 	}
-	public void setEndMonth(String endMonth) {
-		this.endMonth = endMonth;
+	public void setUcEndMonth(String ucEndMonth) {
+		this.ucEndMonth = ucEndMonth;
 	}
-	public String getEndYear() {
-		return endYear;
+	public String getUcEndYear() {
+		return ucEndYear;
 	}
-	public void setEndYear(String endYear) {
-		this.endYear = endYear;
+	public void setUcEndYear(String ucEndYear) {
+		this.ucEndYear = ucEndYear;
 	}
 	public String getUcTitle() {
 		return ucTitle;

@@ -9,13 +9,7 @@ import com.abilists.bean.para.CommonPara;
 
 import io.utility.validate.annotation.CharacterEscape;
 
-/**
- * Action + db name + data
- * 
- * @author njoonk
- *
- */
-public class UdtUserCarrerPara extends CommonPara {
+public class UdtUserCareerPara extends CommonPara {
 
 	@NotNull(message = "parameter.error.null.message")
     @Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")

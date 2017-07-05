@@ -1,17 +1,13 @@
-package com.abilists.bean.para.profile;
+package com.abilists.bean.model.user;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import java.io.Serializable;
+import java.util.Date;
 
-import com.abilists.bean.para.CommonPara;
+public class UserCareerModel implements Serializable {
 
-import io.utility.validate.annotation.CharacterEscape;
+	private static final long serialVersionUID = 1L;
 
-public class IstUserCarrerPara extends CommonPara {
-
-	@CharacterEscape(message = "parameter.error.escape.character.message")
-	@NotNull(message = "parameter.error.null.message")
-    @Size(min = 1, max = 100, message = "parameter.error.size.max100.message")
+	private int ucNo;
 	private String ucCompanyName;
 	private String ucPresent;
 	private String ucStartMonth;
@@ -22,7 +18,17 @@ public class IstUserCarrerPara extends CommonPara {
 	private String ucContents;
 	private String ucImg;
 	private String ucStatus;
+	private String ucDelete;
+	private String userId;
+	private Date insertTime;
+	private Date updateTime;
 
+	public int getUcNo() {
+		return ucNo;
+	}
+	public void setUcNo(int ucNo) {
+		this.ucNo = ucNo;
+	}
 	public String getUcCompanyName() {
 		return ucCompanyName;
 	}
@@ -82,6 +88,33 @@ public class IstUserCarrerPara extends CommonPara {
 	}
 	public void setUcStatus(String ucStatus) {
 		this.ucStatus = ucStatus;
+	}
+	public String getUcDelete() {
+		return ucDelete;
+	}
+	public void setUcDelete(String ucDelete) {
+		this.ucDelete = ucDelete;
+	}
+	public String getUserId() {
+		return userId;
+	}
+	public void setUserId(String userId) {
+		this.userId = userId;
+	}
+	public Date getInsertTime() {
+		return insertTime;
+	}
+	public void setInsertTime(Date insertTime) {
+		this.insertTime = insertTime;
+	}
+	public Date getUpdateTime() {
+		return updateTime;
+	}
+	public void setUpdateTime(Date updateTime) {
+		this.updateTime = updateTime;
+	}
+	public static long getSerialversionuid() {
+		return serialVersionUID;
 	}
 
 }

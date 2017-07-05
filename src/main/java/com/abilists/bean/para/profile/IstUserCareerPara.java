@@ -1,13 +1,14 @@
-package com.abilists.bean.model.user;
+package com.abilists.bean.para.profile;
 
-import java.io.Serializable;
-import java.util.Date;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
-public class UserCarrerModel implements Serializable {
+import com.abilists.bean.para.CommonPara;
 
-	private static final long serialVersionUID = 1L;
+public class IstUserCareerPara extends CommonPara {
 
-	private int ucNo;
+	@NotNull(message = "parameter.error.null.message")
+    @Size(min = 1, max = 100, message = "parameter.error.size.max100.message")
 	private String ucCompanyName;
 	private String ucPresent;
 	private String ucStartMonth;
@@ -18,17 +19,7 @@ public class UserCarrerModel implements Serializable {
 	private String ucContents;
 	private String ucImg;
 	private String ucStatus;
-	private String ucDelete;
-	private String userId;
-	private Date insertTime;
-	private Date updateTime;
 
-	public int getUcNo() {
-		return ucNo;
-	}
-	public void setUcNo(int ucNo) {
-		this.ucNo = ucNo;
-	}
 	public String getUcCompanyName() {
 		return ucCompanyName;
 	}
@@ -88,33 +79,6 @@ public class UserCarrerModel implements Serializable {
 	}
 	public void setUcStatus(String ucStatus) {
 		this.ucStatus = ucStatus;
-	}
-	public String getUcDelete() {
-		return ucDelete;
-	}
-	public void setUcDelete(String ucDelete) {
-		this.ucDelete = ucDelete;
-	}
-	public String getUserId() {
-		return userId;
-	}
-	public void setUserId(String userId) {
-		this.userId = userId;
-	}
-	public Date getInsertTime() {
-		return insertTime;
-	}
-	public void setInsertTime(Date insertTime) {
-		this.insertTime = insertTime;
-	}
-	public Date getUpdateTime() {
-		return updateTime;
-	}
-	public void setUpdateTime(Date updateTime) {
-		this.updateTime = updateTime;
-	}
-	public static long getSerialversionuid() {
-		return serialVersionUID;
 	}
 
 }

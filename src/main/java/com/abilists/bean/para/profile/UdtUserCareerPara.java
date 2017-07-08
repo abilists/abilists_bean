@@ -1,7 +1,5 @@
 package com.abilists.bean.para.profile;
 
-import java.util.Date;
-
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -16,13 +14,13 @@ public class UdtUserCareerPara extends CommonPara {
 	private String ucNo;
 
 	@CharacterEscape(message = "parameter.error.escape.character.message")
-	@NotNull(message = "parameter.error.null.message")
 	@Size(min = 1, max = 100, message = "parameter.error.size.max100.message")
 	private String ucCompanyName;
-
 	private String ucPresent;
-	private Date ucStartDate;
-	private Date ucEndDate;
+	private String ucStartMonth;
+	private String ucStartYear;
+	private String ucEndMonth;
+	private String ucEndYear;
 	private String ucTitle;
 	private String ucContents;
 	private String ucImg;
@@ -45,17 +43,29 @@ public class UdtUserCareerPara extends CommonPara {
 	public void setUcPresent(String ucPresent) {
 		this.ucPresent = ucPresent;
 	}
-	public Date getUcStartDate() {
-		return ucStartDate;
+	public String getUcStartMonth() {
+		return ucStartMonth;
 	}
-	public void setUcStartDate(Date ucStartDate) {
-		this.ucStartDate = ucStartDate;
+	public void setUcStartMonth(String ucStartMonth) {
+		this.ucStartMonth = ucStartMonth;
 	}
-	public Date getUcEndDate() {
-		return ucEndDate;
+	public String getUcStartYear() {
+		return ucStartYear;
 	}
-	public void setUcEndDate(Date ucEndDate) {
-		this.ucEndDate = ucEndDate;
+	public void setUcStartYear(String ucStartYear) {
+		this.ucStartYear = ucStartYear;
+	}
+	public String getUcEndMonth() {
+		return ucEndMonth;
+	}
+	public void setUcEndMonth(String ucEndMonth) {
+		this.ucEndMonth = ucEndMonth;
+	}
+	public String getUcEndYear() {
+		return ucEndYear;
+	}
+	public void setUcEndYear(String ucEndYear) {
+		this.ucEndYear = ucEndYear;
 	}
 	public String getUcTitle() {
 		return ucTitle;

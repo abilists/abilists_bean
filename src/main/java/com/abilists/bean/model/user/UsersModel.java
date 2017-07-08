@@ -17,6 +17,7 @@ public class UsersModel implements Serializable {
 	private String userEmail;
 	private String userAges;
 	private String userProfile;
+	private String userSummary;
 	private String userStatus;
 	private String userDelete;
 	private String userPwd;
@@ -72,6 +73,12 @@ public class UsersModel implements Serializable {
 	}
 	public void setUserProfile(String userProfile) {
 		this.userProfile = userProfile;
+	}
+	public String getUserSummary() {
+		return userSummary;
+	}
+	public void setUserSummary(String userSummary) {
+		this.userSummary = userSummary;
 	}
 	public String getUserStatus() {
 		return userStatus;

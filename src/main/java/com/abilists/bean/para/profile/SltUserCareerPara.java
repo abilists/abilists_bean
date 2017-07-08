@@ -12,6 +12,7 @@ public class SltUserCareerPara extends CommonPara {
 	@CharacterEscape(message = "parameter.error.escape.character.message")
 	@NotNull(message = "parameter.error.null.message")
     @Size(min = 1, max = 100, message = "parameter.error.size.max100.message")
+	private String ucNo;
 	private String ucCompanyName;
 	private String ucPresent;
 	private String ucStartMonth;
@@ -23,6 +24,12 @@ public class SltUserCareerPara extends CommonPara {
 	private String ucImg;
 	private String ucStatus;
 
+	public String getUcNo() {
+		return ucNo;
+	}
+	public void setUcNo(String ucNo) {
+		this.ucNo = ucNo;
+	}
 	public String getUcCompanyName() {
 		return ucCompanyName;
 	}

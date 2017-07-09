@@ -5,9 +5,12 @@ import javax.validation.constraints.Size;
 
 import com.abilists.bean.para.CommonPara;
 
+import io.utility.validate.annotation.CharacterEscape;
+
 public class IstUserCareerPara extends CommonPara {
 
 	@NotNull(message = "parameter.error.null.message")
+	@CharacterEscape(message = "parameter.error.escape.character.message")
     @Size(min = 1, max = 100, message = "parameter.error.size.max100.message")
 	private String ucCompanyName;
 	private String ucPresent;
@@ -16,6 +19,8 @@ public class IstUserCareerPara extends CommonPara {
 	private String ucEndMonth;
 	private String ucEndYear;
 	private String ucTitle;
+	@CharacterEscape(message = "parameter.error.escape.character.message")
+	@Size(min = 1, max = 300, message = "parameter.error.size.max300.message")
 	private String ucContents;
 	private String ucImg;
 	private String ucStatus;

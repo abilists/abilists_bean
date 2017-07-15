@@ -6,6 +6,7 @@ public class SltMIndustryPara  extends CommonPara {
 
 	private String miNo;
 	private String miLargeCategory;
+	private String miMiddleCategory;
 	private String mlCode;
 	private String miStatus;
 
@@ -20,6 +21,12 @@ public class SltMIndustryPara  extends CommonPara {
 	}
 	public void setMiLargeCategory(String miLargeCategory) {
 		this.miLargeCategory = miLargeCategory;
+	}
+	public String getMiMiddleCategory() {
+		return miMiddleCategory;
+	}
+	public void setMiMiddleCategory(String miMiddleCategory) {
+		this.miMiddleCategory = miMiddleCategory;
 	}
 	public String getMlCode() {
 		return mlCode;

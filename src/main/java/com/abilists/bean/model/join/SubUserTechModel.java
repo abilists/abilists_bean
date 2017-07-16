@@ -1,10 +1,5 @@
 package com.abilists.bean.model.join;
 
-/**
- * Not used
- * @author njoonk
- *
- */
 public class SubUserTechModel {
 
 	private int utNo;

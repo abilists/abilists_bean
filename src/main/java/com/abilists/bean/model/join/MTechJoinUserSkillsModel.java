@@ -2,15 +2,15 @@ package com.abilists.bean.model.join;
 
 import java.io.Serializable;
 
-public class MTechJoinUserTechModel implements Serializable {
+public class MTechJoinUserSkillsModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 	private int mtNo;
 	private String mtSkill;
 	private String mtName;
-	private String utKind;
-	private String utLevel;
+	private String usKind;
+	private String usLevel;
 
 	public int getMtNo() {
 		return mtNo;
@@ -36,20 +36,20 @@ public class MTechJoinUserTechModel implements Serializable {
 		this.mtName = mtName;
 	}
 
-	public String getUtKind() {
-		return utKind;
+	public String getUsKind() {
+		return usKind;
 	}
 
-	public void setUtKind(String utKind) {
-		this.utKind = utKind;
+	public void setUsKind(String usKind) {
+		this.usKind = usKind;
 	}
 
-	public String getUtLevel() {
-		return utLevel;
+	public String getUsLevel() {
+		return usLevel;
 	}
 
-	public void setUtLevel(String utLevel) {
-		this.utLevel = utLevel;
+	public void setUsLevel(String usLevel) {
+		this.usLevel = usLevel;
 	}
 
 

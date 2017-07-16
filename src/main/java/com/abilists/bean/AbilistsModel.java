@@ -9,14 +9,14 @@ import com.abilists.bean.model.MTechDetailModel;
 import com.abilists.bean.model.MTechModel;
 import com.abilists.bean.model.NotificationModel;
 import com.abilists.bean.model.join.MIndustryJoinUserProjectsModel;
-import com.abilists.bean.model.join.MTechJoinUserTechModel;
+import com.abilists.bean.model.join.MTechJoinUserSkillsModel;
 import com.abilists.bean.model.join.UserProjectsJoinTechModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.user.UserCareerModel;
 import com.abilists.bean.model.user.UserProjectTechModel;
 import com.abilists.bean.model.user.UserProjectsModel;
 import com.abilists.bean.model.user.UserTaskModel;
-import com.abilists.bean.model.user.UserTechModel;
+import com.abilists.bean.model.user.UserSkillsModel;
 import com.abilists.bean.model.user.UserTemp;
 import com.abilists.bean.model.user.UsersModel;
 import com.abilists.bean.para.admin.SltMIndustryPara;
@@ -29,8 +29,8 @@ public class AbilistsModel extends CommonModel {
 	private UserTemp userTemp;
 	private UsersModel users;
 	private List<UsersModel> usersList;
-	private UserTechModel userTech;
-	private List<UserTechModel> userTechList;
+	private UserSkillsModel userSkills;
+	private List<UserSkillsModel> userSkillsList;
 	private UserProjectsModel userProjects;
 	private List<UserProjectsModel> userProjectsList;
 	private List<UserTaskModel> userTaskList;
@@ -55,7 +55,7 @@ public class AbilistsModel extends CommonModel {
 	private NotificationModel notification;
 	private List<NotificationModel> notificationList;
 
-	private List<MTechJoinUserTechModel> mTechJoinUserTechList;
+	private List<MTechJoinUserSkillsModel> mTechJoinUserSkillsList;
 	private List<MIndustryJoinUserProjectsModel> mIndustryJoinUserProjectsList;
 	private List<UserProjectsJoinTechModel> userProjectsJoinTechList;
 
@@ -86,20 +86,20 @@ public class AbilistsModel extends CommonModel {
 		this.usersList = usersList;
 	}
 
-	public UserTechModel getUserTech() {
-		return userTech;
+	public UserSkillsModel getUserSkills() {
+		return userSkills;
 	}
 
-	public void setUserTech(UserTechModel userTech) {
-		this.userTech = userTech;
+	public void setUserSkills(UserSkillsModel userSkills) {
+		this.userSkills = userSkills;
 	}
 
-	public List<UserTechModel> getUserTechList() {
-		return userTechList;
+	public List<UserSkillsModel> getUserSkillsList() {
+		return userSkillsList;
 	}
 
-	public void setUserTechList(List<UserTechModel> userTechList) {
-		this.userTechList = userTechList;
+	public void setUserSkillsList(List<UserSkillsModel> userSkillsList) {
+		this.userSkillsList = userSkillsList;
 	}
 
 	public UserProjectsModel getUserProjects() {
@@ -246,12 +246,12 @@ public class AbilistsModel extends CommonModel {
 		this.notificationList = notificationList;
 	}
 
-	public List<MTechJoinUserTechModel> getmTechJoinUserTechList() {
-		return mTechJoinUserTechList;
+	public List<MTechJoinUserSkillsModel> getmTechJoinUserSkillsList() {
+		return mTechJoinUserSkillsList;
 	}
 
-	public void setmTechJoinUserTechList(List<MTechJoinUserTechModel> mTechJoinUserTechList) {
-		this.mTechJoinUserTechList = mTechJoinUserTechList;
+	public void setmTechJoinUserSkillsList(List<MTechJoinUserSkillsModel> mTechJoinUserSkillsList) {
+		this.mTechJoinUserSkillsList = mTechJoinUserSkillsList;
 	}
 
 	public List<MIndustryJoinUserProjectsModel> getmIndustryJoinUserProjectsList() {

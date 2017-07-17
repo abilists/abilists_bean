@@ -9,15 +9,15 @@ public class DltUserSkillsPara extends CommonPara {
 
 	@NotNull(message = "parameter.error.null.message")
     @Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
-	private int usNo;
+	private String usNo;
 
 	private String usSkill;
 
-	public int getUsNo() {
+	public String getUsNo() {
 		return usNo;
 	}
 
-	public void setUsNo(int usNo) {
+	public void setUsNo(String usNo) {
 		this.usNo = usNo;
 	}
 

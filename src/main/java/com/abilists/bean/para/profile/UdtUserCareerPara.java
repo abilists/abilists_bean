@@ -23,7 +23,7 @@ public class UdtUserCareerPara extends CommonPara {
 	private String ucEndYear;
 	private String ucTitle;
 	@CharacterEscape(message = "parameter.error.escape.character.message")
-	@Size(min = 1, max = 300, message = "parameter.error.size.max300.message")
+	@Size(min = 1, max = 700, message = "parameter.error.size.max700.message")
 	private String ucContents;
 	private String ucImg;
 	private String ucStatus;

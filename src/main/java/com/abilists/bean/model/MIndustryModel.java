@@ -10,8 +10,8 @@ public class MIndustryModel implements Serializable {
 	private int miNo;
 	private String miLargeCategory;
 	private String miMiddleCategory;
+	private String miImgCode;
 	private String miCode;
-	private String miExplain;
 	private String mlCode;
 	private String miStatus;
 	private String miDelete;
@@ -42,11 +42,11 @@ public class MIndustryModel implements Serializable {
 	public void setMiCode(String miCode) {
 		this.miCode = miCode;
 	}
-	public String getMiExplain() {
-		return miExplain;
+	public String getMiImgCode() {
+		return miImgCode;
 	}
-	public void setMiExplain(String miExplain) {
-		this.miExplain = miExplain;
+	public void setMiImgCode(String miImgCode) {
+		this.miImgCode = miImgCode;
 	}
 	public String getMlCode() {
 		return mlCode;

@@ -11,8 +11,8 @@ public class IstMIndustryPara  extends CommonPara {
     @Size(min = 1, max = 90 ,message = "miLargeCategory must not exceed {max} characters")
 	private String miLargeCategory;
 	private String miMiddleCategory;
+	private String miImgCode;
 	private String miCode;
-	private String miExplain;
 	@NotNull(message = "mlCode")
     @Size(min = 1, max = 90 ,message = "mlCode must not exceed {max} characters")
 	private String mlCode;
@@ -37,11 +37,11 @@ public class IstMIndustryPara  extends CommonPara {
 	public void setMiCode(String miCode) {
 		this.miCode = miCode;
 	}
-	public String getMiExplain() {
-		return miExplain;
+	public String getMiImgCode() {
+		return miImgCode;
 	}
-	public void setMiExplain(String miExplain) {
-		this.miExplain = miExplain;
+	public void setMiImgCode(String miImgCode) {
+		this.miImgCode = miImgCode;
 	}
 	public String getMlCode() {
 		return mlCode;

@@ -3,7 +3,9 @@ package com.abilists.bean.model.user;
 import java.io.Serializable;
 import java.util.Date;
 
-public class UserProjectsModel implements Serializable {
+import com.abilists.bean.model.BasicModel;
+
+public class UserProjectsModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -19,6 +21,7 @@ public class UserProjectsModel implements Serializable {
 	private String mrName;
 	private Date insertTime;
 	private Date updateTime;
+
 	public int getUpNo() {
 		return upNo;
 	}

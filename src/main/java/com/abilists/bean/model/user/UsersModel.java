@@ -3,7 +3,9 @@ package com.abilists.bean.model.user;
 import java.io.Serializable;
 import java.util.Date;
 
-public class UsersModel implements Serializable {
+import com.abilists.bean.model.BasicModel;
+
+public class UsersModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -23,8 +25,6 @@ public class UsersModel implements Serializable {
 	private String userPwd;
 	private Date insertTime;
 	private Date updateTime;
-
-	private String userImgData;
 
 	public int getUserNo() {
 		return userNo;
@@ -121,12 +121,6 @@ public class UsersModel implements Serializable {
 	}
 	public void setUserImg(byte[] userImg) {
 		this.userImg = userImg;
-	}
-	public String getUserImgData() {
-		return userImgData;
-	}
-	public void setUserImgData(String userImgData) {
-		this.userImgData = userImgData;
 	}
 
 }

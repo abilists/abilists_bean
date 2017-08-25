@@ -2,11 +2,17 @@ package com.abilists.bean.para.profile;
 
 import com.abilists.bean.para.CommonPara;
 
+import io.utility.validate.annotation.CharacterEscape;
+
 public class SrhUserSkillsPara extends CommonPara {
 
+	@CharacterEscape
 	private String userId;
+	@CharacterEscape
 	private String userName;
+	@CharacterEscape
 	private String upIndustrial;
+	@CharacterEscape
 	private String usKind;
 
 	public String getUserId() {

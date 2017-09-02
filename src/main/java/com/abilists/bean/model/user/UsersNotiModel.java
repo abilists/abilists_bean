@@ -3,6 +3,8 @@ package com.abilists.bean.model.user;
 import java.io.Serializable;
 import java.util.Date;
 
+import com.abilists.bean.model.BasicModel;
+
 /**
  * 0.0.2
  * TODO
@@ -11,7 +13,7 @@ import java.util.Date;
  * @author joonk
  *
  */
-public class UsersNotiModel implements Serializable {
+public class UsersNotiModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 	private int unNo;

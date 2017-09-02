@@ -3,7 +3,9 @@ package com.abilists.bean.model.user;
 import java.io.Serializable;
 import java.util.Date;
 
-public class UserCareerModel implements Serializable {
+import com.abilists.bean.model.BasicModel;
+
+public class UserCareerModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 

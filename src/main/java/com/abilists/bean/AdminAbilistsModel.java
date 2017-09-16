@@ -2,6 +2,7 @@ package com.abilists.bean;
 
 import java.util.List;
 
+import com.abilists.bean.admin.SkillsLevelBean;
 import com.abilists.bean.admin.TaskBean;
 import com.abilists.bean.model.CommonModel;
 import com.abilists.bean.model.sum.AdminProjectsSumByStatusModel;
@@ -24,6 +25,8 @@ public class AdminAbilistsModel extends CommonModel {
 	private int rolesSum;
 	// Notification
 	private int notiSum;
+	// Sum Group user skill level
+	private SkillsLevelBean skillsLevelBean;
 
 	public List<AdminUsersSumByMonthModel> getAdminUsersSumByMonthList() {
 		return adminUsersSumByMonthList;
@@ -87,6 +90,14 @@ public class AdminAbilistsModel extends CommonModel {
 
 	public void setNotiSum(int notiSum) {
 		this.notiSum = notiSum;
+	}
+
+	public SkillsLevelBean getSkillsLevelBean() {
+		return skillsLevelBean;
+	}
+
+	public void setSkillsLevelBean(SkillsLevelBean skillsLevelBean) {
+		this.skillsLevelBean = skillsLevelBean;
 	}
 
 }

@@ -22,7 +22,7 @@ public class UdtMTechDetailPara  extends CommonPara {
 	private String mtdLevel;
 
 	@NotNull(message = "parameter.error.null.message")
-	@Size(max = 15, message = "parameter.error.size.max15.message")
+	@Size(max = 50, message = "parameter.error.size.max50.message")
 	@CharacterEscape(message = "parameter.error.escape.character.message")
 	private String mtdLevelExplain;
 

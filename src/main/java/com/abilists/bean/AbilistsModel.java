@@ -12,6 +12,7 @@ import com.abilists.bean.model.join.MIndustryJoinUserProjectsModel;
 import com.abilists.bean.model.join.MTechJoinUserSkillsModel;
 import com.abilists.bean.model.join.UserProjectsJoinTechModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
+import com.abilists.bean.model.sum.UserSkillsSumByYearModel;
 import com.abilists.bean.model.user.UserCareerModel;
 import com.abilists.bean.model.user.UserProjectTechModel;
 import com.abilists.bean.model.user.UserProjectsModel;
@@ -31,6 +32,8 @@ public class AbilistsModel extends CommonModel {
 	private List<UsersModel> usersList;
 	private UserSkillsModel userSkills;
 	private List<UserSkillsModel> userSkillsList;
+	private List<UserSkillsSumBean> userSkillsSumBeanList;
+
 	private UserProjectsModel userProjects;
 	private List<UserProjectsModel> userProjectsList;
 	private List<UserTaskModel> userTaskList;
@@ -100,6 +103,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserSkillsList(List<UserSkillsModel> userSkillsList) {
 		this.userSkillsList = userSkillsList;
+	}
+
+	public List<UserSkillsSumBean> getUserSkillsSumBeanList() {
+		return userSkillsSumBeanList;
+	}
+
+	public void setUserSkillsSumBeanList(List<UserSkillsSumBean> userSkillsSumBeanList) {
+		this.userSkillsSumBeanList = userSkillsSumBeanList;
 	}
 
 	public UserProjectsModel getUserProjects() {

@@ -8,6 +8,7 @@ import com.abilists.bean.model.MRoleModel;
 import com.abilists.bean.model.MTechDetailModel;
 import com.abilists.bean.model.MTechModel;
 import com.abilists.bean.model.NotificationModel;
+import com.abilists.bean.model.join.MIndustryJoinUserCareerModel;
 import com.abilists.bean.model.join.MIndustryJoinUserProjectsModel;
 import com.abilists.bean.model.join.MTechJoinUserSkillsModel;
 import com.abilists.bean.model.join.UserProjectsJoinTechModel;
@@ -60,6 +61,7 @@ public class AbilistsModel extends CommonModel {
 
 	private List<MTechJoinUserSkillsModel> mTechJoinUserSkillsList;
 	private List<MIndustryJoinUserProjectsModel> mIndustryJoinUserProjectsList;
+	private List<MIndustryJoinUserCareerModel> mIndustryJoinUserCareerList;
 	private List<UserProjectsJoinTechModel> userProjectsJoinTechList;
 
 	private UserCareerModel userCareer;
@@ -271,6 +273,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setmIndustryJoinUserProjectsList(List<MIndustryJoinUserProjectsModel> mIndustryJoinUserProjectsList) {
 		this.mIndustryJoinUserProjectsList = mIndustryJoinUserProjectsList;
+	}
+
+	public List<MIndustryJoinUserCareerModel> getmIndustryJoinUserCareerList() {
+		return mIndustryJoinUserCareerList;
+	}
+
+	public void setmIndustryJoinUserCareerList(List<MIndustryJoinUserCareerModel> mIndustryJoinUserCareerList) {
+		this.mIndustryJoinUserCareerList = mIndustryJoinUserCareerList;
 	}
 
 	public List<UserProjectsJoinTechModel> getUserProjectsJoinTechList() {

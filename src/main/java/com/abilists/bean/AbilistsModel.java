@@ -13,6 +13,7 @@ import com.abilists.bean.model.join.MIndustryJoinUserProjectsModel;
 import com.abilists.bean.model.join.MTechJoinUserSkillsModel;
 import com.abilists.bean.model.join.UserProjectsJoinTechModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
+import com.abilists.bean.model.sum.UserSkillsSumBySkillModel;
 import com.abilists.bean.model.sum.UserSkillsSumByYearModel;
 import com.abilists.bean.model.user.UserCareerModel;
 import com.abilists.bean.model.user.UserProjectTechModel;
@@ -25,6 +26,9 @@ import com.abilists.bean.para.admin.SltMIndustryPara;
 import com.abilists.bean.para.admin.SltMRolePara;
 import com.abilists.bean.para.admin.SltMTechDetailPara;
 import com.abilists.bean.para.admin.SltMTechPara;
+import com.abilists.bean.user.UserCareerChartBean;
+import com.abilists.bean.user.UserSkillsSumBean;
+import com.abilists.bean.user.UserSkillsSumByKindBean;
 
 public class AbilistsModel extends CommonModel {
 
@@ -34,12 +38,14 @@ public class AbilistsModel extends CommonModel {
 	private UserSkillsModel userSkills;
 	private List<UserSkillsModel> userSkillsList;
 	private List<UserSkillsSumBean> userSkillsSumBeanList;
+	private List<UserSkillsSumBySkillModel> userSkillsSumBySkillList;
 
 	private UserProjectsModel userProjects;
 	private List<UserProjectsModel> userProjectsList;
 	private List<UserTaskModel> userTaskList;
 	private UserTaskModel userTask;
 	private List<UserProjectsSumByYearModel> userProjectsSumByYearList;
+	private List<UserSkillsSumByKindBean> userSkillsSumByKindBeanList;
 
 	private UserProjectTechModel userProjectTech;
 	private List<UserProjectTechModel> userProjectTechList;
@@ -66,6 +72,7 @@ public class AbilistsModel extends CommonModel {
 
 	private UserCareerModel userCareer;
 	private List<UserCareerModel> userCareerList;
+	private List<UserCareerChartBean> userCareerChartBeanList;
 
 	public UserTemp getUserTemp() {
 		return userTemp;
@@ -115,6 +122,14 @@ public class AbilistsModel extends CommonModel {
 		this.userSkillsSumBeanList = userSkillsSumBeanList;
 	}
 
+	public List<UserSkillsSumBySkillModel> getUserSkillsSumBySkillList() {
+		return userSkillsSumBySkillList;
+	}
+
+	public void setUserSkillsSumBySkillList(List<UserSkillsSumBySkillModel> userSkillsSumBySkillList) {
+		this.userSkillsSumBySkillList = userSkillsSumBySkillList;
+	}
+
 	public UserProjectsModel getUserProjects() {
 		return userProjects;
 	}
@@ -153,6 +168,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserProjectsSumByYearList(List<UserProjectsSumByYearModel> userProjectsSumByYearList) {
 		this.userProjectsSumByYearList = userProjectsSumByYearList;
+	}
+
+	public List<UserSkillsSumByKindBean> getUserSkillsSumByKindBeanList() {
+		return userSkillsSumByKindBeanList;
+	}
+
+	public void setUserSkillsSumByKindBeanList(List<UserSkillsSumByKindBean> userSkillsSumByKindBeanList) {
+		this.userSkillsSumByKindBeanList = userSkillsSumByKindBeanList;
 	}
 
 	public UserProjectTechModel getUserProjectTech() {
@@ -305,6 +328,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserCareerList(List<UserCareerModel> userCareerList) {
 		this.userCareerList = userCareerList;
+	}
+
+	public List<UserCareerChartBean> getUserCareerChartBeanList() {
+		return userCareerChartBeanList;
+	}
+
+	public void setUserCareerChartBeanList(List<UserCareerChartBean> userCareerChartBeanList) {
+		this.userCareerChartBeanList = userCareerChartBeanList;
 	}
 
 }

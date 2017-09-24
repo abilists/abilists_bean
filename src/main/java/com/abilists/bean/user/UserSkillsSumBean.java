@@ -1,4 +1,4 @@
-package com.abilists.bean;
+package com.abilists.bean.user;
 
 import java.util.HashMap;
 

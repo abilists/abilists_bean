@@ -1,21 +1,12 @@
 package com.abilists.bean.user;
 
-import java.util.HashMap;
+import java.util.Map;
 
 public class UserSkillsSumBean {
 
-	private String year;
 	private String usSkill;
 	private String bgColor;
-	private HashMap<String, Integer> skillsMap;
-
-	public String getYear() {
-		return year;
-	}
-
-	public void setYear(String year) {
-		this.year = year;
-	}
+	private Map<String, Integer> skillsMap;
 
 	public String getUsSkill() {
 		return usSkill;
@@ -33,11 +24,11 @@ public class UserSkillsSumBean {
 		this.bgColor = bgColor;
 	}
 
-	public HashMap<String, Integer> getSkillsMap() {
+	public Map<String, Integer> getSkillsMap() {
 		return skillsMap;
 	}
 
-	public void setSkillsMap(HashMap<String, Integer> skillsMap) {
+	public void setSkillsMap(Map<String, Integer> skillsMap) {
 		this.skillsMap = skillsMap;
 	}
 

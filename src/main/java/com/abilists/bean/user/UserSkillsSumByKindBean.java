@@ -1,11 +1,11 @@
 package com.abilists.bean.user;
 
-import java.util.HashMap;
+import java.util.Map;
 
 public class UserSkillsSumByKindBean {
 
 	private String usSkill;
-	private HashMap<String, Integer> skillsMap;
+	private Map<String, Integer> skillsMap;
 
 	public String getUsSkill() {
 		return usSkill;
@@ -15,13 +15,12 @@ public class UserSkillsSumByKindBean {
 		this.usSkill = usSkill;
 	}
 
-	public HashMap<String, Integer> getSkillsMap() {
+	public Map<String, Integer> getSkillsMap() {
 		return skillsMap;
 	}
 
-	public void setSkillsMap(HashMap<String, Integer> skillsMap) {
+	public void setSkillsMap(Map<String, Integer> skillsMap) {
 		this.skillsMap = skillsMap;
 	}
-
 
 }

@@ -20,6 +20,8 @@ jar {
 	manifest {
 		attributes 'Implementation-Title': 'Abilists', 'Implementation-Version': version
 	}
+	// Include source with jar
+	from sourceSets.main.allSource
 }
 
 repositories {

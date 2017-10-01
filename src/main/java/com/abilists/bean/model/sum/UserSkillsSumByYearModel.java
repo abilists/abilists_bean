@@ -6,21 +6,21 @@ public class UserSkillsSumByYearModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private String year;
 	private String usSkill;
+	private String year;
 	private int usLevelSum;
 
-	public String getYear() {
-		return year;
-	}
-	public void setYear(String year) {
-		this.year = year;
-	}
 	public String getUsSkill() {
 		return usSkill;
 	}
 	public void setUsSkill(String usSkill) {
 		this.usSkill = usSkill;
+	}
+	public String getYear() {
+		return year;
+	}
+	public void setYear(String year) {
+		this.year = year;
 	}
 	public int getUsLevelSum() {
 		return usLevelSum;

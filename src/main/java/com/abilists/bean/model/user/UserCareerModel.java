@@ -22,6 +22,7 @@ public class UserCareerModel extends BasicModel implements Serializable {
 	private String ucStatus;
 	private String ucDelete;
 	private String userId;
+	private int mrNo;
 	private int miNo;
 	private Date insertTime;
 	private Date updateTime;
@@ -103,6 +104,12 @@ public class UserCareerModel extends BasicModel implements Serializable {
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+	public int getMrNo() {
+		return mrNo;
+	}
+	public void setMrNo(int mrNo) {
+		this.mrNo = mrNo;
 	}
 	public int getMiNo() {
 		return miNo;

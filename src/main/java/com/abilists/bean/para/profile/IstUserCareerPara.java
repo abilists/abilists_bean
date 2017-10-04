@@ -22,6 +22,7 @@ public class IstUserCareerPara extends CommonPara {
 	@CharacterEscape(message = "parameter.error.escape.character.message")
 	@Size(min = 1, max = 700, message = "parameter.error.size.max700.message")
 	private String ucContents;
+	private String mrNo;
 	private String miNo;
 	private String ucImg;
 	private String ucStatus;
@@ -73,6 +74,12 @@ public class IstUserCareerPara extends CommonPara {
 	}
 	public void setUcContents(String ucContents) {
 		this.ucContents = ucContents;
+	}
+	public String getMrNo() {
+		return mrNo;
+	}
+	public void setMrNo(String mrNo) {
+		this.mrNo = mrNo;
 	}
 	public String getMiNo() {
 		return miNo;

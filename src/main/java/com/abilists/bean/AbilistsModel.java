@@ -10,16 +10,16 @@ import com.abilists.bean.model.MTechModel;
 import com.abilists.bean.model.NotificationModel;
 import com.abilists.bean.model.join.MIndustryJoinUserCareerModel;
 import com.abilists.bean.model.join.MIndustryJoinUserProjectsModel;
+import com.abilists.bean.model.join.MRoleJoinUserCareerModel;
 import com.abilists.bean.model.join.MTechJoinUserSkillsModel;
 import com.abilists.bean.model.join.UserProjectsJoinTechModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.sum.UserSkillsSumBySkillModel;
-import com.abilists.bean.model.sum.UserSkillsSumByYearModel;
 import com.abilists.bean.model.user.UserCareerModel;
 import com.abilists.bean.model.user.UserProjectTechModel;
 import com.abilists.bean.model.user.UserProjectsModel;
-import com.abilists.bean.model.user.UserTaskModel;
 import com.abilists.bean.model.user.UserSkillsModel;
+import com.abilists.bean.model.user.UserTaskModel;
 import com.abilists.bean.model.user.UserTemp;
 import com.abilists.bean.model.user.UsersModel;
 import com.abilists.bean.para.admin.SltMIndustryPara;
@@ -27,6 +27,7 @@ import com.abilists.bean.para.admin.SltMRolePara;
 import com.abilists.bean.para.admin.SltMTechDetailPara;
 import com.abilists.bean.para.admin.SltMTechPara;
 import com.abilists.bean.user.UserCareerChartBean;
+import com.abilists.bean.user.UserCareerRoleSumBean;
 import com.abilists.bean.user.UserSkillsSumBean;
 import com.abilists.bean.user.UserSkillsSumByKindBean;
 
@@ -68,6 +69,7 @@ public class AbilistsModel extends CommonModel {
 	private List<MTechJoinUserSkillsModel> mTechJoinUserSkillsList;
 	private List<MIndustryJoinUserProjectsModel> mIndustryJoinUserProjectsList;
 	private List<MIndustryJoinUserCareerModel> mIndustryJoinUserCareerList;
+	private List<UserCareerRoleSumBean> userCareerRoleSumBeanList;
 	private List<UserProjectsJoinTechModel> userProjectsJoinTechList;
 
 	private UserCareerModel userCareer;
@@ -304,6 +306,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setmIndustryJoinUserCareerList(List<MIndustryJoinUserCareerModel> mIndustryJoinUserCareerList) {
 		this.mIndustryJoinUserCareerList = mIndustryJoinUserCareerList;
+	}
+
+	public List<UserCareerRoleSumBean> getUserCareerRoleSumBeanList() {
+		return userCareerRoleSumBeanList;
+	}
+
+	public void setUserCareerRoleSumBeanList(List<UserCareerRoleSumBean> userCareerRoleSumBeanList) {
+		this.userCareerRoleSumBeanList = userCareerRoleSumBeanList;
 	}
 
 	public List<UserProjectsJoinTechModel> getUserProjectsJoinTechList() {

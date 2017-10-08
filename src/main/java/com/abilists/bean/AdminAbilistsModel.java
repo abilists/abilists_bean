@@ -5,14 +5,14 @@ import java.util.List;
 import com.abilists.bean.admin.SkillsLevelBean;
 import com.abilists.bean.admin.TaskBean;
 import com.abilists.bean.model.CommonModel;
-import com.abilists.bean.model.sum.AdminProjectsSumByStatusModel;
 import com.abilists.bean.model.sum.AdminUsersSumByMonthModel;
+import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.user.UserTaskModel;
 
 public class AdminAbilistsModel extends CommonModel {
 
 	private List<AdminUsersSumByMonthModel> adminUsersSumByMonthList;
-	private List<AdminProjectsSumByStatusModel> adminProjectsSumByStatusList;
+	private List<UserProjectsSumByYearModel> userProjectsSumByYearList;
 
 	private List<TaskBean> taskBeanList;
 	private List<UserTaskModel> userTaskList;
@@ -36,12 +36,12 @@ public class AdminAbilistsModel extends CommonModel {
 		this.adminUsersSumByMonthList = adminUsersSumByMonthList;
 	}
 
-	public List<AdminProjectsSumByStatusModel> getAdminProjectsSumByStatusList() {
-		return adminProjectsSumByStatusList;
+	public List<UserProjectsSumByYearModel> getUserProjectsSumByYearList() {
+		return userProjectsSumByYearList;
 	}
 
-	public void setAdminProjectsSumByStatusList(List<AdminProjectsSumByStatusModel> adminProjectsSumByStatusList) {
-		this.adminProjectsSumByStatusList = adminProjectsSumByStatusList;
+	public void setUserProjectsSumByYearList(List<UserProjectsSumByYearModel> userProjectsSumByYearList) {
+		this.userProjectsSumByYearList = userProjectsSumByYearList;
 	}
 
 	public List<TaskBean> getTaskBeanList() {

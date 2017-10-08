@@ -7,7 +7,7 @@ public class UserProjectsTechJoinTechModel implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private String mtName;
-	private String cntMtNo;
+	private int cntMtNo;
 
 	public String getMtName() {
 		return mtName;
@@ -15,10 +15,10 @@ public class UserProjectsTechJoinTechModel implements Serializable {
 	public void setMtName(String mtName) {
 		this.mtName = mtName;
 	}
-	public String getCntMtNo() {
+	public int getCntMtNo() {
 		return cntMtNo;
 	}
-	public void setCntMtNo(String cntMtNo) {
+	public void setCntMtNo(int cntMtNo) {
 		this.cntMtNo = cntMtNo;
 	}
 

@@ -11,7 +11,7 @@ public class UserProjectTechModel extends BasicModel implements Serializable {
 
 	private int uptNo;
 	private String uptKind;
-	private String uptLevel;
+	private int uptLevel;
 	private String uptDetail;
 	private String uptStatus;
 	private String uptDelete;
@@ -33,10 +33,10 @@ public class UserProjectTechModel extends BasicModel implements Serializable {
 	public void setUptKind(String uptKind) {
 		this.uptKind = uptKind;
 	}
-	public String getUptLevel() {
+	public int getUptLevel() {
 		return uptLevel;
 	}
-	public void setUptLevel(String uptLevel) {
+	public void setUptLevel(int uptLevel) {
 		this.uptLevel = uptLevel;
 	}
 	public String getUptDetail() {

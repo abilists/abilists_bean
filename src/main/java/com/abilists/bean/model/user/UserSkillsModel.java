@@ -12,7 +12,7 @@ public class UserSkillsModel extends BasicModel implements Serializable {
 	private int usNo;
 	private String usSkill;
 	private String usKind;
-	private String usLevel;
+	private int usLevel;
 	private String usDetail;
 	private String usStatus;
 	private String usDelete;
@@ -38,10 +38,10 @@ public class UserSkillsModel extends BasicModel implements Serializable {
 	public void setUsKind(String usKind) {
 		this.usKind = usKind;
 	}
-	public String getUsLevel() {
+	public int getUsLevel() {
 		return usLevel;
 	}
-	public void setUsLevel(String usLevel) {
+	public void setUsLevel(int usLevel) {
 		this.usLevel = usLevel;
 	}
 	public String getUsDetail() {

@@ -9,7 +9,7 @@ import javax.validation.constraints.Size;
  * @author njoonk
  *
  */
-public class InputUsersInfoPara {
+public class InputUsersPara {
 
 	@NotNull(message = "userId")
     @Size(min = 1, max = 90 ,message = "userId must not exceed {max} characters")
@@ -18,8 +18,6 @@ public class InputUsersInfoPara {
     @NotNull(message = "userPwd")
     @Size(min = 1, max = 150 ,message = "userPwd must not exceed {max} characters")
     private String userPwd;
-
-    private String userCode;
 
     @NotNull(message = "userName")
     @Size(min = 1, max = 90 ,message = "userName must not exceed {max} characters")
@@ -45,14 +43,6 @@ public class InputUsersInfoPara {
 
 	public void setUserPwd(String userPwd) {
 		this.userPwd = userPwd;
-	}
-
-	public String getUserCode() {
-		return userCode;
-	}
-
-	public void setUserCode(String userCode) {
-		this.userCode = userCode;
 	}
 
 	public String getUserName() {

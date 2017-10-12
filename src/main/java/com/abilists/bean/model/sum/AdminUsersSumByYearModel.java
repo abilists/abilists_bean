@@ -2,12 +2,12 @@ package com.abilists.bean.model.sum;
 
 import java.io.Serializable;
 
-public class AdminUsersSumByMonthModel implements Serializable {
+public class AdminUsersSumByYearModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 	private int cnt;
-	private String month;
+	private String year;
 
 	public int getCnt() {
 		return cnt;
@@ -15,11 +15,11 @@ public class AdminUsersSumByMonthModel implements Serializable {
 	public void setCnt(int cnt) {
 		this.cnt = cnt;
 	}
-	public String getMonth() {
-		return month;
+	public String getYear() {
+		return year;
 	}
-	public void setMonth(String month) {
-		this.month = month;
+	public void setYear(String year) {
+		this.year = year;
 	}
 
 }

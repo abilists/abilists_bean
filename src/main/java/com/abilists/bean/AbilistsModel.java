@@ -9,8 +9,8 @@ import com.abilists.bean.model.MTechDetailModel;
 import com.abilists.bean.model.MTechModel;
 import com.abilists.bean.model.NotificationModel;
 import com.abilists.bean.model.join.MIndustryJoinUserCareerModel;
-import com.abilists.bean.model.join.MIndustryJoinUserProjectsModel;
-import com.abilists.bean.model.join.MRoleJoinUserCareerModel;
+import com.abilists.bean.model.join.UserProjectsJoinMindustryModel;
+import com.abilists.bean.model.join.UserProjectsJoinMroleModel;
 import com.abilists.bean.model.join.MTechJoinUserSkillsModel;
 import com.abilists.bean.model.join.UserProjectsJoinTechModel;
 import com.abilists.bean.model.join.UserProjectsTechJoinTechModel;
@@ -68,7 +68,8 @@ public class AbilistsModel extends CommonModel {
 	private List<NotificationModel> notificationList;
 
 	private List<MTechJoinUserSkillsModel> mTechJoinUserSkillsList;
-	private List<MIndustryJoinUserProjectsModel> mIndustryJoinUserProjectsList;
+	private List<UserProjectsJoinMroleModel> userProjectsJoinMroleList;
+	private List<UserProjectsJoinMindustryModel> userProjectsJoinMindustryList;
 	private List<MIndustryJoinUserCareerModel> mIndustryJoinUserCareerList;
 	private List<UserCareerRoleSumBean> userCareerRoleSumBeanList;
 	private List<UserProjectsJoinTechModel> userProjectsJoinTechList;
@@ -294,12 +295,20 @@ public class AbilistsModel extends CommonModel {
 		this.mTechJoinUserSkillsList = mTechJoinUserSkillsList;
 	}
 
-	public List<MIndustryJoinUserProjectsModel> getmIndustryJoinUserProjectsList() {
-		return mIndustryJoinUserProjectsList;
+	public List<UserProjectsJoinMroleModel> getUserProjectsJoinMroleList() {
+		return userProjectsJoinMroleList;
 	}
 
-	public void setmIndustryJoinUserProjectsList(List<MIndustryJoinUserProjectsModel> mIndustryJoinUserProjectsList) {
-		this.mIndustryJoinUserProjectsList = mIndustryJoinUserProjectsList;
+	public void setUserProjectsJoinMroleList(List<UserProjectsJoinMroleModel> userProjectsJoinMroleList) {
+		this.userProjectsJoinMroleList = userProjectsJoinMroleList;
+	}
+
+	public List<UserProjectsJoinMindustryModel> getUserProjectsJoinMindustryList() {
+		return userProjectsJoinMindustryList;
+	}
+
+	public void setUserProjectsJoinMindustryList(List<UserProjectsJoinMindustryModel> userProjectsJoinMindustryList) {
+		this.userProjectsJoinMindustryList = userProjectsJoinMindustryList;
 	}
 
 	public List<MIndustryJoinUserCareerModel> getmIndustryJoinUserCareerList() {

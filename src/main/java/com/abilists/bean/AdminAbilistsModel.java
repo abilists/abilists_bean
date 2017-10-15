@@ -1,10 +1,12 @@
 package com.abilists.bean;
 
+import java.util.HashMap;
 import java.util.List;
 
 import com.abilists.bean.admin.SkillsLevelBean;
 import com.abilists.bean.admin.TaskBean;
 import com.abilists.bean.model.CommonModel;
+import com.abilists.bean.model.admin.sum.AdminUserTaskSumModel;
 import com.abilists.bean.model.sum.AdminUsersSumByYearModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.user.UserTaskModel;
@@ -16,6 +18,7 @@ public class AdminAbilistsModel extends CommonModel {
 
 	private List<TaskBean> taskBeanList;
 	private List<UserTaskModel> userTaskList;
+	private HashMap<String, List<AdminUserTaskSumModel>> adminUserTaskSumMap;
 
 	// Sum Techs
 	private int techsSum;
@@ -58,6 +61,14 @@ public class AdminAbilistsModel extends CommonModel {
 
 	public void setUserTaskList(List<UserTaskModel> userTaskList) {
 		this.userTaskList = userTaskList;
+	}
+
+	public HashMap<String, List<AdminUserTaskSumModel>> getAdminUserTaskSumMap() {
+		return adminUserTaskSumMap;
+	}
+
+	public void setAdminUserTaskSumMap(HashMap<String, List<AdminUserTaskSumModel>> adminUserTaskSumMap) {
+		this.adminUserTaskSumMap = adminUserTaskSumMap;
 	}
 
 	public int getTechsSum() {

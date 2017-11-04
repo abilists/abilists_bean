@@ -7,6 +7,7 @@ import com.abilists.bean.para.CommonPara;
 
 import io.utility.validate.annotation.CharacterEscape;
 import io.utility.validate.annotation.DateFormat;
+import io.utility.validate.annotation.IsInteger;
 
 public class UdtTaskPara extends CommonPara {
 
@@ -20,6 +21,11 @@ public class UdtTaskPara extends CommonPara {
     @CharacterEscape(message = "parameter.error.escape.character.message")
     @Size(max = 150, message = "parameter.error.size.max150.message")
 	private String utkTask;
+
+    @CharacterEscape(message = "parameter.error.escape.character.message")
+    @IsInteger(message = "parameter.error.integer.message")
+    @Size(max = 10, message = "parameter.error.size.max10.message")
+    private String utkWorkHour;
 
 	public String getUtkNo() {
 		return utkNo;
@@ -38,6 +44,12 @@ public class UdtTaskPara extends CommonPara {
 	}
 	public void setUtkTask(String utkTask) {
 		this.utkTask = utkTask;
+	}
+	public String getUtkWorkHour() {
+		return utkWorkHour;
+	}
+	public void setUtkWorkHour(String utkWorkHour) {
+		this.utkWorkHour = utkWorkHour;
 	}
 
 }

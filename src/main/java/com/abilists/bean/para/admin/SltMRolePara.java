@@ -7,8 +7,6 @@ public class SltMRolePara  extends CommonPara {
 	private String mrNo;
 	private String mrName;
 	private String mrExplain;
-	private String mrResponsibilities;
-	private String mrWorks;
 	private String mrSkills;
 	private String mrPrefers;
 	private String mlCode;
@@ -32,18 +30,6 @@ public class SltMRolePara  extends CommonPara {
 	}
 	public void setMrExplain(String mrExplain) {
 		this.mrExplain = mrExplain;
-	}
-	public String getMrResponsibilities() {
-		return mrResponsibilities;
-	}
-	public void setMrResponsibilities(String mrResponsibilities) {
-		this.mrResponsibilities = mrResponsibilities;
-	}
-	public String getMrWorks() {
-		return mrWorks;
-	}
-	public void setMrWorks(String mrWorks) {
-		this.mrWorks = mrWorks;
 	}
 	public String getMrSkills() {
 		return mrSkills;

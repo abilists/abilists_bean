@@ -3,7 +3,7 @@ package com.abilists.bean.para.profile;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.abilists.bean.model.MTechDetailModel;
+import com.abilists.bean.model.master.MTechDetailModel;
 
 public class MTechDetailListAjax {
 

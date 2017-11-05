@@ -11,7 +11,7 @@ public class UserTaskModel extends BasicModel implements Serializable {
 
 	private int utkNo;
 	private Date utkWorkDay;
-	private String utkWorkHour;
+	private int utkWorkHour;
 	private String utkWorkProgress;
 	private String utkTask;
 	private String utkStatus;
@@ -34,10 +34,10 @@ public class UserTaskModel extends BasicModel implements Serializable {
 	public void setUtkWorkDay(Date utkWorkDay) {
 		this.utkWorkDay = utkWorkDay;
 	}
-	public String getUtkWorkHour() {
+	public int getUtkWorkHour() {
 		return utkWorkHour;
 	}
-	public void setUtkWorkHour(String utkWorkHour) {
+	public void setUtkWorkHour(int utkWorkHour) {
 		this.utkWorkHour = utkWorkHour;
 	}
 	public String getUtkWorkProgress() {

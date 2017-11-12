@@ -21,7 +21,8 @@ public class SltUserCareerPara extends CommonPara {
 	private String ucEndYear;
 	private String ucTitle;
 	private String ucContents;
-	private String ucImg;
+	private String ucCodeIndustry;
+	private String ucCodeRole;
 	private String ucStatus;
 
 	public String getUcNo() {
@@ -78,11 +79,17 @@ public class SltUserCareerPara extends CommonPara {
 	public void setUcContents(String ucContents) {
 		this.ucContents = ucContents;
 	}
-	public String getUcImg() {
-		return ucImg;
+	public String getUcCodeIndustry() {
+		return ucCodeIndustry;
 	}
-	public void setUcImg(String ucImg) {
-		this.ucImg = ucImg;
+	public void setUcCodeIndustry(String ucCodeIndustry) {
+		this.ucCodeIndustry = ucCodeIndustry;
+	}
+	public String getUcCodeRole() {
+		return ucCodeRole;
+	}
+	public void setUcCodeRole(String ucCodeRole) {
+		this.ucCodeRole = ucCodeRole;
 	}
 	public String getUcStatus() {
 		return ucStatus;

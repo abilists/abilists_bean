@@ -25,9 +25,10 @@ public class UdtUserCareerPara extends CommonPara {
 	@CharacterEscape(message = "parameter.error.escape.character.message")
 	@Size(min = 1, max = 700, message = "parameter.error.size.max700.message")
 	private String ucContents;
+	private String ucCodeIndustry;
+	private String ucCodeRole;
 	private String mrNo;
 	private String miNo;
-	private String ucImg;
 	private String ucStatus;
 	public String getUcNo() {
 		return ucNo;
@@ -95,11 +96,17 @@ public class UdtUserCareerPara extends CommonPara {
 	public void setMiNo(String miNo) {
 		this.miNo = miNo;
 	}
-	public String getUcImg() {
-		return ucImg;
+	public String getUcCodeIndustry() {
+		return ucCodeIndustry;
 	}
-	public void setUcImg(String ucImg) {
-		this.ucImg = ucImg;
+	public void setUcCodeIndustry(String ucCodeIndustry) {
+		this.ucCodeIndustry = ucCodeIndustry;
+	}
+	public String getUcCodeRole() {
+		return ucCodeRole;
+	}
+	public void setUcCodeRole(String ucCodeRole) {
+		this.ucCodeRole = ucCodeRole;
 	}
 	public String getUcStatus() {
 		return ucStatus;

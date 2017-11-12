@@ -12,10 +12,10 @@ public class UserProjectsModel extends BasicModel implements Serializable {
 
 	private int upNo;
 	private String upName;
-	private String upIndustrial;
 	private String upExplain;
 	private String upMembers;
-	private String upRole;
+	private String upCodeIndustry;
+	private String upCodeRole;
 	private String upStatus;
 	private String upDelete;
 	private String userId;
@@ -37,12 +37,6 @@ public class UserProjectsModel extends BasicModel implements Serializable {
 	public void setUpName(String upName) {
 		this.upName = upName;
 	}
-	public String getUpIndustrial() {
-		return upIndustrial;
-	}
-	public void setUpIndustrial(String upIndustrial) {
-		this.upIndustrial = upIndustrial;
-	}
 	public String getUpExplain() {
 		return upExplain;
 	}
@@ -55,11 +49,17 @@ public class UserProjectsModel extends BasicModel implements Serializable {
 	public void setUpMembers(String upMembers) {
 		this.upMembers = upMembers;
 	}
-	public String getUpRole() {
-		return upRole;
+	public String getUpCodeIndustry() {
+		return upCodeIndustry;
 	}
-	public void setUpRole(String upRole) {
-		this.upRole = upRole;
+	public void setUpCodeIndustry(String upCodeIndustry) {
+		this.upCodeIndustry = upCodeIndustry;
+	}
+	public String getUpCodeRole() {
+		return upCodeRole;
+	}
+	public void setUpCodeRole(String upCodeRole) {
+		this.upCodeRole = upCodeRole;
 	}
 	public String getUpStatus() {
 		return upStatus;

@@ -23,6 +23,7 @@ import com.abilists.bean.model.user.UserSkillsModel;
 import com.abilists.bean.model.user.UserTaskModel;
 import com.abilists.bean.model.user.UserTemp;
 import com.abilists.bean.model.user.UsersModel;
+import com.abilists.bean.model.works.UserMemoModel;
 import com.abilists.bean.para.admin.SltMIndustryPara;
 import com.abilists.bean.para.admin.SltMRolePara;
 import com.abilists.bean.para.admin.SltMTechDetailPara;
@@ -46,6 +47,8 @@ public class AbilistsModel extends CommonModel {
 	private List<UserProjectsModel> userProjectsList;
 	private List<UserTaskModel> userTaskList;
 	private UserTaskModel userTask;
+	private List<UserMemoModel> userMemoList;
+
 	private List<UserProjectsSumByYearModel> userProjectsSumByYearList;
 	private List<UserSkillsSumByKindBean> userSkillsSumByKindBeanList;
 
@@ -161,6 +164,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserTask(UserTaskModel userTask) {
 		this.userTask = userTask;
+	}
+
+	public List<UserMemoModel> getUserMemoList() {
+		return userMemoList;
+	}
+
+	public void setUserMemoList(List<UserMemoModel> userMemoList) {
+		this.userMemoList = userMemoList;
 	}
 
 	public void setUserProjectsList(List<UserProjectsModel> userProjectsList) {

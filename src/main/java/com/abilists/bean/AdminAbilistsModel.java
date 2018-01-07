@@ -10,6 +10,7 @@ import com.abilists.bean.model.admin.sum.AdminUserTaskSumModel;
 import com.abilists.bean.model.sum.AdminUsersSumByYearModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.user.UserTaskModel;
+import com.abilists.bean.model.works.UserMemoModel;
 
 public class AdminAbilistsModel extends CommonModel {
 
@@ -71,6 +72,8 @@ public class AdminAbilistsModel extends CommonModel {
 		this.adminUserTaskSumMap = adminUserTaskSumMap;
 	}
 
+
+	
 	public int getTechsSum() {
 		return techsSum;
 	}

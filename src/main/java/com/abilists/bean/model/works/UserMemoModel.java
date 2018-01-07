@@ -3,18 +3,21 @@ package com.abilists.bean.model.works;
 import java.io.Serializable;
 import java.util.Date;
 
-public class UserMemoModel implements Serializable {
+import com.abilists.bean.model.BasicModel;
+
+public class UserMemoModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
 	private long umNo;
 	private String umTitle;
 	private String umMemo;
+	private String umBgColor;
 	private String umStatus;
 	private String umDelete;
 	private String userId;
-	private Date insertDate;
-	private Date updateDate;
+	private Date insertTime;
+	private Date updateTime;
 
 	public long getUmNo() {
 		return umNo;
@@ -34,6 +37,12 @@ public class UserMemoModel implements Serializable {
 	public void setUmMemo(String umMemo) {
 		this.umMemo = umMemo;
 	}
+	public String getUmBgColor() {
+		return umBgColor;
+	}
+	public void setUmBgColor(String umBgColor) {
+		this.umBgColor = umBgColor;
+	}
 	public String getUmStatus() {
 		return umStatus;
 	}
@@ -52,18 +61,17 @@ public class UserMemoModel implements Serializable {
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public Date getInsertDate() {
-		return insertDate;
+	public Date getInsertTime() {
+		return insertTime;
 	}
-	public void setInsertDate(Date insertDate) {
-		this.insertDate = insertDate;
+	public void setInsertTime(Date insertTime) {
+		this.insertTime = insertTime;
 	}
-	public Date getUpdateDate() {
-		return updateDate;
+	public Date getUpdateTime() {
+		return updateTime;
 	}
-	public void setUpdateDate(Date updateDate) {
-		this.updateDate = updateDate;
+	public void setUpdateTime(Date updateTime) {
+		this.updateTime = updateTime;
 	}
 
-	
 }

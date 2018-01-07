@@ -19,6 +19,8 @@ public class IstMemoPara extends CommonPara {
 	@Size(min = 1, max = 300, message = "parameter.error.size.max700.message")
 	private String umMemo;
 
+	private String umBgColor;
+
 	private String umStatus;
 
 	public String getUmTitle() {
@@ -35,6 +37,14 @@ public class IstMemoPara extends CommonPara {
 
 	public void setUmMemo(String umMemo) {
 		this.umMemo = umMemo;
+	}
+
+	public String getUmBgColor() {
+		return umBgColor;
+	}
+
+	public void setUmBgColor(String umBgColor) {
+		this.umBgColor = umBgColor;
 	}
 
 	public String getUmStatus() {

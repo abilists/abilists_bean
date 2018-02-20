@@ -2,7 +2,7 @@ package com.abilists.bean.para.admin;
 
 import com.abilists.bean.para.CommonPara;
 
-public class SltMTechPara  extends CommonPara {
+public class SltMTechPara extends CommonPara {
 
 	private String mtNo;
 	private String mtSkill;

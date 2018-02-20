@@ -2,7 +2,7 @@ package com.abilists.bean.para.admin;
 
 import com.abilists.bean.para.CommonPara;
 
-public class SrhAutoCompletePara  extends CommonPara {
+public class SrhAutoCompletePara extends CommonPara {
 
 	private String srhColumn;
 	private String srhContents;

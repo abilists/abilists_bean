@@ -1,4 +1,4 @@
-package com.abilists.bean.model.user;
+package com.abilists.bean.model.works;
 
 import java.io.Serializable;
 import java.util.Date;

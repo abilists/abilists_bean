@@ -20,10 +20,11 @@ import com.abilists.bean.model.user.UserCareerModel;
 import com.abilists.bean.model.user.UserProjectTechModel;
 import com.abilists.bean.model.user.UserProjectsModel;
 import com.abilists.bean.model.user.UserSkillsModel;
-import com.abilists.bean.model.user.UserTaskModel;
+
 import com.abilists.bean.model.user.UserTemp;
 import com.abilists.bean.model.user.UsersModel;
 import com.abilists.bean.model.works.UserMemoModel;
+import com.abilists.bean.model.works.UserTaskModel;
 import com.abilists.bean.para.admin.SltMIndustryPara;
 import com.abilists.bean.para.admin.SltMRolePara;
 import com.abilists.bean.para.admin.SltMTechDetailPara;

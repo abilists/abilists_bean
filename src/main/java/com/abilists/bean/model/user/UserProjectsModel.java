@@ -5,6 +5,7 @@ import java.util.Date;
 import java.util.List;
 
 import com.abilists.bean.model.BasicModel;
+import com.abilists.bean.model.works.UserTaskModel;
 
 public class UserProjectsModel extends BasicModel implements Serializable {
 

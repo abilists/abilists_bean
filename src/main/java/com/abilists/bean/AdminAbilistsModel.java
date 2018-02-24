@@ -9,8 +9,7 @@ import com.abilists.bean.model.CommonModel;
 import com.abilists.bean.model.admin.sum.AdminUserTaskSumModel;
 import com.abilists.bean.model.sum.AdminUsersSumByYearModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
-import com.abilists.bean.model.user.UserTaskModel;
-import com.abilists.bean.model.works.UserMemoModel;
+import com.abilists.bean.model.works.UserTaskModel;
 
 public class AdminAbilistsModel extends CommonModel {
 

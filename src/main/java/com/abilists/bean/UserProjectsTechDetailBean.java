@@ -3,7 +3,7 @@ package com.abilists.bean;
 import java.util.List;
 
 import com.abilists.bean.model.master.MTechDetailModel;
-import com.abilists.bean.model.user.UserProjectTechModel;
+import com.abilists.bean.model.works.UserProjectTechModel;
 
 public class UserProjectsTechDetailBean {
 

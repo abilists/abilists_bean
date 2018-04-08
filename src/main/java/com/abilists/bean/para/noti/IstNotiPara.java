@@ -5,19 +5,20 @@ import javax.validation.constraints.Size;
 
 import com.abilists.bean.para.CommonPara;
 
-import io.utility.validate.annotation.DateFormat;
+import io.utility.validate.annotation.CharacterEscape;
 
 public class IstNotiPara extends CommonPara {
 
-    @NotNull(message = "notiTitle")
+	@NotNull(message = "parameter.error.null.message")
     @Size(min = 1, max = 50 ,message = "It is different String size")
 	private String notiTitle;
 
-    @NotNull(message = "notiContents")
-    @Size(min = 1, max = 190 ,message = "It is different String size")
+	@CharacterEscape(message = "parameter.error.escape.character.message")
+	@NotNull(message = "parameter.error.null.message")
+    @Size(min = 1, max = 1000, message = "parameter.error.size.max1000.message")
 	private String notiContents;
 
-    @NotNull(message = "notiKind")
+	@NotNull(message = "parameter.error.null.message")
     @Size(min = 1, max = 10 ,message = "It is different String size")
 	private String notiKind;
 

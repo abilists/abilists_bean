@@ -19,7 +19,7 @@ public class UdtTaskPara extends CommonPara {
 	private String utkWorkDay;
 
     @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(max = 150, message = "parameter.error.size.max150.message")
+    @Size(max = 1000, message = "parameter.error.size.max1000.message")
 	private String utkTask;
 
     @IsInteger(message = "parameter.error.integer.message")

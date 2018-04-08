@@ -6,6 +6,7 @@ import javax.validation.constraints.Size;
 import com.abilists.bean.para.CommonPara;
 
 import io.utility.validate.annotation.Array;
+import io.utility.validate.annotation.CharacterEscape;
 
 /**
  * Action + db name + data
@@ -27,6 +28,9 @@ public class IstProjectTechPara extends CommonPara {
 
     private String[] uptLevel;
 
+	@NotNull(message = "parameter.error.null.message")
+	@Size(min = 1, max = 300 ,message = "parameter.error.size.max300.message")
+	@Array(message = "parameter.error.array.message")
     private String[] uptDetail;
 
 	public String[] getMtNo() {

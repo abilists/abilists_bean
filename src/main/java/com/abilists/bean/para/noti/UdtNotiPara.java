@@ -17,9 +17,9 @@ public class UdtNotiPara extends CommonPara {
     @Size(min = 1, max = 50 ,message = "parameter.error.size.max50.message")
 	private String notiTitle;
 
-    @CharacterEscape(message = "parameter.error.escape.character.message")
-    @NotNull(message = "parameter.error.null.message")
-    @Size(min = 1, max = 100 ,message = "parameter.error.size.max100.message")
+	@CharacterEscape(message = "parameter.error.escape.character.message")
+	@NotNull(message = "parameter.error.null.message")
+    @Size(min = 1, max = 1000, message = "parameter.error.size.max1000.message")
 	private String notiContents;
 
 	private String notiKind;

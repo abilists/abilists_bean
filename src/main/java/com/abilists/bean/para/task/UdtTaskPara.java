@@ -23,7 +23,7 @@ public class UdtTaskPara extends CommonPara {
 	private String utkTask;
 
     @IsInteger(message = "parameter.error.integer.message")
-    @Size(max = 10, message = "parameter.error.size.max10.message")
+    @Size(max = 5, message = "parameter.error.size.max5.message")
     private String utkWorkHour;
 
 	public String getUtkNo() {

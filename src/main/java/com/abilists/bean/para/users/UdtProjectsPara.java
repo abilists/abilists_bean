@@ -26,7 +26,7 @@ public class UdtProjectsPara extends CommonPara {
 
 	@CharacterEscape(message = "parameter.error.escape.character.message")
 	@NotNull(message = "parameter.error.null.message")
-    @Size(min = 1, max = 1000, message = "parameter.error.size.max1000.message")
+    @Size(min = 1, max = 2500, message = "parameter.error.size.max2500.message")
     private String upExplain;
 
 	private String upMembers;

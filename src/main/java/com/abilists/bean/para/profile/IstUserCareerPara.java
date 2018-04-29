@@ -13,15 +13,23 @@ public class IstUserCareerPara extends CommonPara {
 	@CharacterEscape(message = "parameter.error.escape.character.message")
     @Size(min = 1, max = 100, message = "parameter.error.size.max100.message")
 	private String ucCompanyName;
+	
 	private String ucPresent;
+	
+	@NotNull(message = "parameter.error.null.message")
 	private String ucStartMonth;
+	
+	@NotNull(message = "parameter.error.null.message")
 	private String ucStartYear;
+	
 	private String ucEndMonth;
 	private String ucEndYear;
 	private String ucTitle;
+	
 	@CharacterEscape(message = "parameter.error.escape.character.message")
 	@Size(min = 1, max = 1000, message = "parameter.error.size.max1000.message")
 	private String ucContents;
+
 	private String ucCodeIndustry;
 	private String ucCodeRole;
 	private String mrNo;

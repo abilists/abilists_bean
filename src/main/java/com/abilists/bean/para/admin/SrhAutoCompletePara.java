@@ -2,9 +2,13 @@ package com.abilists.bean.para.admin;
 
 import com.abilists.bean.para.CommonPara;
 
+import io.utility.validate.annotation.CharacterEscape;
+
 public class SrhAutoCompletePara extends CommonPara {
 
 	private String srhColumn;
+	
+	@CharacterEscape(message = "parameter.error.escape.character.message", charArray = {'\'', '"', '^'})
 	private String srhContents;
 
 	public String getSrhColumn() {

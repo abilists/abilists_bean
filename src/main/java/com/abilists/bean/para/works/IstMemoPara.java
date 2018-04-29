@@ -4,8 +4,6 @@ import javax.validation.constraints.Size;
 
 import com.abilists.bean.para.CommonPara;
 
-import io.utility.validate.annotation.CharacterEscape;
-
 /**
  * 
  * @author Joon Kim
@@ -15,7 +13,8 @@ public class IstMemoPara extends CommonPara {
 
 	private String umTitle;
 
-	@CharacterEscape(message = "parameter.error.escape.character.message")
+	// Mybatis Prevent SQL injection attacks with using #, not $ 
+	// @CharacterEscape(message = "parameter.error.escape.character.message")
 	@Size(min = 1, max = 2500, message = "parameter.error.size.max2500.message")
 	private String umMemo;
 

@@ -1,4 +1,4 @@
-package com.abilists.bean.para.users;
+package com.abilists.bean.para.works;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -13,11 +13,15 @@ import io.utility.validate.annotation.CharacterEscape;
  * @author njoonk
  *
  */
-public class IstProjectsPara extends CommonPara {
+public class UdtProjectsPara extends CommonPara {
+
+	@NotNull(message = "parameter.error.null.message")
+    @Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
+	private String upNo;
 
 	@CharacterEscape(message = "parameter.error.escape.character.message")
 	@NotNull(message = "parameter.error.null.message")
-    @Size(min = 1, max = 50, message = "parameter.error.size.max50.message")
+	@Size(min = 1, max = 50, message = "parameter.error.size.max50.message")
 	private String upName;
 
 	@CharacterEscape(message = "parameter.error.escape.character.message")
@@ -32,6 +36,14 @@ public class IstProjectsPara extends CommonPara {
     private String upCodeRole;
 
     private String upStatus;
+
+	public String getUpNo() {
+		return upNo;
+	}
+
+	public void setUpNo(String upNo) {
+		this.upNo = upNo;
+	}
 
 	public String getUpName() {
 		return upName;

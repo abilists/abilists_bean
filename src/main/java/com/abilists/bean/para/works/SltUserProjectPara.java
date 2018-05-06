@@ -1,4 +1,4 @@
-package com.abilists.bean.para.users;
+package com.abilists.bean.para.works;
 
 import com.abilists.bean.para.CommonPara;
 

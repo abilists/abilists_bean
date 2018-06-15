@@ -2,7 +2,7 @@ package com.abilists.bean.para.profile;
 
 import javax.validation.constraints.NotNull;
 
-import com.abilists.bean.para.CommonPara;
+import base.bean.para.CommonPara;
 
 public class IstUserSkillsPara extends CommonPara {
 

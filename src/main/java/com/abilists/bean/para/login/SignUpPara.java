@@ -5,7 +5,7 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.Email;
 
-import com.abilists.bean.para.CommonPara;
+import base.bean.para.CommonPara;
 
 public class SignUpPara extends CommonPara {
 

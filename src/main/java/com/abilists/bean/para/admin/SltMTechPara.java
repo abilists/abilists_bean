@@ -1,6 +1,6 @@
 package com.abilists.bean.para.admin;
 
-import com.abilists.bean.para.CommonPara;
+import base.bean.para.CommonPara;
 
 public class SltMTechPara extends CommonPara {
 

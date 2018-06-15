@@ -3,7 +3,7 @@ package com.abilists.bean.model.works;
 import java.io.Serializable;
 import java.util.Date;
 
-import com.abilists.bean.model.BasicModel;
+import base.bean.model.BasicModel;
 
 public class UserMemoModel extends BasicModel implements Serializable {
 

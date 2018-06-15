@@ -5,11 +5,12 @@ import java.util.List;
 
 import com.abilists.bean.admin.SkillsLevelBean;
 import com.abilists.bean.admin.TaskBean;
-import com.abilists.bean.model.CommonModel;
 import com.abilists.bean.model.admin.sum.AdminUserTaskSumModel;
 import com.abilists.bean.model.sum.AdminUsersSumByYearModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.works.UserTaskModel;
+
+import base.bean.model.CommonModel;
 
 public class AdminAbilistsModel extends CommonModel {
 

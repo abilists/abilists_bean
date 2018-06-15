@@ -3,7 +3,7 @@ package com.abilists.bean.para.works;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import com.abilists.bean.para.CommonPara;
+import base.bean.para.CommonPara;
 
 public class DltMemoPara extends CommonPara {
 

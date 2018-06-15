@@ -1,6 +1,6 @@
 package com.abilists.bean.para.users;
 
-import com.abilists.bean.para.CommonPara;
+import base.bean.para.CommonPara;
 
 /**
  * Action + db name + data

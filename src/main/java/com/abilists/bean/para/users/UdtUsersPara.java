@@ -2,8 +2,7 @@ package com.abilists.bean.para.users;
 
 import javax.validation.constraints.Size;
 
-import com.abilists.bean.para.CommonPara;
-
+import base.bean.para.CommonPara;
 import io.utility.validate.annotation.CharacterEscape;
 
 public class UdtUsersPara extends CommonPara {

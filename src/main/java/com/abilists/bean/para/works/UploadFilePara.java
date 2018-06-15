@@ -5,8 +5,7 @@ import javax.validation.constraints.Size;
 
 import org.springframework.web.multipart.MultipartFile;
 
-import com.abilists.bean.para.CommonPara;
-
+import base.bean.para.CommonPara;
 import io.utility.validate.annotation.UploadFiles;
 
 public class UploadFilePara extends CommonPara {

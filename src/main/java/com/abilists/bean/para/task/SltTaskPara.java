@@ -1,6 +1,6 @@
 package com.abilists.bean.para.task;
 
-import com.abilists.bean.para.CommonPara;
+import base.bean.para.CommonPara;
 
 public class SltTaskPara extends CommonPara {
 

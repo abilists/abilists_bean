@@ -3,8 +3,7 @@ package com.abilists.bean.para.admin;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import com.abilists.bean.para.CommonPara;
-
+import base.bean.para.CommonPara;
 import io.utility.validate.annotation.CharacterEscape;
 
 public class UdtMTechDetailPara  extends CommonPara {

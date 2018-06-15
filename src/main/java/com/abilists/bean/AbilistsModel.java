@@ -2,12 +2,11 @@ package com.abilists.bean;
 
 import java.util.List;
 
-import com.abilists.bean.model.CommonModel;
 import com.abilists.bean.model.NotificationModel;
 import com.abilists.bean.model.join.MIndustryJoinUserCareerModel;
+import com.abilists.bean.model.join.MTechJoinUserSkillsModel;
 import com.abilists.bean.model.join.UserProjectsJoinMindustryModel;
 import com.abilists.bean.model.join.UserProjectsJoinMroleModel;
-import com.abilists.bean.model.join.MTechJoinUserSkillsModel;
 import com.abilists.bean.model.join.UserProjectsJoinTechModel;
 import com.abilists.bean.model.join.UserProjectsTechJoinTechModel;
 import com.abilists.bean.model.master.MIndustryModel;
@@ -18,7 +17,6 @@ import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.sum.UserSkillsSumBySkillModel;
 import com.abilists.bean.model.user.UserCareerModel;
 import com.abilists.bean.model.user.UserSkillsModel;
-
 import com.abilists.bean.model.user.UserTemp;
 import com.abilists.bean.model.user.UsersModel;
 import com.abilists.bean.model.works.UserMemoModel;
@@ -33,6 +31,8 @@ import com.abilists.bean.user.UserCareerChartBean;
 import com.abilists.bean.user.UserCareerRoleSumBean;
 import com.abilists.bean.user.UserSkillsSumBean;
 import com.abilists.bean.user.UserSkillsSumByKindBean;
+
+import base.bean.model.CommonModel;
 
 public class AbilistsModel extends CommonModel {
 

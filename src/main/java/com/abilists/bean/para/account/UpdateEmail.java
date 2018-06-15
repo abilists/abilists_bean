@@ -5,8 +5,7 @@ import javax.validation.constraints.Size;
 
 import org.hibernate.validator.constraints.Email;
 
-import com.abilists.bean.para.CommonPara;
-
+import base.bean.para.CommonPara;
 import io.utility.validate.annotation.PwdEscape;
 
 public class UpdateEmail extends CommonPara {

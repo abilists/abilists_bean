@@ -3,10 +3,8 @@ package com.abilists.bean.para.works;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import com.abilists.bean.para.CommonPara;
-
+import base.bean.para.CommonPara;
 import io.utility.validate.annotation.Array;
-import io.utility.validate.annotation.CharacterEscape;
 
 /**
  * Action + db name + data

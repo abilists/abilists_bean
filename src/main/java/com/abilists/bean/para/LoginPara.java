@@ -3,6 +3,8 @@ package com.abilists.bean.para;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
+import base.bean.para.CommonPara;
+
 public class LoginPara extends CommonPara {
 
     @NotNull(message = "parameter.login.id.pwd.error.message")

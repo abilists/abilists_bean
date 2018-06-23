@@ -4,11 +4,11 @@ import java.util.HashMap;
 import java.util.List;
 
 import com.abilists.bean.admin.SkillsLevelBean;
-import com.abilists.bean.admin.TaskBean;
-import com.abilists.bean.model.admin.sum.AdminUserTaskSumModel;
+import com.abilists.bean.admin.ReportsBean;
+import com.abilists.bean.model.admin.sum.AdminUserReportsSumModel;
 import com.abilists.bean.model.sum.AdminUsersSumByYearModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
-import com.abilists.bean.model.works.UserTaskModel;
+import com.abilists.bean.model.works.UserReportsModel;
 
 import base.bean.model.CommonModel;
 
@@ -17,9 +17,9 @@ public class AdminAbilistsModel extends CommonModel {
 	private List<AdminUsersSumByYearModel> adminUsersSumByYearList;
 	private List<UserProjectsSumByYearModel> userProjectsSumByYearList;
 
-	private List<TaskBean> taskBeanList;
-	private List<UserTaskModel> userTaskList;
-	private HashMap<String, List<AdminUserTaskSumModel>> adminUserTaskSumMap;
+	private List<ReportsBean> taskBeanList;
+	private List<UserReportsModel> userReportsList;
+	private HashMap<String, List<AdminUserReportsSumModel>> adminUserTaskSumMap;
 
 	// Sum Techs
 	private int techsSum;
@@ -48,32 +48,30 @@ public class AdminAbilistsModel extends CommonModel {
 		this.userProjectsSumByYearList = userProjectsSumByYearList;
 	}
 
-	public List<TaskBean> getTaskBeanList() {
+	public List<ReportsBean> getTaskBeanList() {
 		return taskBeanList;
 	}
 
-	public void setTaskBeanList(List<TaskBean> taskBeanList) {
+	public void setTaskBeanList(List<ReportsBean> taskBeanList) {
 		this.taskBeanList = taskBeanList;
 	}
 
-	public List<UserTaskModel> getUserTaskList() {
-		return userTaskList;
+	public List<UserReportsModel> getUserReportsList() {
+		return userReportsList;
 	}
 
-	public void setUserTaskList(List<UserTaskModel> userTaskList) {
-		this.userTaskList = userTaskList;
+	public void setUserReportsList(List<UserReportsModel> userReportsList) {
+		this.userReportsList = userReportsList;
 	}
 
-	public HashMap<String, List<AdminUserTaskSumModel>> getAdminUserTaskSumMap() {
+	public HashMap<String, List<AdminUserReportsSumModel>> getAdminUserTaskSumMap() {
 		return adminUserTaskSumMap;
 	}
 
-	public void setAdminUserTaskSumMap(HashMap<String, List<AdminUserTaskSumModel>> adminUserTaskSumMap) {
+	public void setAdminUserTaskSumMap(HashMap<String, List<AdminUserReportsSumModel>> adminUserTaskSumMap) {
 		this.adminUserTaskSumMap = adminUserTaskSumMap;
 	}
 
-
-	
 	public int getTechsSum() {
 		return techsSum;
 	}

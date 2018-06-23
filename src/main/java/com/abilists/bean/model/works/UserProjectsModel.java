@@ -2,7 +2,6 @@ package com.abilists.bean.model.works;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
 
 import base.bean.model.BasicModel;
 
@@ -22,8 +21,6 @@ public class UserProjectsModel extends BasicModel implements Serializable {
 	private String mrName;
 	private Date insertTime;
 	private Date updateTime;
-
-	private List<UserTaskModel> userTaskList;
 
 	public int getUpNo() {
 		return upNo;
@@ -96,12 +93,6 @@ public class UserProjectsModel extends BasicModel implements Serializable {
 	}
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
-	}
-	public List<UserTaskModel> getUserTaskList() {
-		return userTaskList;
-	}
-	public void setUserTaskList(List<UserTaskModel> userTaskList) {
-		this.userTaskList = userTaskList;
 	}
 
 }

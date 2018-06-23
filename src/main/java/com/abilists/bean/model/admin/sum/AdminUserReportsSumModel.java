@@ -2,7 +2,7 @@ package com.abilists.bean.model.admin.sum;
 
 import java.io.Serializable;
 
-public class AdminUserTaskSumModel implements Serializable {
+public class AdminUserReportsSumModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 

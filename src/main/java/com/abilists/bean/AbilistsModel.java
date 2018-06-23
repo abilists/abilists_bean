@@ -22,7 +22,7 @@ import com.abilists.bean.model.user.UsersModel;
 import com.abilists.bean.model.works.UserMemoModel;
 import com.abilists.bean.model.works.UserProjectTechModel;
 import com.abilists.bean.model.works.UserProjectsModel;
-import com.abilists.bean.model.works.UserTaskModel;
+import com.abilists.bean.model.works.UserReportsModel;
 import com.abilists.bean.para.admin.SltMIndustryPara;
 import com.abilists.bean.para.admin.SltMRolePara;
 import com.abilists.bean.para.admin.SltMTechDetailPara;
@@ -46,8 +46,10 @@ public class AbilistsModel extends CommonModel {
 
 	private UserProjectsModel userProjects;
 	private List<UserProjectsModel> userProjectsList;
-	private List<UserTaskModel> userTaskList;
-	private UserTaskModel userTask;
+
+	private List<UserReportsModel> userReportsList;
+	private UserReportsModel userReports;
+
 	private List<UserMemoModel> userMemoList;
 
 	private List<UserProjectsSumByYearModel> userProjectsSumByYearList;
@@ -151,20 +153,20 @@ public class AbilistsModel extends CommonModel {
 		return userProjectsList;
 	}
 
-	public List<UserTaskModel> getUserTaskList() {
-		return userTaskList;
+	public List<UserReportsModel> getUserReportsList() {
+		return userReportsList;
 	}
 
-	public void setUserTaskList(List<UserTaskModel> userTaskList) {
-		this.userTaskList = userTaskList;
+	public void setUserReportsList(List<UserReportsModel> userReportsList) {
+		this.userReportsList = userReportsList;
 	}
 
-	public UserTaskModel getUserTask() {
-		return userTask;
+	public UserReportsModel getUserReports() {
+		return userReports;
 	}
 
-	public void setUserTask(UserTaskModel userTask) {
-		this.userTask = userTask;
+	public void setUserReports(UserReportsModel userReports) {
+		this.userReports = userReports;
 	}
 
 	public List<UserMemoModel> getUserMemoList() {

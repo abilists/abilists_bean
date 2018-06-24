@@ -17,9 +17,9 @@ public class AdminAbilistsModel extends CommonModel {
 	private List<AdminUsersSumByYearModel> adminUsersSumByYearList;
 	private List<UserProjectsSumByYearModel> userProjectsSumByYearList;
 
-	private List<ReportsBean> taskBeanList;
+	private List<ReportsBean> reportsBeanList;
 	private List<UserReportsModel> userReportsList;
-	private HashMap<String, List<AdminUserReportsSumModel>> adminUserTaskSumMap;
+	private HashMap<String, List<AdminUserReportsSumModel>> adminUserReportsSumMap;
 
 	// Sum Techs
 	private int techsSum;
@@ -48,12 +48,12 @@ public class AdminAbilistsModel extends CommonModel {
 		this.userProjectsSumByYearList = userProjectsSumByYearList;
 	}
 
-	public List<ReportsBean> getTaskBeanList() {
-		return taskBeanList;
+	public List<ReportsBean> getReportsBeanList() {
+		return reportsBeanList;
 	}
 
-	public void setTaskBeanList(List<ReportsBean> taskBeanList) {
-		this.taskBeanList = taskBeanList;
+	public void setReportsBeanList(List<ReportsBean> reportsBeanList) {
+		this.reportsBeanList = reportsBeanList;
 	}
 
 	public List<UserReportsModel> getUserReportsList() {
@@ -64,12 +64,12 @@ public class AdminAbilistsModel extends CommonModel {
 		this.userReportsList = userReportsList;
 	}
 
-	public HashMap<String, List<AdminUserReportsSumModel>> getAdminUserTaskSumMap() {
-		return adminUserTaskSumMap;
+	public HashMap<String, List<AdminUserReportsSumModel>> getAdminUserReportsSumMap() {
+		return adminUserReportsSumMap;
 	}
 
-	public void setAdminUserTaskSumMap(HashMap<String, List<AdminUserReportsSumModel>> adminUserTaskSumMap) {
-		this.adminUserTaskSumMap = adminUserTaskSumMap;
+	public void setAdminUserReportsSumMap(HashMap<String, List<AdminUserReportsSumModel>> adminUserReportsSumMap) {
+		this.adminUserReportsSumMap = adminUserReportsSumMap;
 	}
 
 	public int getTechsSum() {

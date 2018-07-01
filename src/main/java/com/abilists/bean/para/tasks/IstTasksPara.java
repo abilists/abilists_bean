@@ -25,7 +25,12 @@ public class IstTasksPara extends CommonPara {
 	private String utEndDay;
     
     @Size(max = 5, message = "parameter.error.size.max5.message")
-	private String utHour;
+	private String utTaskHour;
+
+	private String utMarginHour;
+    
+	private String utStatus;
+
     private String upNo;
 
 	public String getUtTitle() {
@@ -64,11 +69,23 @@ public class IstTasksPara extends CommonPara {
 	public void setUtEndDay(String utEndDay) {
 		this.utEndDay = utEndDay;
 	}
-	public String getUtHour() {
-		return utHour;
+	public String getUtTaskHour() {
+		return utTaskHour;
 	}
-	public void setUtHour(String utHour) {
-		this.utHour = utHour;
+	public void setUtTaskHour(String utTaskHour) {
+		this.utTaskHour = utTaskHour;
+	}
+	public String getUtMarginHour() {
+		return utMarginHour;
+	}
+	public void setUtMarginHour(String utMarginHour) {
+		this.utMarginHour = utMarginHour;
+	}
+	public String getUtStatus() {
+		return utStatus;
+	}
+	public void setUtStatus(String utStatus) {
+		this.utStatus = utStatus;
 	}
 	public String getUpNo() {
 		return upNo;

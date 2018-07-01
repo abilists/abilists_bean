@@ -12,8 +12,7 @@ public class UdtTasksPara extends CommonPara {
 	@NotNull(message = "parameter.error.null.message")
     @Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String utNo;
-	@NotNull(message = "parameter.error.null.message")
-    @Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
+
 	private String utSort;
 
     @CharacterEscape(message = "parameter.error.escape.character.message")
@@ -34,7 +33,12 @@ public class UdtTasksPara extends CommonPara {
 	@NotNull(message = "parameter.error.null.message")
     @DateFormat(format = "yyyy-MM-dd", message = "Not right format for start of date")
 	private String utEndDay;
-	private String utHour;
+
+    @Size(max = 5, message = "parameter.error.size.max5.message")
+	private String utTaskHour;
+
+	private String utMarginHour;
+
     private String utStatus;
     private String upNo;
 
@@ -86,11 +90,17 @@ public class UdtTasksPara extends CommonPara {
 	public void setUtEndDay(String utEndDay) {
 		this.utEndDay = utEndDay;
 	}
-	public String getUtHour() {
-		return utHour;
+	public String getUtTaskHour() {
+		return utTaskHour;
 	}
-	public void setUtHour(String utHour) {
-		this.utHour = utHour;
+	public void setUtTaskHour(String utTaskHour) {
+		this.utTaskHour = utTaskHour;
+	}
+	public String getUtMarginHour() {
+		return utMarginHour;
+	}
+	public void setUtMarginHour(String utMarginHour) {
+		this.utMarginHour = utMarginHour;
 	}
 	public String getUtStatus() {
 		return utStatus;

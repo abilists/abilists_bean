@@ -17,7 +17,8 @@ public class UserTasksModel extends BasicModel implements Serializable {
 	private String utProgress;
 	private Date utStartDay;
 	private Date utEndDay;
-	private int utHour;
+	private int utTaskHour;
+	private int utMarginHour;
 	private String utStatus;
 	private String utDelete;
 	private int upNo;
@@ -73,11 +74,17 @@ public class UserTasksModel extends BasicModel implements Serializable {
 	public void setUtEndDay(Date utEndDay) {
 		this.utEndDay = utEndDay;
 	}
-	public int getUtHour() {
-		return utHour;
+	public int getUtTaskHour() {
+		return utTaskHour;
 	}
-	public void setUtHour(int utHour) {
-		this.utHour = utHour;
+	public void setUtTaskHour(int utTaskHour) {
+		this.utTaskHour = utTaskHour;
+	}
+	public int getUtMarginHour() {
+		return utMarginHour;
+	}
+	public void setUtMarginHour(int utMarginHour) {
+		this.utMarginHour = utMarginHour;
 	}
 	public String getUtStatus() {
 		return utStatus;

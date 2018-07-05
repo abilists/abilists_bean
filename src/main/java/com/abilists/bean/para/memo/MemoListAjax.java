@@ -1,4 +1,4 @@
-package com.abilists.bean.para.works;
+package com.abilists.bean.para.memo;
 
 import java.util.ArrayList;
 import java.util.List;

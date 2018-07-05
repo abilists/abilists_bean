@@ -1,4 +1,4 @@
-package com.abilists.bean.para.works;
+package com.abilists.bean.para.memo;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;

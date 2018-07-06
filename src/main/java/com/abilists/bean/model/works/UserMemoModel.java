@@ -10,6 +10,7 @@ public class UserMemoModel extends BasicModel implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private long umNo;
+	private String umSort;
 	private String umTitle;
 	private String umMemo;
 	private String umBgColor;
@@ -24,6 +25,12 @@ public class UserMemoModel extends BasicModel implements Serializable {
 	}
 	public void setUmNo(long umNo) {
 		this.umNo = umNo;
+	}
+	public String getUmSort() {
+		return umSort;
+	}
+	public void setUmSort(String umSort) {
+		this.umSort = umSort;
 	}
 	public String getUmTitle() {
 		return umTitle;

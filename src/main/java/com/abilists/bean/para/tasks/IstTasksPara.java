@@ -3,17 +3,17 @@ package com.abilists.bean.para.tasks;
 import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
-import io.utility.validate.annotation.CharacterEscape;
 import io.utility.validate.annotation.DateFormat;
 
 public class IstTasksPara extends CommonPara {
 
-    @CharacterEscape(message = "parameter.error.escape.character.message")
+    // @CharacterEscape(message = "parameter.error.escape.character.message")
     @Size(max = 50, message = "parameter.error.size.max50.message")    
 	private String utTitle;
 
-    @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(max = 2500, message = "parameter.error.size.max2500.message")
+	// Mybatis Prevent SQL injection attacks with using #, not $ 
+	// @CharacterEscape(message = "parameter.error.escape.character.message")
+	@Size(min = 1, max = 2500, message = "parameter.error.size.max2500.message")
 	private String utTask;
 
 	private String utKind;

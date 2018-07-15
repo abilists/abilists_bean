@@ -6,12 +6,7 @@ import javax.validation.constraints.Size;
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.CharacterEscape;
 
-/**
- * Action + db name + data
- * 
- * @author njoonk
- *
- */
+
 public class IstProjectsPara extends CommonPara {
 
 	@CharacterEscape(message = "parameter.error.escape.character.message")
@@ -19,7 +14,6 @@ public class IstProjectsPara extends CommonPara {
     @Size(min = 1, max = 50, message = "parameter.error.size.max50.message")
 	private String upName;
 
-	@CharacterEscape(message = "parameter.error.escape.character.message")
 	@NotNull(message = "parameter.error.null.message")
     @Size(min = 1, max = 2500, message = "parameter.error.size.max2500.message")
     private String upExplain;

@@ -20,6 +20,7 @@ import com.abilists.bean.model.user.UserSkillsModel;
 import com.abilists.bean.model.user.UserTemp;
 import com.abilists.bean.model.user.UsersModel;
 import com.abilists.bean.model.works.UserMemoModel;
+import com.abilists.bean.model.works.UserPostsModel;
 import com.abilists.bean.model.works.UserProjectTechModel;
 import com.abilists.bean.model.works.UserProjectsModel;
 import com.abilists.bean.model.works.UserReportsModel;
@@ -44,6 +45,8 @@ public class AbilistsModel extends CommonModel {
 	private List<UserSkillsModel> userSkillsList;
 	private List<UserSkillsSumBean> userSkillsSumBeanList;
 	private List<UserSkillsSumBySkillModel> userSkillsSumBySkillList;
+
+	private List<UserPostsModel> userPostsList;
 
 	private UserProjectsModel userProjects;
 	private List<UserProjectsModel> userProjectsList;
@@ -143,6 +146,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserSkillsSumBySkillList(List<UserSkillsSumBySkillModel> userSkillsSumBySkillList) {
 		this.userSkillsSumBySkillList = userSkillsSumBySkillList;
+	}
+
+	public List<UserPostsModel> getUserPostsList() {
+		return userPostsList;
+	}
+
+	public void setUserPostsList(List<UserPostsModel> userPostsList) {
+		this.userPostsList = userPostsList;
 	}
 
 	public UserProjectsModel getUserProjects() {

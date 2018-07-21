@@ -1,12 +1,23 @@
 package com.abilists.bean;
 
-import base.bean.para.CommonPara;
+import com.abilists.bean.model.works.UserPostsModel;
 
-public class PostsBean extends CommonPara {
+public class PostsBean extends UserPostsModel {
 
-	private String umNoOrder;
+	private static final long serialVersionUID = 1L;
 
-	private String umSortOrder;
+	private String urlPath;
 
+	public PostsBean(UserPostsModel userPosts) {
+		super(userPosts);
+	}
+
+	public String getUrlPath() {
+		return urlPath;
+	}
+
+	public void setUrlPath(String urlPath) {
+		this.urlPath = urlPath;
+	}
 
 }

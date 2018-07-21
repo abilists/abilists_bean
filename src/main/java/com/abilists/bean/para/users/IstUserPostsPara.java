@@ -14,6 +14,8 @@ public class IstUserPostsPara extends CommonPara {
 	@NotNull(message = "upsPost")
 	@Size(min = 1, max = 2500, message = "parameter.error.size.max2500.message")
 	private String upsPost;
+	private String upsFileName;
+	private String upsFilePath;
 
 	public String getUpsserviceNo() {
 		return upsserviceNo;
@@ -45,6 +47,22 @@ public class IstUserPostsPara extends CommonPara {
 
 	public void setUpsPost(String upsPost) {
 		this.upsPost = upsPost;
+	}
+
+	public String getUpsFileName() {
+		return upsFileName;
+	}
+
+	public void setUpsFileName(String upsFileName) {
+		this.upsFileName = upsFileName;
+	}
+
+	public String getUpsFilePath() {
+		return upsFilePath;
+	}
+
+	public void setUpsFilePath(String upsFilePath) {
+		this.upsFilePath = upsFilePath;
 	}
 
 	

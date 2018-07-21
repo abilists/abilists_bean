@@ -46,6 +46,7 @@ public class AbilistsModel extends CommonModel {
 	private List<UserSkillsSumBean> userSkillsSumBeanList;
 	private List<UserSkillsSumBySkillModel> userSkillsSumBySkillList;
 
+	private List<PostsBean> postsBeanList;
 	private List<UserPostsModel> userPostsList;
 
 	private UserProjectsModel userProjects;
@@ -146,6 +147,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserSkillsSumBySkillList(List<UserSkillsSumBySkillModel> userSkillsSumBySkillList) {
 		this.userSkillsSumBySkillList = userSkillsSumBySkillList;
+	}
+
+	public List<PostsBean> getPostsBeanList() {
+		return postsBeanList;
+	}
+
+	public void setPostsBeanList(List<PostsBean> postsBeanList) {
+		this.postsBeanList = postsBeanList;
 	}
 
 	public List<UserPostsModel> getUserPostsList() {

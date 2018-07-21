@@ -14,11 +14,36 @@ public class UserPostsModel extends BasicModel implements Serializable {
 	private String upsServiceName;
 	private String upsTitle;
 	private String upsPost;
+	private String upsFileName;
+	private String upsFilePath;
 	private String upsStatus;
 	private String upsDelete;
 	private String userId;
+	private String userName;
 	private Date insertTime;
 	private Date updateTime;
+
+	UserPostsModel(){
+	}
+
+	public UserPostsModel(UserPostsModel userPosts){
+		this.upsNo = userPosts.getUpsNo();
+		this.upsServiceNo = userPosts.getUpsServiceNo();
+		this.upsServiceName = userPosts.getUpsServiceName();
+		this.upsTitle = userPosts.getUpsTitle();
+		this.upsPost = userPosts.getUpsPost();
+		this.upsFileName = userPosts.getUpsFileName();
+		this.upsFilePath = userPosts.getUpsFilePath();
+		this.upsStatus = userPosts.getUpsStatus();
+		this.upsDelete = userPosts.getUpsDelete();
+		this.userId = userPosts.getUserId();
+		this.userName = userPosts.getUserName();
+		this.insertTime = userPosts.getInsertTime();
+		this.updateTime = userPosts.getUpdateTime();
+
+		this.setUserImgData(userPosts.getUserImgData());
+		this.setToken(userPosts.getToken());
+	}
 
 	public long getUpsNo() {
 		return upsNo;
@@ -50,6 +75,18 @@ public class UserPostsModel extends BasicModel implements Serializable {
 	public void setUpsPost(String upsPost) {
 		this.upsPost = upsPost;
 	}
+	public String getUpsFileName() {
+		return upsFileName;
+	}
+	public void setUpsFileName(String upsFileName) {
+		this.upsFileName = upsFileName;
+	}
+	public String getUpsFilePath() {
+		return upsFilePath;
+	}
+	public void setUpsFilePath(String upsFilePath) {
+		this.upsFilePath = upsFilePath;
+	}
 	public String getUpsStatus() {
 		return upsStatus;
 	}
@@ -67,6 +104,12 @@ public class UserPostsModel extends BasicModel implements Serializable {
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	public Date getInsertTime() {
 		return insertTime;

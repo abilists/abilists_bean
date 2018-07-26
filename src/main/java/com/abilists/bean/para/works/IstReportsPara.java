@@ -9,18 +9,18 @@ import io.utility.validate.annotation.IsInteger;
 
 public class IstReportsPara extends CommonPara {
 
-    @NotNull(message = "utkWorkDay")
-    @Size(min = 9, max = 10 ,message = "It is different String size")
-    @DateFormat(format = "yyyy-MM-dd", message = "Not right format for start of date")
+	@NotNull(message = "utkWorkDay")
+	@Size(min = 9, max = 10, message = "It is different String size")
+	@DateFormat(format = "yyyy-MM-dd", message = "Not right format for start of date")
 	private String urWorkDay;
 
-    @IsInteger(message = "parameter.error.integer.message")
-    @Size(max = 5, message = "parameter.error.size.max5.message")
-    private String urWorkHour;
+	@IsInteger(message = "parameter.error.integer.message")
+	@Size(max = 5, message = "parameter.error.size.max5.message")
+	private String urWorkHour;
 
-    // @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(max = 2500, message = "parameter.error.size.max2500.message")
-	private String urReports;
+	// @CharacterEscape(message = "parameter.error.escape.character.message")
+	@Size(max = 2500, message = "parameter.error.size.max2500.message")
+	private String urReport;
 
 	public String getUrWorkDay() {
 		return urWorkDay;
@@ -38,12 +38,12 @@ public class IstReportsPara extends CommonPara {
 		this.urWorkHour = urWorkHour;
 	}
 
-	public String getUrReports() {
-		return urReports;
+	public String getUrReport() {
+		return urReport;
 	}
 
-	public void setUrReports(String urReports) {
-		this.urReports = urReports;
+	public void setUrReport(String urReport) {
+		this.urReport = urReport;
 	}
 
 }

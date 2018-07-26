@@ -12,18 +12,18 @@ public class UdtReportsPara extends CommonPara {
 
 	private String urNo;
 
-    @NotNull(message = "parameter.error.null.message")
-    @Size(min = 9, max = 10 ,message = "parameter.error.size.max10.message")
-    @DateFormat(format = "yyyy-MM-dd", message = "parameter.error.date.format.message")
+	@NotNull(message = "parameter.error.null.message")
+	@Size(min = 9, max = 10, message = "parameter.error.size.max10.message")
+	@DateFormat(format = "yyyy-MM-dd", message = "parameter.error.date.format.message")
 	private String urWorkDay;
 
-    @IsInteger(message = "parameter.error.integer.message")
-    @Size(max = 5, message = "parameter.error.size.max5.message")
-    private String urWorkHour;
+	@IsInteger(message = "parameter.error.integer.message")
+	@Size(max = 5, message = "parameter.error.size.max5.message")
+	private String urWorkHour;
 
-    @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(max = 2500, message = "parameter.error.size.max2500.message")
-	private String urReports;
+	@CharacterEscape(message = "parameter.error.escape.character.message")
+	@Size(max = 2500, message = "parameter.error.size.max2500.message")
+	private String urReport;
 
 	public String getUrNo() {
 		return urNo;
@@ -49,12 +49,12 @@ public class UdtReportsPara extends CommonPara {
 		this.urWorkHour = urWorkHour;
 	}
 
-	public String getUrReports() {
-		return urReports;
+	public String getUrReport() {
+		return urReport;
 	}
 
-	public void setUrReports(String urReports) {
-		this.urReports = urReports;
+	public void setUrReport(String urReport) {
+		this.urReport = urReport;
 	}
 
 }

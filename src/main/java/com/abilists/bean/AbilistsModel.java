@@ -22,6 +22,7 @@ import com.abilists.bean.model.user.UsersModel;
 import com.abilists.bean.model.works.UserMemoModel;
 import com.abilists.bean.model.works.UserPostsModel;
 import com.abilists.bean.model.works.UserProjectTechModel;
+import com.abilists.bean.model.works.UserProjectsFilesModel;
 import com.abilists.bean.model.works.UserProjectsModel;
 import com.abilists.bean.model.works.UserReportsModel;
 import com.abilists.bean.model.works.UserTasksModel;
@@ -51,6 +52,7 @@ public class AbilistsModel extends CommonModel {
 
 	private UserProjectsModel userProjects;
 	private List<UserProjectsModel> userProjectsList;
+	private List<UserProjectsFilesModel> UserProjectsFilesList;
 
 	private List<UserTasksModel> userTasksList;
 	private UserTasksModel userTasks;
@@ -219,6 +221,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserProjectsList(List<UserProjectsModel> userProjectsList) {
 		this.userProjectsList = userProjectsList;
+	}
+
+	public List<UserProjectsFilesModel> getUserProjectsFilesList() {
+		return UserProjectsFilesList;
+	}
+
+	public void setUserProjectsFilesList(List<UserProjectsFilesModel> userProjectsFilesList) {
+		UserProjectsFilesList = userProjectsFilesList;
 	}
 
 	public List<UserProjectsSumByYearModel> getUserProjectsSumByYearList() {

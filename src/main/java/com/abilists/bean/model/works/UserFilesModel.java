@@ -13,6 +13,7 @@ public class UserFilesModel extends BasicModel implements Serializable {
 	private String ufKind;
 	private long ufNum;
 	private String ufName;
+	private String ufExt;
 	private String ufPath;
 	private String ufStatus;
 	private String ufDelete;
@@ -43,6 +44,12 @@ public class UserFilesModel extends BasicModel implements Serializable {
 	}
 	public void setUfName(String ufName) {
 		this.ufName = ufName;
+	}
+	public String getUfExt() {
+		return ufExt;
+	}
+	public void setUfExt(String ufExt) {
+		this.ufExt = ufExt;
 	}
 	public String getUfPath() {
 		return ufPath;

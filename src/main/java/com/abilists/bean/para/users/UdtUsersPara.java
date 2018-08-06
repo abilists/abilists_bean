@@ -3,7 +3,6 @@ package com.abilists.bean.para.users;
 import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
-import io.utility.validate.annotation.CharacterEscape;
 
 public class UdtUsersPara extends CommonPara {
 
@@ -11,7 +10,7 @@ public class UdtUsersPara extends CommonPara {
 	private String userStatus;
 	private String userDelete;
 
-	@CharacterEscape(message = "parameter.error.escape.character.message")
+	// @CharacterEscape(message = "parameter.error.escape.character.message")
 	@Size(min = 1, max = 1000, message = "parameter.error.size.max1000.message")
 	private String userSummary;
 	

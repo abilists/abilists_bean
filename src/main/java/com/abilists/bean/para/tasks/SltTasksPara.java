@@ -29,6 +29,7 @@ public class SltTasksPara extends CommonPara {
 	private String utEndDay;
 	private String utHour;
     private String upNo;
+    private String forView;
 
 	public String getUtNo() {
 		return utNo;
@@ -89,6 +90,12 @@ public class SltTasksPara extends CommonPara {
 	}
 	public void setUpNo(String upNo) {
 		this.upNo = upNo;
+	}
+	public String getForView() {
+		return forView;
+	}
+	public void setForView(String forView) {
+		this.forView = forView;
 	}
 
 }

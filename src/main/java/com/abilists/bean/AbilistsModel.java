@@ -34,6 +34,7 @@ import com.abilists.bean.user.UserCareerChartBean;
 import com.abilists.bean.user.UserCareerRoleSumBean;
 import com.abilists.bean.user.UserSkillsSumBean;
 import com.abilists.bean.user.UserSkillsSumByKindBean;
+import com.abilists.bean.works.UserProjectsSumTotalBean;
 
 import base.bean.model.CommonModel;
 
@@ -52,7 +53,8 @@ public class AbilistsModel extends CommonModel {
 
 	private UserProjectsModel userProjects;
 	private List<UserProjectsModel> userProjectsList;
-	private List<UserProjectsFilesModel> UserProjectsFilesList;
+	private List<UserProjectsFilesModel> userProjectsFilesList;
+	private List<UserProjectsSumTotalBean> userProjectsSumTotalBeanList;
 
 	private List<UserTasksModel> userTasksList;
 	private UserTasksModel userTasks;
@@ -224,11 +226,19 @@ public class AbilistsModel extends CommonModel {
 	}
 
 	public List<UserProjectsFilesModel> getUserProjectsFilesList() {
-		return UserProjectsFilesList;
+		return userProjectsFilesList;
 	}
 
 	public void setUserProjectsFilesList(List<UserProjectsFilesModel> userProjectsFilesList) {
-		UserProjectsFilesList = userProjectsFilesList;
+		this.userProjectsFilesList = userProjectsFilesList;
+	}
+
+	public List<UserProjectsSumTotalBean> getUserProjectsSumTotalBeanList() {
+		return userProjectsSumTotalBeanList;
+	}
+
+	public void setUserProjectsSumTotalBeanList(List<UserProjectsSumTotalBean> userProjectsSumTotalBeanList) {
+		this.userProjectsSumTotalBeanList = userProjectsSumTotalBeanList;
 	}
 
 	public List<UserProjectsSumByYearModel> getUserProjectsSumByYearList() {

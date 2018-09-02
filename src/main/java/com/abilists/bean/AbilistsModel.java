@@ -13,6 +13,7 @@ import com.abilists.bean.model.master.MIndustryModel;
 import com.abilists.bean.model.master.MRoleModel;
 import com.abilists.bean.model.master.MTechDetailModel;
 import com.abilists.bean.model.master.MTechModel;
+import com.abilists.bean.model.sum.UserMemoSumByMonthModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.sum.UserSkillsSumBySkillModel;
 import com.abilists.bean.model.user.UserCareerModel;
@@ -63,6 +64,7 @@ public class AbilistsModel extends CommonModel {
 	private UserReportsModel userReports;
 
 	private List<UserMemoModel> userMemoList;
+	private List<UserMemoSumByMonthModel> userMemoSumByMonthList;
 
 	private List<UserProjectsSumByYearModel> userProjectsSumByYearList;
 	private List<UserSkillsSumByKindBean> userSkillsSumByKindBeanList;
@@ -219,6 +221,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserMemoList(List<UserMemoModel> userMemoList) {
 		this.userMemoList = userMemoList;
+	}
+
+	public List<UserMemoSumByMonthModel> getUserMemoSumByMonthList() {
+		return userMemoSumByMonthList;
+	}
+
+	public void setUserMemoSumByMonthList(List<UserMemoSumByMonthModel> userMemoSumByMonthList) {
+		this.userMemoSumByMonthList = userMemoSumByMonthList;
 	}
 
 	public void setUserProjectsList(List<UserProjectsModel> userProjectsList) {

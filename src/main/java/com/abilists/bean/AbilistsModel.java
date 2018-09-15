@@ -16,6 +16,7 @@ import com.abilists.bean.model.master.MTechModel;
 import com.abilists.bean.model.sum.UserMemoSumByMonthModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.sum.UserSkillsSumBySkillModel;
+import com.abilists.bean.model.sum.UserTasksSumByMonthModel;
 import com.abilists.bean.model.user.UserCareerModel;
 import com.abilists.bean.model.user.UserSkillsModel;
 import com.abilists.bean.model.user.UserTemp;
@@ -36,6 +37,7 @@ import com.abilists.bean.user.UserCareerRoleSumBean;
 import com.abilists.bean.user.UserSkillsSumBean;
 import com.abilists.bean.user.UserSkillsSumByKindBean;
 import com.abilists.bean.works.UserProjectsSumTotalBean;
+import com.abilists.bean.works.UserTasksBean;
 
 import base.bean.model.CommonModel;
 
@@ -59,7 +61,8 @@ public class AbilistsModel extends CommonModel {
 
 	private List<UserTasksModel> userTasksList;
 	private UserTasksModel userTasks;
-
+	private List<UserTasksBean> userTasksBeanList;
+	
 	private List<UserReportsModel> userReportsList;
 	private UserReportsModel userReports;
 
@@ -197,6 +200,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserTasks(UserTasksModel userTasks) {
 		this.userTasks = userTasks;
+	}
+
+	public List<UserTasksBean> getUserTasksBeanList() {
+		return userTasksBeanList;
+	}
+
+	public void setUserTasksBeanList(List<UserTasksBean> userTasksBeanList) {
+		this.userTasksBeanList = userTasksBeanList;
 	}
 
 	public List<UserReportsModel> getUserReportsList() {

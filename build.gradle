@@ -57,6 +57,17 @@ configure(install.repositories.mavenInstaller) {
     }
 }
 
+task buildJar << {
+	copy {
+		from "build/libs/abilists_bean-" + version + ".jar"
+		into "${System.getProperty( 'user.dir' )}" + "/../abilists_client/libs"
+		include '**/*.jar'
+	}
+}
+
+// $ gradle buildJar
+buildJar.dependsOn(install)
+
 // $ gradle wrapper
 task wrapper(type: Wrapper) {
 	gradleVersion = '2.3'

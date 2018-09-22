@@ -16,7 +16,7 @@ public class ReportsBean {
 	public String getUserImgData() {
 		return userImgData;
 	}
-	public void setUserImgData(String userImgData) {
+	public void setUserImgAvatar(String userImgData) {
 		this.userImgData = userImgData;
 	}
 

@@ -41,7 +41,7 @@ public class UserPostsModel extends BasicModel implements Serializable {
 		this.insertTime = userPosts.getInsertTime();
 		this.updateTime = userPosts.getUpdateTime();
 
-		this.setUserImgData(userPosts.getUserImgData());
+		this.setUserImgAvatar(userPosts.getUserImgAvatar());
 		this.setToken(userPosts.getToken());
 	}
 

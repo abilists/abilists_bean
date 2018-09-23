@@ -5,7 +5,7 @@ import com.abilists.bean.model.works.UserReportsModel;
 public class ReportsBean {
 
 	private UserReportsModel userReports;
-	private String userImgData;
+	private String userImgAvatar;
 
 	public UserReportsModel getUserReports() {
 		return userReports;
@@ -13,11 +13,11 @@ public class ReportsBean {
 	public void setUserReports(UserReportsModel userReports) {
 		this.userReports = userReports;
 	}
-	public String getUserImgData() {
-		return userImgData;
+	public String getUserImgAvatar() {
+		return userImgAvatar;
 	}
-	public void setUserImgAvatar(String userImgData) {
-		this.userImgData = userImgData;
+	public void setUserImgAvatar(String userImgAvatar) {
+		this.userImgAvatar = userImgAvatar;
 	}
 
 }

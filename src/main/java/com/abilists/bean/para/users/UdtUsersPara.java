@@ -11,9 +11,9 @@ public class UdtUsersPara extends CommonPara {
 	private String userDelete;
 
 	// @CharacterEscape(message = "parameter.error.escape.character.message")
-	@Size(min = 1, max = 2500, message = "parameter.error.size.max2500.message")
+	@Size(min = 1, max = 8000, message = "parameter.error.size.max8000.message")
 	private String userSummary;
-	
+
 	public String getUserAuth() {
 		return userAuth;
 	}

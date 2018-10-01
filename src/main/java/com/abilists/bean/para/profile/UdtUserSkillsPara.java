@@ -14,7 +14,8 @@ public class UdtUserSkillsPara extends CommonPara {
 	private String mtNo;
 	private String usKind;
 	private String usLevel;
-	@Size(min = 1, max = 200, message = "parameter.error.size.max200.message")
+
+	@Size(min = 1, max = 700, message = "parameter.error.size.max700.message")
 	private String usDetail;
 	private String req;
 	private String cnt;

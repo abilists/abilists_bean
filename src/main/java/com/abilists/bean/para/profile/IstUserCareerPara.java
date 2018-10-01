@@ -24,9 +24,9 @@ public class IstUserCareerPara extends CommonPara {
 	private String ucEndMonth;
 	private String ucEndYear;
 	private String ucTitle;
-	
+
 	@CharacterEscape(message = "parameter.error.escape.character.message")
-	@Size(min = 1, max = 1000, message = "parameter.error.size.max1000.message")
+	@Size(min = 1, max = 5000, message = "parameter.error.size.max5000.message")
 	private String ucContents;
 
 	private String ucCodeIndustry;

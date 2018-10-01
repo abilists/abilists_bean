@@ -1,6 +1,7 @@
 package com.abilists.bean.para.profile;
 
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
 
@@ -16,6 +17,7 @@ public class IstUserSkillsPara extends CommonPara {
 
 	private String usLevel;
 
+	@Size(min = 1, max = 700, message = "parameter.error.size.max700.message")
 	private String usDetail;
 
 	public String getUsSkill() {

@@ -5,6 +5,7 @@ import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.CharacterEscape;
+import io.utility.validate.annotation.StringByte;
 
 public class UdtUserCareerPara extends CommonPara {
 
@@ -29,7 +30,7 @@ public class UdtUserCareerPara extends CommonPara {
 	private String ucTitle;
 	
 	@CharacterEscape(message = "parameter.error.escape.character.message")
-	@Size(min = 1, max = 5000, message = "parameter.error.size.max5000.message")
+	@StringByte(charset = "ms949", min = 1, max = 5000, message = "parameter.error.size.max5000.message")
 	private String ucContents;
 	
 	private String ucCodeIndustry;

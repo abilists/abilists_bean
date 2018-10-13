@@ -5,6 +5,7 @@ import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.DateFormat;
+import io.utility.validate.annotation.StringByte;
 
 public class UdtTasksPara extends CommonPara {
 
@@ -15,12 +16,12 @@ public class UdtTasksPara extends CommonPara {
 	private String utSort;
 
     // @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(max = 2500, message = "parameter.error.size.max50.message")    
+    @Size(max = 50, message = "parameter.error.size.max50.message")
 	private String utTitle;
 
 	// Mybatis Prevent SQL injection attacks with using #, not $ 
 	// @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(max = 2500, message = "parameter.error.size.max2500.message")
+	@StringByte(charset = "ms949", min = 1, max = 2500, message = "parameter.error.size.max2500.message")
 	private String utTask;
 
 	private String utKind;

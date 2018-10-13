@@ -5,6 +5,7 @@ import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.CharacterEscape;
+import io.utility.validate.annotation.StringByte;
 
 /**
  * Action + db name + data
@@ -24,7 +25,7 @@ public class UdtProjectsPara extends CommonPara {
 	private String upName;
 
 	@NotNull(message = "parameter.error.null.message")
-    @Size(min = 1, max = 2500, message = "parameter.error.size.max2500.message")
+	@StringByte(charset = "ms949", min = 1, max = 2500, message = "parameter.error.size.max2500.message")
     private String upExplain;
 
 	private String upMembers;

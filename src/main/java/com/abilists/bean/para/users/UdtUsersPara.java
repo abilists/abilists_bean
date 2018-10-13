@@ -1,8 +1,7 @@
 package com.abilists.bean.para.users;
 
-import javax.validation.constraints.Size;
-
 import base.bean.para.CommonPara;
+import io.utility.validate.annotation.StringByte;
 
 public class UdtUsersPara extends CommonPara {
 
@@ -11,7 +10,7 @@ public class UdtUsersPara extends CommonPara {
 	private String userDelete;
 
 	// @CharacterEscape(message = "parameter.error.escape.character.message")
-	@Size(min = 1, max = 8000, message = "parameter.error.size.max8000.message")
+	@StringByte(charset = "ms949", min = 1, max = 8000, message = "parameter.error.size.max8000.message")
 	private String userSummary;
 
 	public String getUserAuth() {

@@ -5,6 +5,7 @@ import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.CharacterEscape;
+import io.utility.validate.annotation.StringByte;
 
 public class UdtNotiPara extends CommonPara {
 
@@ -18,7 +19,7 @@ public class UdtNotiPara extends CommonPara {
 
 	@CharacterEscape(message = "parameter.error.escape.character.message")
 	@NotNull(message = "parameter.error.null.message")
-    @Size(min = 1, max = 2500, message = "parameter.error.size.max2500.message")
+	@StringByte(charset = "ms949", min = 1, max = 2500, message = "parameter.error.size.max2500.message")
 	private String notiContents;
 
 	private String notiKind;

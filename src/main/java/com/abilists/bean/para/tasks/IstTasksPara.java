@@ -4,6 +4,7 @@ import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.DateFormat;
+import io.utility.validate.annotation.StringByte;
 
 public class IstTasksPara extends CommonPara {
 
@@ -13,7 +14,7 @@ public class IstTasksPara extends CommonPara {
 
 	// Mybatis Prevent SQL injection attacks with using #, not $ 
 	// @CharacterEscape(message = "parameter.error.escape.character.message")
-	@Size(min = 1, max = 2500, message = "parameter.error.size.max2500.message")
+	@StringByte(charset = "ms949", min = 1, max = 2500, message = "parameter.error.size.max2500.message")
 	private String utTask;
 
 	private String utKind;

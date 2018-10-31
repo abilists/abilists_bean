@@ -14,12 +14,12 @@ public class UdtPwd extends CommonPara {
 
     @NotNull(message = "parameter.error.null.message")
     @PwdEscape(message = "parameter.error.escape.password.message")
-    @Size(min = 8, max = 100 ,message = "parameter.error.size.min10.max100.new.password.message")
+    @Size(min = 8, max = 30 ,message = "parameter.error.size.min10.max30.new.password.message")
 	private String password;
 
     @NotNull(message = "parameter.error.null.message")
     @PwdEscape(message = "parameter.error.escape.password.message")
-    @Size(min = 8, max = 100 ,message = "parameter.error.size.min10.max100.new.password.message")
+    @Size(min = 8, max = 30 ,message = "parameter.error.size.min10.max30.new.password.message")
 	private String password2;
 
 	public String getCurrentPwd() {

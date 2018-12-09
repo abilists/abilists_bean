@@ -3,7 +3,9 @@ package com.abilists.bean.model;
 import java.io.Serializable;
 import java.util.Date;
 
-public class NotificationModel implements Serializable {
+import base.bean.model.BasicModel;
+
+public class NotificationModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 

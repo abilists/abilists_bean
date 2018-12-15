@@ -3,7 +3,9 @@ package com.abilists.bean.model.master;
 import java.io.Serializable;
 import java.util.Date;
 
-public class MRoleModel implements Serializable {
+import base.bean.model.BasicModel;
+
+public class MRoleModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 

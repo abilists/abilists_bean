@@ -2,8 +2,8 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 apply plugin: 'maven'
 
-sourceCompatibility = '1.7'
-targetCompatibility = '1.7'
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
 
 buildscript {
 	repositories { 
@@ -45,7 +45,7 @@ configure(install.repositories.mavenInstaller) {
     pom.project {
 		group = 'com.abilists'
 		artifactId 'bean'
-        inceptionYear '2017'
+        inceptionYear '2019'
         packaging 'jar'
         licenses {
             license {

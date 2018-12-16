@@ -3,7 +3,9 @@ package com.abilists.bean.model.master;
 import java.io.Serializable;
 import java.util.Date;
 
-public class MLanguageModel implements Serializable {
+import base.bean.model.BasicModel;
+
+public class MLanguageModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 

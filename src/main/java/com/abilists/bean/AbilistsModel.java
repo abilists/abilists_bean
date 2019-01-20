@@ -9,6 +9,8 @@ import com.abilists.bean.model.join.UserProjectsJoinMindustryModel;
 import com.abilists.bean.model.join.UserProjectsJoinMroleModel;
 import com.abilists.bean.model.join.UserProjectsJoinTechModel;
 import com.abilists.bean.model.join.UserProjectsTechJoinTechModel;
+import com.abilists.bean.model.list.UserMyListJoinUsersModel;
+import com.abilists.bean.model.list.UserMyListModel;
 import com.abilists.bean.model.master.MIndustryModel;
 import com.abilists.bean.model.master.MRoleModel;
 import com.abilists.bean.model.master.MTechDetailModel;
@@ -16,7 +18,6 @@ import com.abilists.bean.model.master.MTechModel;
 import com.abilists.bean.model.sum.UserMemoSumByMonthModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.sum.UserSkillsSumBySkillModel;
-import com.abilists.bean.model.sum.UserTasksSumByMonthModel;
 import com.abilists.bean.model.user.UserCareerModel;
 import com.abilists.bean.model.user.UserSkillsModel;
 import com.abilists.bean.model.user.UserTemp;
@@ -46,6 +47,10 @@ public class AbilistsModel extends CommonModel {
 	private UserTemp userTemp;
 	private UsersModel users;
 	private List<UsersModel> usersList;
+
+	private UserMyListModel userMyList;
+	private List<UserMyListJoinUsersModel> userMyListList;
+
 	private UserSkillsModel userSkills;
 	private List<UserSkillsModel> userSkillsList;
 	private List<UserSkillsSumBean> userSkillsSumBeanList;
@@ -124,6 +129,22 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUsersList(List<UsersModel> usersList) {
 		this.usersList = usersList;
+	}
+
+	public UserMyListModel getUserMyList() {
+		return userMyList;
+	}
+
+	public void setUserMyList(UserMyListModel userMyList) {
+		this.userMyList = userMyList;
+	}
+
+	public List<UserMyListJoinUsersModel> getUserMyListList() {
+		return userMyListList;
+	}
+
+	public void setUserMyListList(List<UserMyListJoinUsersModel> userMyListList) {
+		this.userMyListList = userMyListList;
 	}
 
 	public UserSkillsModel getUserSkills() {

@@ -3,7 +3,7 @@ package com.abilists.bean.para.users;
 import javax.validation.constraints.NotNull;
 
 import base.bean.para.CommonPara;
-import io.utility.validate.annotation.StringByte;
+import io.utility.validate.annotation.ByteString;
 
 public class IstUserPostsPara extends CommonPara {
 
@@ -12,7 +12,7 @@ public class IstUserPostsPara extends CommonPara {
 	private String upsTitle;
 
 	@NotNull(message = "upsPost")
-	@StringByte(charset = "ms949", min = 1, max = 2500, message = "parameter.error.size.max2500.message")
+	@ByteString(charset = "ms949", min = 1, max = 2500, message = "parameter.error.size.max2500.message")
 	private String upsPost;
 	private String upsFileName;
 	private String upsFilePath;

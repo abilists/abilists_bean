@@ -3,12 +3,12 @@ package com.abilists.bean.para.login;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import io.utility.validate.annotation.StringEscape;
+import io.utility.validate.annotation.EscapeString;
 
 public class UserIdPara {
 
     @NotNull(message = "userId")
-    @StringEscape(message = "There is a special character.")
+    @EscapeString(message = "There is a special character.")
     @Size(min = 3, max = 20 ,message = "userId must not exceed {max} characters")
 	private String userId;
     private String result;

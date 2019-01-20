@@ -4,17 +4,17 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
-import io.utility.validate.annotation.PwdEscape;
+import io.utility.validate.annotation.EscapePassword;
 
 public class CompleteResetPwdPara extends CommonPara {
 
     @NotNull(message = "password.")
-    @PwdEscape(message = "There is not good password1.")
+    @EscapePassword(message = "There is not good password1.")
     @Size(min = 1, max = 45 ,message = "password must not exceed {max} characters")
 	private String password;
 
     @NotNull(message = "password2.")
-    @PwdEscape(message = "There is not good password2.")
+    @EscapePassword(message = "There is not good password2.")
     @Size(min = 1, max = 45 ,message = "password2 must not exceed {max} characters")
 	private String password2;
 

@@ -6,7 +6,7 @@ import javax.validation.constraints.Size;
 import org.hibernate.validator.constraints.Email;
 
 import base.bean.para.CommonPara;
-import io.utility.validate.annotation.PwdEscape;
+import io.utility.validate.annotation.EscapePassword;
 
 public class UpdateEmail extends CommonPara {
 
@@ -16,7 +16,7 @@ public class UpdateEmail extends CommonPara {
 	private String newUserEmail;
 
     @NotNull(message = "userPwd.")
-    @PwdEscape(message = "The userPwd is wrong.")
+    @EscapePassword(message = "The userPwd is wrong.")
     @Size(min = 1, max = 45 ,message = "userPwd must not exceed {max} characters")
 	private String userPwd;
 

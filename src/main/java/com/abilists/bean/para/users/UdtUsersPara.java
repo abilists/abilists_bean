@@ -1,7 +1,7 @@
 package com.abilists.bean.para.users;
 
 import base.bean.para.CommonPara;
-import io.utility.validate.annotation.StringByte;
+import io.utility.validate.annotation.ByteString;
 
 public class UdtUsersPara extends CommonPara {
 
@@ -10,7 +10,7 @@ public class UdtUsersPara extends CommonPara {
 	private String userDelete;
 
 	// @CharacterEscape(message = "parameter.error.escape.character.message")
-	@StringByte(charset = "ms949", min = 1, max = 8000, message = "parameter.error.size.max8000.message")
+	@ByteString(charset = "ms949", min = 1, max = 8000, message = "parameter.error.size.max8000.message")
 	private String userSummary;
 
 	public String getUserAuth() {

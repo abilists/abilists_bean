@@ -33,6 +33,7 @@ import com.abilists.bean.para.admin.SltMIndustryPara;
 import com.abilists.bean.para.admin.SltMRolePara;
 import com.abilists.bean.para.admin.SltMTechDetailPara;
 import com.abilists.bean.para.admin.SltMTechPara;
+import com.abilists.bean.para.list.SltMyListPara;
 import com.abilists.bean.user.UserCareerChartBean;
 import com.abilists.bean.user.UserCareerRoleSumBean;
 import com.abilists.bean.user.UserSkillsSumBean;
@@ -50,6 +51,7 @@ public class AbilistsModel extends CommonModel {
 
 	private UserMyListModel userMyList;
 	private List<UserMyListJoinUsersModel> userMyListList;
+	private SltMyListPara sltMyListPara;
 
 	private UserSkillsModel userSkills;
 	private List<UserSkillsModel> userSkillsList;
@@ -145,6 +147,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserMyListList(List<UserMyListJoinUsersModel> userMyListList) {
 		this.userMyListList = userMyListList;
+	}
+
+	public SltMyListPara getSltMyListPara() {
+		return sltMyListPara;
+	}
+
+	public void setSltMyListPara(SltMyListPara sltMyListPara) {
+		this.sltMyListPara = sltMyListPara;
 	}
 
 	public UserSkillsModel getUserSkills() {

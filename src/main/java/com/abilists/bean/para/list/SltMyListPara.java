@@ -7,7 +7,8 @@ public class SltMyListPara extends CommonPara {
     private String umlNo;
     private String umlUserId;
     private String umlStatus;
-    
+    private String usSkill;
+
 	public String getUmlNo() {
 		return umlNo;
 	}
@@ -30,6 +31,14 @@ public class SltMyListPara extends CommonPara {
 
 	public void setUmlStatus(String umlStatus) {
 		this.umlStatus = umlStatus;
+	}
+
+	public String getUsSkill() {
+		return usSkill;
+	}
+
+	public void setUsSkill(String usSkill) {
+		this.usSkill = usSkill;
 	}
 
 }

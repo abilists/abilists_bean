@@ -16,7 +16,7 @@ public class UserMyListJoinUsersModel extends BasicModel implements Serializable
 	private String userId;
 	private Date insertTime;
 	private Date updateTime;
-
+	private int sumUsLevel;
 	private String userName;
 	private String userProfile;
 
@@ -62,7 +62,12 @@ public class UserMyListJoinUsersModel extends BasicModel implements Serializable
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
 	}
-
+	public int getSumUsLevel() {
+		return sumUsLevel;
+	}
+	public void setSumUsLevel(int sumUsLevel) {
+		this.sumUsLevel = sumUsLevel;
+	}
 	public String getUserName() {
 		return userName;
 	}

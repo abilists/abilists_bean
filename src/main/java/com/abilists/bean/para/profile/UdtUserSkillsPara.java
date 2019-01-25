@@ -1,9 +1,9 @@
 package com.abilists.bean.para.profile;
 
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
+import io.utility.validate.annotation.CharacterEscape;
 
 public class UdtUserSkillsPara extends CommonPara {
 
@@ -14,8 +14,7 @@ public class UdtUserSkillsPara extends CommonPara {
 	private String mtNo;
 	private String usKind;
 	private String usLevel;
-
-	@Size(min = 1, max = 700, message = "parameter.error.size.max700.message")
+	@CharacterEscape(message = "parameter.error.escape.character.message")
 	private String usDetail;
 	private String req;
 	private String cnt;

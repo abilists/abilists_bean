@@ -3,7 +3,6 @@ package com.abilists.bean.para.profile;
 import javax.validation.constraints.NotNull;
 
 import base.bean.para.CommonPara;
-import io.utility.validate.annotation.CharacterEscape;
 
 public class UdtUserSkillsPara extends CommonPara {
 
@@ -14,7 +13,6 @@ public class UdtUserSkillsPara extends CommonPara {
 	private String mtNo;
 	private String usKind;
 	private String usLevel;
-	@CharacterEscape(message = "parameter.error.escape.character.message")
 	private String usDetail;
 	private String req;
 	private String cnt;

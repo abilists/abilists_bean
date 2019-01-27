@@ -19,6 +19,7 @@ import com.abilists.bean.model.sum.UserMemoSumByMonthModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.sum.UserSkillsSumBySkillModel;
 import com.abilists.bean.model.user.UserCareerModel;
+import com.abilists.bean.model.user.UserChartModel;
 import com.abilists.bean.model.user.UserSkillsModel;
 import com.abilists.bean.model.user.UserTemp;
 import com.abilists.bean.model.user.UsersModel;
@@ -60,7 +61,8 @@ public class AbilistsModel extends CommonModel {
 
 	private List<PostsBean> postsBeanList;
 	private List<UserPostsModel> userPostsList;
-
+	private List<UserChartModel> userChartList;
+	
 	private UserProjectsModel userProjects;
 	private List<UserProjectsModel> userProjectsList;
 	private List<UserProjectsFilesModel> userProjectsFilesList;
@@ -203,6 +205,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserPostsList(List<UserPostsModel> userPostsList) {
 		this.userPostsList = userPostsList;
+	}
+
+	public List<UserChartModel> getUserChartList() {
+		return userChartList;
+	}
+
+	public void setUserChartList(List<UserChartModel> userChartList) {
+		this.userChartList = userChartList;
 	}
 
 	public UserProjectsModel getUserProjects() {

@@ -11,6 +11,7 @@ public class UserChartModel extends BasicModel implements Serializable {
 
 	private long uctNo;
 	private String uctKind;
+	private String uctChart;
 	private int uctSort;
 	private String uctTitle;
 	private String uctStatus;
@@ -30,6 +31,12 @@ public class UserChartModel extends BasicModel implements Serializable {
 	}
 	public void setUctKind(String uctKind) {
 		this.uctKind = uctKind;
+	}
+	public String getUctChart() {
+		return uctChart;
+	}
+	public void setUctChart(String uctChart) {
+		this.uctChart = uctChart;
 	}
 	public int getUctSort() {
 		return uctSort;

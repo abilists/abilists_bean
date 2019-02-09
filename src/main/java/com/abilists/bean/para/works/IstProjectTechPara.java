@@ -26,9 +26,9 @@ public class IstProjectTechPara extends CommonPara {
 
     private String[] uptLevel;
 
-	@NotNull(message = "parameter.error.null.message")
-	@Size(min = 1, max = 300 ,message = "parameter.error.size.max300.message")
-	@Array(message = "parameter.error.array.message")
+//	@NotNull(message = "parameter.error.null.message")
+//	@Size(min = 1, max = 300 ,message = "parameter.error.size.max300.message")
+//	@Array(message = "parameter.error.array.message")
     private String[] uptDetail;
 
 	public String[] getMtNo() {

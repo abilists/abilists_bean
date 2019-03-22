@@ -14,7 +14,7 @@ buildscript {
 	}
 }
 
-version = '0.0.2'
+version = '0.2.0'
 
 jar {
 	manifest {
@@ -37,7 +37,7 @@ dependencies {
 	compile "org.hibernate:hibernate-validator:5.4.1.Final"
 	compile "org.apache.commons:commons-pool2:2.5.0"
 	compile "io.utility:validate:0.0.5"
-	compile "io.base:base-bean:0.0.1"
+	compile "io.base:base-bean:0.2.0"
 }
 
 // $ gradle install
@@ -45,7 +45,7 @@ configure(install.repositories.mavenInstaller) {
     pom.project {
 		group = 'com.abilists'
 		artifactId 'bean'
-        inceptionYear '2019'
+        inceptionYear '2017'
         packaging 'jar'
         licenses {
             license {

@@ -1,23 +1,23 @@
 package com.abilists.bean.para.profile;
 
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
+import io.utility.validate.annotation.ByteString;
 
 public class IstUserSkillsPara extends CommonPara {
 
-	@NotNull(message = "parameter.error.null.message")
+	@NotNull(message="parameter.error.null.message")
 	private String usSkill;
 
-	@NotNull(message = "parameter.error.null.message")
+	@NotNull(message="parameter.error.null.message")
 	private String mtNo;
 
 	private String usKind;
 
 	private String usLevel;
 
-	@Size(min = 1, max = 700, message = "parameter.error.size.max700.message")
+	@ByteString(min=1, max=650, charset="UTF-8", message="parameter.error.size.max650.message") //700
 	private String usDetail;
 
 	public String getUsSkill() {

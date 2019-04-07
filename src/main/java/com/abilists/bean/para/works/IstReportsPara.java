@@ -4,6 +4,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
+import io.utility.validate.annotation.ByteString;
 import io.utility.validate.annotation.DateFormat;
 import io.utility.validate.annotation.IsInteger;
 
@@ -19,7 +20,7 @@ public class IstReportsPara extends CommonPara {
 	private String urWorkHour;
 
 	// @CharacterEscape(message = "parameter.error.escape.character.message")
-	@Size(max = 2500, message = "parameter.error.size.max2500.message")
+	@ByteString(charset = "UTF-8", min = 1, max = 2900, message = "parameter.error.size.max2900.message") // 3000
 	private String urReport;
 
 	public String getUrWorkDay() {

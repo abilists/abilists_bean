@@ -12,7 +12,7 @@ public class IstUserPostsPara extends CommonPara {
 	private String upsTitle;
 
 	@NotNull(message = "upsPost")
-	@ByteString(charset = "ms949", min = 1, max = 2500, message = "parameter.error.size.max2500.message")
+	@ByteString(charset = "UTF-8", min = 1, max = 4900, message = "parameter.error.size.max4900.message") // 5000
 	private String upsPost;
 	private String upsFileName;
 	private String upsFilePath;

@@ -7,21 +7,26 @@ import base.bean.para.CommonPara;
 
 public class IstMTechDetailPara  extends CommonPara {
 
-	@NotNull(message = "mtNo")
-    @Size(min = 1, max = 90 ,message = "mtNo must not exceed {max} characters")
+	@NotNull(message = "parameter.error.null.message")
+	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String mtNo;
-	@NotNull(message = "mtKind")
-    @Size(min = 1, max = 90 ,message = "mtKind must not exceed {max} characters")
+
+	@NotNull(message = "parameter.error.null.message")
+	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String mtKind;
-	@NotNull(message = "mtdLevel")
-    @Size(min = 1, max = 90 ,message = "mtdLevel must not exceed {max} characters")
+
+	@NotNull(message = "parameter.error.null.message")
+	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String mtdLevel;
-	@NotNull(message = "mtdLevelExplain")
-    @Size(min = 1, max = 90 ,message = "mtdLevelExplain must not exceed {max} characters")
+
+	@NotNull(message = "parameter.error.null.message")
+	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String mtdLevelExplain;
-	@NotNull(message = "mlCode")
-    @Size(min = 1, max = 90 ,message = "mlCode must not exceed {max} characters")
+
+	@NotNull(message = "parameter.error.null.message")
+	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String mlCode;
+
 	private String mtdStatus;
 	private String mtdDelete;
 

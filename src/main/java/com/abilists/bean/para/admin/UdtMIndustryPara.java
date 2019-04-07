@@ -8,15 +8,19 @@ import base.bean.para.CommonPara;
 public class UdtMIndustryPara  extends CommonPara {
 
 	private String miNo;
-	@NotNull(message = "miLargeCategory")
-    @Size(min = 1, max = 90 ,message = "miLargeCategory must not exceed {max} characters")
+
+	@NotNull(message = "parameter.error.null.message")
+	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String miLargeCategory;
+
 	private String miMiddleCategory;
 	private String miImgCode;
 	private String miCode;
-	@NotNull(message = "mlCode")
-    @Size(min = 1, max = 90 ,message = "mlCode must not exceed {max} characters")
+
+	@NotNull(message = "parameter.error.null.message")
+	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String mlCode;
+
 	private String miStatus;
 	private String miDelete;
 

@@ -4,6 +4,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
+import io.utility.validate.annotation.ByteString;
 import io.utility.validate.annotation.CharacterEscape;
 
 public class UdtMTechDetailPara  extends CommonPara {
@@ -17,17 +18,18 @@ public class UdtMTechDetailPara  extends CommonPara {
 	private String mtKind;
 
 	@NotNull(message = "parameter.error.null.message")
-    @Size(min = 1, max = 90 ,message = "mtdLevel must not exceed {max} characters")
+    @Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String mtdLevel;
 
 	@NotNull(message = "parameter.error.null.message")
-	@Size(max = 50, message = "parameter.error.size.max50.message")
 	@CharacterEscape(message = "parameter.error.escape.character.message")
+	@ByteString(charset = "UTF-8", min = 1, max = 150, message = "parameter.error.size.max150.message") // 200
 	private String mtdLevelExplain;
 
 	@NotNull(message = "parameter.error.null.message")
 	@Size(max = 10, message = "parameter.error.size.max10.message")
 	private String mlCode;
+
 	private String mtdStatus;
 	private String mtdDelete;
 

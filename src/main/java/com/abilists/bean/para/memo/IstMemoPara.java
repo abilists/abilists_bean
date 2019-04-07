@@ -1,21 +1,15 @@
 package com.abilists.bean.para.memo;
 
-import javax.validation.constraints.Size;
-
 import base.bean.para.CommonPara;
+import io.utility.validate.annotation.ByteString;
 
-/**
- * 
- * @author Joon Kim
- *
- */
 public class IstMemoPara extends CommonPara {
 
 	private String umTitle;
 
-	// Mybatis Prevent SQL injection attacks with using #, not $ 
+	// TODO: Can write any characters for developer
 	// @CharacterEscape(message = "parameter.error.escape.character.message")
-	@Size(min = 1, max = 2500, message = "parameter.error.size.max2500.message")
+	@ByteString(charset = "UTF-8", min = 1, max = 4900, message = "parameter.error.size.max4900.message") // 5000
 	private String umMemo;
 
 	private String umBgColor;

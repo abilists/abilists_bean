@@ -3,30 +3,33 @@ package com.abilists.bean.para.users;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-/**
- * Action + db name + data
- * 
- * @author njoonk
- *
- */
+import io.utility.validate.annotation.ByteString;
+import io.utility.validate.annotation.CharacterEscape;
+
 public class InputUsersPara {
 
 	@NotNull(message = "userId")
+	@CharacterEscape(message = "parameter.error.escape.character.message")
     @Size(min = 1, max = 90 ,message = "userId must not exceed {max} characters")
 	private String userId;
 
     @NotNull(message = "userPwd")
+    @CharacterEscape(message = "parameter.error.escape.character.message")
     @Size(min = 1, max = 150 ,message = "userPwd must not exceed {max} characters")
     private String userPwd;
 
     @NotNull(message = "userName")
+    @CharacterEscape(message = "parameter.error.escape.character.message")
     @Size(min = 1, max = 90 ,message = "userName must not exceed {max} characters")
 	private String userName;
 
     private String userSex;
 
+    @CharacterEscape(message = "parameter.error.escape.character.message")
     private String userEmail;
 
+    @CharacterEscape(message = "parameter.error.escape.character.message")
+    @ByteString(charset = "UTF-8", min = 1, max = 250, message = "parameter.error.size.max250.message") // 300
     private String userProfile;
 
 	public String getUserId() {

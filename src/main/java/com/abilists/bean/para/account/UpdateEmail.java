@@ -10,12 +10,12 @@ import io.utility.validate.annotation.EscapePassword;
 
 public class UpdateEmail extends CommonPara {
 
-    @NotNull(message = "newUserEmail.")
+	@NotNull(message = "parameter.error.null.message")
     @Email(message = "You should form for email.")
     @Size(min = 1, max = 45 ,message = "newUserEmail must not exceed {max} characters")
 	private String newUserEmail;
 
-    @NotNull(message = "userPwd.")
+	@NotNull(message = "parameter.error.null.message")
     @EscapePassword(message = "The userPwd is wrong.")
     @Size(min = 1, max = 45 ,message = "userPwd must not exceed {max} characters")
 	private String userPwd;

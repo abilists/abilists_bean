@@ -4,6 +4,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
+import io.utility.validate.annotation.ByteString;
 
 /**
  * 
@@ -20,7 +21,7 @@ public class UdtMemoPara extends CommonPara {
 
 	// Mybatis Prevent SQL injection attacks with using #, not $ 
 	// @CharacterEscape(message = "parameter.error.escape.character.message")
-	@Size(min = 1, max = 2500, message = "parameter.error.size.max2500.message")
+	@ByteString(charset = "UTF-8", min = 1, max = 4900, message = "parameter.error.size.max4900.message") // 5000
 	private String umMemo;
 
 	private String umBgColor;

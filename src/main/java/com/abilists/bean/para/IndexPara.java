@@ -5,8 +5,8 @@ import javax.validation.constraints.Size;
 
 public class IndexPara {
 
-    @NotNull(message = "userId")
-    @Size(min = 1, max = 45 ,message = "userId")
+	@NotNull(message = "parameter.error.null.message")
+    @Size(min = 1, max = 100 ,message = "parameter.error.size.max100.message")
 	private String userId;
 
 	public String getUserId() {

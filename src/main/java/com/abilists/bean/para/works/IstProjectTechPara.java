@@ -6,11 +6,6 @@ import javax.validation.constraints.Size;
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.Array;
 
-/**
- * Action + db name + data
- * 
- * @author njoonk
- */
 public class IstProjectTechPara extends CommonPara {
 
 	@NotNull(message = "parameter.error.null.message")
@@ -26,6 +21,7 @@ public class IstProjectTechPara extends CommonPara {
 
     private String[] uptLevel;
 
+    // TODO:
 //	@NotNull(message = "parameter.error.null.message")
 //	@Size(min = 1, max = 300 ,message = "parameter.error.size.max300.message")
 //	@Array(message = "parameter.error.array.message")

@@ -11,7 +11,7 @@ public class IstMyListPara extends CommonPara {
     // TODO: message
     @AllowString(message = "parameter.error.escape.password.message")
     private String umlStatus;
-    
+
     private String umlDelete;
 
 	public String getUserNo() {

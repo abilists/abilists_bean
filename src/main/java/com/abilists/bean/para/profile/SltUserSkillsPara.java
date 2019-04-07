@@ -5,9 +5,6 @@ import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
 
-/**
- * Action + db name + data
- */
 public class SltUserSkillsPara extends CommonPara {
 
 	@NotNull(message = "usNo")

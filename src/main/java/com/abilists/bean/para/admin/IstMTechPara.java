@@ -8,13 +8,14 @@ import base.bean.para.CommonPara;
 public class IstMTechPara  extends CommonPara {
 
 	private String mtNo;
-	@NotNull(message = "mtSkill")
-    @Size(min = 1, max = 90 ,message = "mtSkill must not exceed {max} characters")
+	@NotNull(message = "parameter.error.null.message")
+	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String mtSkill;
 
-	@NotNull(message = "mtKind")
-    @Size(min = 1, max = 90 ,message = "mtKind must not exceed {max} characters")
+	@NotNull(message = "parameter.error.null.message")
+	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String mtKind;
+
 	private String mtName;
 	private String mtVersion;
 	private String mtExplain;

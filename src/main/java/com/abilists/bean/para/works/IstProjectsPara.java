@@ -16,7 +16,7 @@ public class IstProjectsPara extends CommonPara {
 	private String upName;
 
 	@NotNull(message = "parameter.error.null.message")
-	@ByteString(charset = "ms949", min = 1, max = 2500, message = "parameter.error.size.max2500.message")
+	@ByteString(charset = "UTF-8", min = 1, max = 4900, message = "parameter.error.size.max4900.message") // 5000
     private String upExplain;
 
 	private String upMembers;

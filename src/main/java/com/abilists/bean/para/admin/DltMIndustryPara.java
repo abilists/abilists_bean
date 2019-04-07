@@ -7,8 +7,8 @@ import base.bean.para.CommonPara;
 
 public class DltMIndustryPara extends CommonPara {
 
-    @NotNull(message = "miNo")
-    @Size(min = 1, max = 10 ,message = "miNo must not exceed {max} characters")
+	@NotNull(message = "parameter.error.null.message")
+	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
     private String miNo;
 
 	public String getMiNo() {

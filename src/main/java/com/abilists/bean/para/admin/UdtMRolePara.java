@@ -4,21 +4,25 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
+import io.utility.validate.annotation.ByteString;
 
 public class UdtMRolePara  extends CommonPara {
 
-	@NotNull(message = "mrNo")
-    @Size(min = 1, max = 90 ,message = "mrNo must not exceed {max} characters")
+	@NotNull(message = "parameter.error.null.message")
+	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String mrNo;
-	@NotNull(message = "mrName")
-    @Size(min = 1, max = 90 ,message = "mrName must not exceed {max} characters")
+
+	@NotNull(message = "parameter.error.null.message")
+	@ByteString(charset = "UTF-8", min = 1, max = 100, message = "parameter.error.size.max100.message") // 100
 	private String mrName;
+
 	private String mrCode;
 	private String mrExplain;
 	private String mrSkills;
 	private String mrPrefers;
-	@NotNull(message = "mlCode")
-    @Size(min = 1, max = 90 ,message = "mlCode must not exceed {max} characters")
+
+	@NotNull(message = "parameter.error.null.message")
+	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String mlCode;
 	private String mrStatus;
 	private String mrDelete;

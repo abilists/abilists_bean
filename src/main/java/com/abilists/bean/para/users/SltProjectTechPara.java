@@ -2,11 +2,6 @@ package com.abilists.bean.para.users;
 
 import base.bean.para.CommonPara;
 
-/**
- * Action + db name + data
- * 
- * @author njoonk
- */
 public class SltProjectTechPara extends CommonPara {
 
     private String mtNo;

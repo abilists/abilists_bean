@@ -6,8 +6,8 @@ import io.utility.validate.annotation.CharacterEscape;
 public class SrhAutoCompletePara extends CommonPara {
 
 	private String srhColumn;
-	
-	@CharacterEscape(message = "parameter.error.escape.character.message", charArray = {'\'', '"', '^'})
+
+	@CharacterEscape(charArray = {'\'', '"', '^'}, message = "parameter.error.escape.character.message")
 	private String srhContents;
 
 	public String getSrhColumn() {

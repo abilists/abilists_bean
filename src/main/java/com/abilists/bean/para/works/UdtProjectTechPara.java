@@ -4,13 +4,9 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
+import io.utility.validate.annotation.ByteString;
 import io.utility.validate.annotation.CharacterEscape;
 
-/**
- * Action + db name + data
- * 
- * @author njoonk
- */
 public class UdtProjectTechPara extends CommonPara {
 
 	@NotNull(message = "parameter.error.null.message")
@@ -22,14 +18,14 @@ public class UdtProjectTechPara extends CommonPara {
 	@NotNull(message = "parameter.error.null.message")
     @Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String uptNo;
-	
+
 	private String uptKind;
 
     private String uptLevel;
 
 	@CharacterEscape(message = "parameter.error.escape.character.message")
 	@NotNull(message = "parameter.error.null.message")
-	@Size(min = 1, max = 300 ,message = "parameter.error.size.max300.message")
+	@ByteString(charset = "UTF-8", min = 1, max = 650, message = "parameter.error.size.max650.message") // 700
     private String uptDetail;
 
 	private String uptStatus;

@@ -7,18 +7,21 @@ import base.bean.para.CommonPara;
 
 public class IstMRolePara  extends CommonPara {
 
-	@NotNull(message = "mrName")
-    @Size(min = 1, max = 90 ,message = "mrName must not exceed {max} characters")
+	@NotNull(message = "parameter.error.null.message")
+	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String mrName;
+	
 	private String mrCode;
 	private String mrExplain;
 	private String mrResponsibilities;
 	private String mrWorks;
 	private String mrSkills;
 	private String mrPrefers;
-	@NotNull(message = "mlCode")
-    @Size(min = 1, max = 90 ,message = "mlCode must not exceed {max} characters")
+	
+	@NotNull(message = "parameter.error.null.message")
+	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String mlCode;
+	
 	private String mrStatus;
 	private String mrDelete;
 

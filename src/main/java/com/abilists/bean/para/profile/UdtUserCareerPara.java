@@ -14,11 +14,11 @@ public class UdtUserCareerPara extends CommonPara {
 	private String ucNo;
 
 	@CharacterEscape(message = "parameter.error.escape.character.message")
-	@Size(min = 1, max = 100, message = "parameter.error.size.max100.message")
+	@ByteString(charset = "UTF-8", min = 1, max = 200, message = "parameter.error.size.max200.message") // 200
 	private String ucCompanyName;
 	
 	private String ucPresent;
-	
+
 	@NotNull(message = "parameter.error.null.message")
 	private String ucStartMonth;
 	
@@ -27,9 +27,11 @@ public class UdtUserCareerPara extends CommonPara {
 	
 	private String ucEndMonth;
 	private String ucEndYear;
-	private String ucTitle;
 	
-	@CharacterEscape(message = "parameter.error.escape.character.message")
+	@ByteString(charset = "UTF-8", min = 1, max = 100, message = "parameter.error.size.max100.message") // 100
+	private String ucTitle;
+
+	// @CharacterEscape(message = "parameter.error.escape.character.message")
 	@ByteString(charset = "UTF-8", min = 1, max = 4900, message = "parameter.error.size.max4900.message") // 5000
 	private String ucContents;
 	

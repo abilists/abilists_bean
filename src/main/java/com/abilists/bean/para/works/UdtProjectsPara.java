@@ -7,12 +7,6 @@ import base.bean.para.CommonPara;
 import io.utility.validate.annotation.ByteString;
 import io.utility.validate.annotation.CharacterEscape;
 
-/**
- * Action + db name + data
- * 
- * @author njoonk
- *
- */
 public class UdtProjectsPara extends CommonPara {
 
 	@NotNull(message = "parameter.error.null.message")
@@ -21,7 +15,7 @@ public class UdtProjectsPara extends CommonPara {
 
 	@CharacterEscape(message = "parameter.error.escape.character.message")
 	@NotNull(message = "parameter.error.null.message")
-	@Size(min = 1, max = 50, message = "parameter.error.size.max50.message")
+	@ByteString(charset = "UTF-8", min = 1, max = 100, message = "parameter.error.size.max100.message") // 100
 	private String upName;
 
 	@NotNull(message = "parameter.error.null.message")

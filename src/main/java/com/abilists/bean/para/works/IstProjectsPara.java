@@ -1,7 +1,6 @@
 package com.abilists.bean.para.works;
 
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.ByteString;
@@ -12,7 +11,7 @@ public class IstProjectsPara extends CommonPara {
 
 	@CharacterEscape(message = "parameter.error.escape.character.message")
 	@NotNull(message = "parameter.error.null.message")
-    @Size(min = 1, max = 50, message = "parameter.error.size.max50.message")
+	@ByteString(charset = "UTF-8", min = 1, max = 100, message = "parameter.error.size.max100.message") // 100
 	private String upName;
 
 	@NotNull(message = "parameter.error.null.message")

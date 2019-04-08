@@ -1,7 +1,6 @@
 package com.abilists.bean.para.profile;
 
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.ByteString;
@@ -11,7 +10,7 @@ public class IstUserCareerPara extends CommonPara {
 
 	@NotNull(message = "parameter.error.null.message")
 	@CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(min = 1, max = 100, message = "parameter.error.size.max100.message")
+	@ByteString(charset = "UTF-8", min = 1, max = 200, message = "parameter.error.size.max200.message") // 200
 	private String ucCompanyName;
 	
 	private String ucPresent;

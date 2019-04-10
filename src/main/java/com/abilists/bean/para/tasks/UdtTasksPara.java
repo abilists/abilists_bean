@@ -17,7 +17,7 @@ public class UdtTasksPara extends CommonPara {
 	private String utSort;
 
     @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(max = 50, message = "parameter.error.size.max50.message")
+    @ByteString(charset = "UTF-8", min = 1, max = 100, message = "parameter.error.size.max100.message") // 100
 	private String utTitle;
 
 	@CharacterEscape(message = "parameter.error.escape.character.message")

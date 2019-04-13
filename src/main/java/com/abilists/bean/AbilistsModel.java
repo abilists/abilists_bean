@@ -14,7 +14,7 @@ import com.abilists.bean.model.list.UserMyListModel;
 import com.abilists.bean.model.master.MIndustryModel;
 import com.abilists.bean.model.master.MRoleModel;
 import com.abilists.bean.model.master.MTechDetailModel;
-import com.abilists.bean.model.master.MTechModel;
+import com.abilists.bean.model.master.MSkillsModel;
 import com.abilists.bean.model.sum.UserMemoSumByMonthModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.sum.UserSkillsSumBySkillModel;
@@ -33,7 +33,7 @@ import com.abilists.bean.model.works.UserTasksModel;
 import com.abilists.bean.para.admin.SltMIndustryPara;
 import com.abilists.bean.para.admin.SltMRolePara;
 import com.abilists.bean.para.admin.SltMTechDetailPara;
-import com.abilists.bean.para.admin.SltMTechPara;
+import com.abilists.bean.para.admin.SltMSkillsPara;
 import com.abilists.bean.para.list.SltMyListPara;
 import com.abilists.bean.user.UserCareerChartBean;
 import com.abilists.bean.user.UserCareerRoleSumBean;
@@ -83,9 +83,9 @@ public class AbilistsModel extends CommonModel {
 
 	private UserProjectTechModel userProjectTech;
 	private List<UserProjectTechModel> userProjectTechList;
-	private MTechModel mTech;
-	private List<MTechModel> mTechList;
-	private SltMTechPara sltMTechPara;
+	private MSkillsModel mSkills;
+	private List<MSkillsModel> mSkillsList;
+	private SltMSkillsPara sltMSkillsPara;
 
 	private List<MTechDetailModel> mTechDetailList;
 	private SltMTechDetailPara sltMTechDetailPara;
@@ -335,28 +335,28 @@ public class AbilistsModel extends CommonModel {
 		this.userProjectTechList = userProjectTechList;
 	}
 
-	public MTechModel getmTech() {
-		return mTech;
+	public MSkillsModel getmSkills() {
+		return mSkills;
 	}
 
-	public void setmTech(MTechModel mTech) {
-		this.mTech = mTech;
+	public void setmSkills(MSkillsModel mSkills) {
+		this.mSkills = mSkills;
 	}
 
-	public List<MTechModel> getmTechList() {
-		return mTechList;
+	public List<MSkillsModel> getmSkillsList() {
+		return mSkillsList;
 	}
 
-	public void setmTechList(List<MTechModel> mTechList) {
-		this.mTechList = mTechList;
+	public void setmSkillsList(List<MSkillsModel> mSkillsList) {
+		this.mSkillsList = mSkillsList;
 	}
 
-	public SltMTechPara getSltMTechPara() {
-		return sltMTechPara;
+	public SltMSkillsPara getSltMSkillsPara() {
+		return sltMSkillsPara;
 	}
 
-	public void setSltMTechPara(SltMTechPara sltMTechPara) {
-		this.sltMTechPara = sltMTechPara;
+	public void setSltMSkillsPara(SltMSkillsPara sltMSkillsPara) {
+		this.sltMSkillsPara = sltMSkillsPara;
 	}
 
 	public List<MTechDetailModel> getmTechDetailList() {

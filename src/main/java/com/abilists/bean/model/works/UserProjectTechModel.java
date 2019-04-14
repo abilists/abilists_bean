@@ -17,7 +17,7 @@ public class UserProjectTechModel extends BasicModel implements Serializable {
 	private String uptDelete;
 	private Date insertTime;
 	private Date updateTime;
-	private int mtNo;
+	private int msNo;
 	private int upNo;
 	private String userId;
 
@@ -69,11 +69,11 @@ public class UserProjectTechModel extends BasicModel implements Serializable {
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
 	}
-	public int getMtNo() {
-		return mtNo;
+	public int getMsNo() {
+		return msNo;
 	}
-	public void setMtNo(int mtNo) {
-		this.mtNo = mtNo;
+	public void setMsNo(int msNo) {
+		this.msNo = msNo;
 	}
 	public int getUpNo() {
 		return upNo;

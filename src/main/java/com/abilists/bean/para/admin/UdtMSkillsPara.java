@@ -3,21 +3,17 @@ package com.abilists.bean.para.admin;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
-import base.bean.para.CommonPara;
-
-public class DltMTechPara extends CommonPara {
+public class UdtMSkillsPara extends IstMSkillsPara {
 
 	@NotNull(message = "parameter.error.null.message")
 	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
-    private String mtNo;
+	private String msNo;
 
-	public String getMtNo() {
-		return mtNo;
+	public String getMsNo() {
+		return msNo;
 	}
-
-	public void setMtNo(String mtNo) {
-		this.mtNo = mtNo;
+	public void setMsNo(String msNo) {
+		this.msNo = msNo;
 	}
-
 
 }

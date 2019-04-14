@@ -4,7 +4,7 @@ import base.bean.para.CommonPara;
 
 public class SltProjectTechPara extends CommonPara {
 
-    private String mtNo;
+    private String msNo;
 	private String upNo;
     private String uptNo;
     private String uptKind;
@@ -12,12 +12,12 @@ public class SltProjectTechPara extends CommonPara {
     private String uptDetail;
 	private String uptStatus;
 
-	public String getMtNo() {
-		return mtNo;
+	public String getMsNo() {
+		return msNo;
 	}
 
-	public void setMtNo(String mtNo) {
-		this.mtNo = mtNo;
+	public void setMsNo(String msNo) {
+		this.msNo = msNo;
 	}
 
 	public String getUpNo() {

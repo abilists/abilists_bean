@@ -7,16 +7,11 @@ import base.bean.para.CommonPara;
 import io.utility.validate.annotation.Array;
 import io.utility.validate.annotation.CharacterEscape;
 
-/**
- * Action + db name + data
- * 
- * @author njoonk
- */
 public class InputUserProjectTechPara extends CommonPara {
 
-	@NotNull(message = "mtNo")
+	@NotNull(message = "msNo")
     @Size(min = 1, max = 90 ,message = "mtNo must not exceed {max} characters")
-    private String mtNo;
+    private String msNo;
 
 	@NotNull(message = "upNo")
     @Size(min = 1, max = 90 ,message = "upNo must not exceed {max} characters")
@@ -32,12 +27,12 @@ public class InputUserProjectTechPara extends CommonPara {
 
 	private String uptStatus;
 
-	public String getMtNo() {
-		return mtNo;
+	public String getMsNo() {
+		return msNo;
 	}
 
-	public void setMtNo(String mtNo) {
-		this.mtNo = mtNo;
+	public void setMsNo(String msNo) {
+		this.msNo = msNo;
 	}
 
 	public String getUpNo() {

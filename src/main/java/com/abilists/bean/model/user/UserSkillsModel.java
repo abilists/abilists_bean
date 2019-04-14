@@ -16,7 +16,7 @@ public class UserSkillsModel extends BasicModel implements Serializable {
 	private String usDetail;
 	private String usStatus;
 	private String usDelete;
-	private int mtNo;
+	private int msNo;
 	private String userId;
 	private Date insertTime;
 	private Date updateTime;
@@ -62,11 +62,11 @@ public class UserSkillsModel extends BasicModel implements Serializable {
 	public void setUsDelete(String usDelete) {
 		this.usDelete = usDelete;
 	}
-	public int getMtNo() {
-		return mtNo;
+	public int getMsNo() {
+		return msNo;
 	}
-	public void setMtNo(int mtNo) {
-		this.mtNo = mtNo;
+	public void setMsNo(int msNo) {
+		this.msNo = msNo;
 	}
 	public String getUserId() {
 		return userId;

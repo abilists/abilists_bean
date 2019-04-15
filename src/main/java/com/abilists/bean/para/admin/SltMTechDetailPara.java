@@ -11,7 +11,7 @@ public class SltMTechDetailPara extends CommonPara {
 
 	@NotNull(message = "parameter.error.null.message")
 	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
-	private String mtNo;
+	private String msNo;
 	private String mtKind;
 	private String mtdLevel;
 	private String mtdLevelExplain;
@@ -25,11 +25,11 @@ public class SltMTechDetailPara extends CommonPara {
 	public void setMtdNo(String mtdNo) {
 		this.mtdNo = mtdNo;
 	}
-	public String getMtNo() {
-		return mtNo;
+	public String getMsNo() {
+		return msNo;
 	}
-	public void setMtNo(String mtNo) {
-		this.mtNo = mtNo;
+	public void setMsNo(String msNo) {
+		this.msNo = msNo;
 	}
 	public String getMtKind() {
 		return mtKind;

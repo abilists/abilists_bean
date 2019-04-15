@@ -11,7 +11,7 @@ public class IstProjectTechPara extends CommonPara {
 	@NotNull(message = "parameter.error.null.message")
     @Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	@Array(message = "parameter.error.array.message")
-    private String[] mtNo;
+    private String[] msNo;
 
 	@NotNull(message = "parameter.error.null.message")
     @Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
@@ -27,12 +27,12 @@ public class IstProjectTechPara extends CommonPara {
 //	@Array(message = "parameter.error.array.message")
     private String[] uptDetail;
 
-	public String[] getMtNo() {
-		return mtNo;
+	public String[] getMsNo() {
+		return msNo;
 	}
 
-	public void setMtNo(String[] mtNo) {
-		this.mtNo = mtNo;
+	public void setMsNo(String[] msNo) {
+		this.msNo = msNo;
 	}
 
 	public String getUpNo() {

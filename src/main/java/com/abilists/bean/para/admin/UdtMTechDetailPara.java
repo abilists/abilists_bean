@@ -13,7 +13,7 @@ public class UdtMTechDetailPara  extends CommonPara {
 	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String mtdNo;
 
-	private String mtNo;
+	private String msNo;
 
 	private String mtKind;
 
@@ -39,11 +39,11 @@ public class UdtMTechDetailPara  extends CommonPara {
 	public void setMtdNo(String mtdNo) {
 		this.mtdNo = mtdNo;
 	}
-	public String getMtNo() {
-		return mtNo;
+	public String getMsNo() {
+		return msNo;
 	}
-	public void setMtNo(String mtNo) {
-		this.mtNo = mtNo;
+	public void setMsNo(String msNo) {
+		this.msNo = msNo;
 	}
 	public String getMtKind() {
 		return mtKind;

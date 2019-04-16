@@ -11,7 +11,7 @@ public class IstUserSkillsPara extends CommonPara {
 	private String usSkill;
 
 	@NotNull(message="parameter.error.null.message")
-	private String mtNo;
+	private String msNo;
 
 	private String usKind;
 
@@ -26,6 +26,14 @@ public class IstUserSkillsPara extends CommonPara {
 
 	public void setUsSkill(String usSkill) {
 		this.usSkill = usSkill;
+	}
+
+	public String getMsNo() {
+		return msNo;
+	}
+
+	public void setMsNo(String msNo) {
+		this.msNo = msNo;
 	}
 
 	public String getUsKind() {
@@ -51,14 +59,5 @@ public class IstUserSkillsPara extends CommonPara {
 	public void setUsDetail(String usDetail) {
 		this.usDetail = usDetail;
 	}
-
-	public String getMtNo() {
-		return mtNo;
-	}
-
-	public void setMtNo(String mtNo) {
-		this.mtNo = mtNo;
-	}
-
 
 }

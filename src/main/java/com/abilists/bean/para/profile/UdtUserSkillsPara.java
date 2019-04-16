@@ -14,7 +14,7 @@ public class UdtUserSkillsPara extends CommonPara {
 	private String usSkill;
 
 	@NotNull(message = "parameter.error.null.message")
-	private String mtNo;
+	private String msNo;
 
 	private String usKind;
 	private String usLevel;
@@ -36,11 +36,11 @@ public class UdtUserSkillsPara extends CommonPara {
 	public void setUsSkill(String usSkill) {
 		this.usSkill = usSkill;
 	}
-	public String getMtNo() {
-		return mtNo;
+	public String getMsNo() {
+		return msNo;
 	}
-	public void setMtNo(String mtNo) {
-		this.mtNo = mtNo;
+	public void setMsNo(String msNo) {
+		this.msNo = msNo;
 	}
 	public String getUsKind() {
 		return usKind;

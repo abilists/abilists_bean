@@ -1,15 +1,14 @@
 package com.abilists.bean.para.account;
 
-import javax.validation.constraints.Size;
-
 import base.bean.para.CommonPara;
+import io.utility.validate.annotation.ByteString;
 import io.utility.validate.annotation.CharacterEscape;
-import io.utility.validate.annotation.EmptyMaxSize;
 
 public class UdtInfoPara extends CommonPara {
 
     @CharacterEscape(message = "parameter.error.escape.character.message")
-	@EmptyMaxSize(max=30, message = "parameter.error.size.max30.message")
+	// @EmptyMaxSize(max=30, message = "parameter.error.size.max30.message")
+    @ByteString(min=1, max=100, charset="UTF-8", message="parameter.error.size.max100.message") // 100
 	private String userName;
 
     private String userSex;
@@ -17,7 +16,7 @@ public class UdtInfoPara extends CommonPara {
     private String userAges;
 
     @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(min = 2, max = 150, message = "parameter.error.size.max150.message")
+	@ByteString(min=1, max=250, charset="UTF-8", message="parameter.error.size.max250.message") // 300
     private String userProfile;
 
 	public String getUserName() {

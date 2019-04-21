@@ -20,6 +20,7 @@ import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.sum.UserSkillsSumBySkillModel;
 import com.abilists.bean.model.user.UserCareerModel;
 import com.abilists.bean.model.user.UserChartModel;
+import com.abilists.bean.model.user.UserOptionsModel;
 import com.abilists.bean.model.user.UserSkillsModel;
 import com.abilists.bean.model.user.UserTemp;
 import com.abilists.bean.model.user.UsersModel;
@@ -48,6 +49,7 @@ public class AbilistsModel extends CommonModel {
 
 	private UserTemp userTemp;
 	private UsersModel users;
+	private UserOptionsModel userOptions;
 	private List<UsersModel> usersList;
 
 	private UserMyListModel userMyList;
@@ -125,6 +127,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUsers(UsersModel users) {
 		this.users = users;
+	}
+
+	public UserOptionsModel getUserOptions() {
+		return userOptions;
+	}
+
+	public void setUserOptions(UserOptionsModel userOptions) {
+		this.userOptions = userOptions;
 	}
 
 	public List<UsersModel> getUsersList() {

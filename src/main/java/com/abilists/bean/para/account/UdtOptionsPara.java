@@ -1,10 +1,12 @@
 package com.abilists.bean.para.account;
 
 import base.bean.para.CommonPara;
+import io.utility.validate.annotation.AllowString;
 
 public class UdtOptionsPara extends CommonPara {
 
 	private String uoOption;
+	@AllowString(message = "parameter.error.escape.password.message")
 	private String uoValue;
 
 	public String getUoOption() {

@@ -50,6 +50,7 @@ public class AbilistsModel extends CommonModel {
 	private UserTemp userTemp;
 	private UsersModel users;
 	private UserOptionsModel userOptions;
+	private List<UserOptionsModel> userOptionsList;
 	private List<UsersModel> usersList;
 
 	private UserMyListModel userMyList;
@@ -135,6 +136,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserOptions(UserOptionsModel userOptions) {
 		this.userOptions = userOptions;
+	}
+
+	public List<UserOptionsModel> getUserOptionsList() {
+		return userOptionsList;
+	}
+
+	public void setUserOptionsList(List<UserOptionsModel> userOptionsList) {
+		this.userOptionsList = userOptionsList;
 	}
 
 	public List<UsersModel> getUsersList() {

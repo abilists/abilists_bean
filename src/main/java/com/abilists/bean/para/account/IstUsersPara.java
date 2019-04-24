@@ -1,4 +1,4 @@
-package com.abilists.bean.para.users;
+package com.abilists.bean.para.account;
 
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -6,7 +6,7 @@ import javax.validation.constraints.Size;
 import io.utility.validate.annotation.ByteString;
 import io.utility.validate.annotation.CharacterEscape;
 
-public class InputUsersPara {
+public class IstUsersPara {
 
 	@NotNull(message = "userId")
 	@CharacterEscape(message = "parameter.error.escape.character.message")
@@ -22,6 +22,16 @@ public class InputUsersPara {
     @CharacterEscape(message = "parameter.error.escape.character.message")
     @Size(min = 1, max = 90 ,message = "userName must not exceed {max} characters")
 	private String userName;
+
+    @NotNull(message = "userFirstName")
+    @CharacterEscape(message = "parameter.error.escape.character.message")
+    @Size(min = 1, max = 45 ,message = "userName must not exceed {max} characters")
+	private String userFirstName;
+
+    @NotNull(message = "userFirstName")
+    @CharacterEscape(message = "parameter.error.escape.character.message")
+    @Size(min = 1, max = 45 ,message = "userName must not exceed {max} characters")
+	private String userLastName;
 
     private String userSex;
 
@@ -54,6 +64,22 @@ public class InputUsersPara {
 
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+
+	public String getUserFirstName() {
+		return userFirstName;
+	}
+
+	public void setUserFirstName(String userFirstName) {
+		this.userFirstName = userFirstName;
+	}
+
+	public String getUserLastName() {
+		return userLastName;
+	}
+
+	public void setUserLastName(String userLastName) {
+		this.userLastName = userLastName;
 	}
 
 	public String getUserSex() {

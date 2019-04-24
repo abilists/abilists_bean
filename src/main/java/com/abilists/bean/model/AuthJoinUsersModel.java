@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-import com.abilists.bean.model.user.UsersModel;
+import com.abilists.bean.model.account.UsersModel;
 
 public class AuthJoinUsersModel implements Serializable {
 

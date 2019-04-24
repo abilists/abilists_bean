@@ -3,6 +3,7 @@ package com.abilists.bean;
 import java.util.List;
 
 import com.abilists.bean.model.NotificationModel;
+import com.abilists.bean.model.account.UsersModel;
 import com.abilists.bean.model.join.MIndustryJoinUserCareerModel;
 import com.abilists.bean.model.join.MTechJoinUserSkillsModel;
 import com.abilists.bean.model.join.UserProjectsJoinMindustryModel;
@@ -23,7 +24,6 @@ import com.abilists.bean.model.user.UserChartModel;
 import com.abilists.bean.model.user.UserOptionsModel;
 import com.abilists.bean.model.user.UserSkillsModel;
 import com.abilists.bean.model.user.UserTemp;
-import com.abilists.bean.model.user.UsersModel;
 import com.abilists.bean.model.works.UserMemoModel;
 import com.abilists.bean.model.works.UserPostsModel;
 import com.abilists.bean.model.works.UserProjectTechModel;

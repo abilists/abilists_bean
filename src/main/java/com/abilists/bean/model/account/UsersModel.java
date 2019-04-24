@@ -1,4 +1,4 @@
-package com.abilists.bean.model.user;
+package com.abilists.bean.model.account;
 
 import java.io.Serializable;
 import java.util.Date;
@@ -13,6 +13,8 @@ public class UsersModel extends BasicModel implements Serializable {
 	private String userId;
 	private String userAuth;
 	private String userName;
+	private String userLastName;
+	private String userFirstName;
 	private String userImgName;
 	private byte[] userImg;
 	private String userSex;
@@ -49,6 +51,18 @@ public class UsersModel extends BasicModel implements Serializable {
 	}
 	public void setUserName(String userName) {
 		this.userName = userName;
+	}
+	public String getUserLastName() {
+		return userLastName;
+	}
+	public void setUserLastName(String userLastName) {
+		this.userLastName = userLastName;
+	}
+	public String getUserFirstName() {
+		return userFirstName;
+	}
+	public void setUserFirstName(String userFirstName) {
+		this.userFirstName = userFirstName;
 	}
 	public String getUserSex() {
 		return userSex;

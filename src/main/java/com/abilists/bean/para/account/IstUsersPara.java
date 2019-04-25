@@ -18,20 +18,17 @@ public class IstUsersPara {
     @Size(min = 1, max = 150 ,message = "userPwd must not exceed {max} characters")
     private String userPwd;
 
-    @NotNull(message = "userName")
-    @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(min = 1, max = 90 ,message = "userName must not exceed {max} characters")
-	private String userName;
-
-    @NotNull(message = "userFirstName")
     @CharacterEscape(message = "parameter.error.escape.character.message")
     @Size(min = 1, max = 45 ,message = "userName must not exceed {max} characters")
 	private String userFirstName;
 
-    @NotNull(message = "userFirstName")
     @CharacterEscape(message = "parameter.error.escape.character.message")
     @Size(min = 1, max = 45 ,message = "userName must not exceed {max} characters")
 	private String userLastName;
+
+    @CharacterEscape(message = "parameter.error.escape.character.message")
+    @Size(min = 1, max = 90 ,message = "userName must not exceed {max} characters")
+	private String userName;
 
     private String userSex;
 

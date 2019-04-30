@@ -9,7 +9,7 @@ public class IstMyListPara extends CommonPara {
     private String umlUserId;
     
     // TODO: message
-    @AllowString(message = "parameter.error.escape.password.message")
+    @AllowString(message = "parameter.error.integer.message")
     private String umlStatus;
 
     private String umlDelete;

@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import com.abilists.bean.admin.SkillsLevelBean;
+import com.abilists.bean.admin.system.DbUserBean;
 import com.abilists.bean.admin.ReportsBean;
 import com.abilists.bean.model.admin.sum.AdminUserReportsSumModel;
 import com.abilists.bean.model.sum.AdminUsersSumByYearModel;
@@ -11,6 +12,7 @@ import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.works.UserReportsModel;
 
 import base.bean.model.CommonModel;
+import io.utility.email.SmtpBean;
 
 public class AdminAbilistsModel extends CommonModel {
 
@@ -31,6 +33,10 @@ public class AdminAbilistsModel extends CommonModel {
 	private int notiSum;
 	// Sum Group user skill level
 	private SkillsLevelBean skillsLevelBean;
+	
+	// System
+	private DbUserBean dbUserBean;
+	private SmtpBean smtpBean;
 
 	public List<AdminUsersSumByYearModel> getAdminUsersSumByYearList() {
 		return adminUsersSumByYearList;
@@ -110,6 +116,22 @@ public class AdminAbilistsModel extends CommonModel {
 
 	public void setSkillsLevelBean(SkillsLevelBean skillsLevelBean) {
 		this.skillsLevelBean = skillsLevelBean;
+	}
+
+	public DbUserBean getDbUserBean() {
+		return dbUserBean;
+	}
+
+	public void setDbUserBean(DbUserBean dbUserBean) {
+		this.dbUserBean = dbUserBean;
+	}
+
+	public SmtpBean getSmtpBean() {
+		return smtpBean;
+	}
+
+	public void setSmtpBean(SmtpBean smtpBean) {
+		this.smtpBean = smtpBean;
 	}
 
 }

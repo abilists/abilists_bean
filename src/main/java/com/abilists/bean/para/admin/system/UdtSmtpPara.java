@@ -4,6 +4,7 @@ import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.BitAllowString;
+import io.utility.validate.annotation.ByteString;
 import io.utility.validate.annotation.CharacterEscape;
 import io.utility.validate.annotation.IsInteger;
 
@@ -19,7 +20,7 @@ public class UdtSmtpPara extends CommonPara {
     private String smtpEnable;
 
     @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(min = 1, max = 100 ,message = "smtpHost must not exceed {max} characters")
+    @ByteString(min=1, max=100, charset="UTF-8", message="parameter.error.size.max100.message") // 100
 	private String smtpHost;
 
     @IsInteger(message = "parameter.error.integer.message")
@@ -27,8 +28,11 @@ public class UdtSmtpPara extends CommonPara {
 	private String smtpPort;
 
     @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(min = 1, max = 100 ,message = "smtpSender must not exceed {max} characters")
+    @ByteString(min=1, max=100, charset="UTF-8", message="parameter.error.size.max100.message") // 100
 	private String smtpSender;
+
+    @ByteString(min=1, max=100, charset="UTF-8", message="parameter.error.size.max100.message") // 100
+	private String smtpPassword;
 
 	public String getSmtpStarttlsEnable() {
 		return smtpStarttlsEnable;
@@ -76,6 +80,14 @@ public class UdtSmtpPara extends CommonPara {
 
 	public void setSmtpSender(String smtpSender) {
 		this.smtpSender = smtpSender;
+	}
+
+	public String getSmtpPassword() {
+		return smtpPassword;
+	}
+
+	public void setSmtpPassword(String smtpPassword) {
+		this.smtpPassword = smtpPassword;
 	}
 
 }

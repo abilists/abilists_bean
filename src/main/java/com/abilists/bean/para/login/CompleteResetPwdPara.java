@@ -8,18 +8,18 @@ import io.utility.validate.annotation.EscapePassword;
 
 public class CompleteResetPwdPara extends CommonPara {
 
-    @NotNull(message = "password.")
-    @EscapePassword(message = "There is not good password1.")
-    @Size(min = 1, max = 45 ,message = "password must not exceed {max} characters")
+	@NotNull(message = "parameter.error.null.message")
+    @EscapePassword(message = "parameter.error.escape.password.message")
+    @Size(min = 8, max = 30 ,message = "parameter.error.size.min10.max30.new.password.message") // 100 encrypted
 	private String password;
 
-    @NotNull(message = "password2.")
-    @EscapePassword(message = "There is not good password2.")
-    @Size(min = 1, max = 45 ,message = "password2 must not exceed {max} characters")
+	@NotNull(message = "parameter.error.null.message")
+    @EscapePassword(message = "parameter.error.escape.password.message")
+    @Size(min = 8, max = 30 ,message = "parameter.error.size.min10.max30.new.password.message") // 100 encrypted
 	private String password2;
 
     @NotNull(message = "ntoken")
-    @Size(min = 1, max = 300 ,message = "ntoken must not exceed {max} characters")
+    @Size(min = 1, max = 200 ,message = "ntoken must not exceed {max} characters")
 	private String ntoken;
 
 	public String getPassword() {

@@ -9,9 +9,9 @@ import base.bean.para.CommonPara;
 
 public class SignUpPara extends CommonPara {
 
-    @NotNull(message = "Please input your email address.")
-    @Email(message = "You should form for email.")
-    @Size(min = 1, max = 45 ,message = "userEmail must not exceed {max} characters")
+    @NotNull(message = "login.signup.title0")
+    @Email(message = "login.signup.email.text1")
+    @Size(min = 1, max = 45 ,message = "Email address must not exceed {max} characters")
 	private String userEmail;
 
 	private String userStatus;

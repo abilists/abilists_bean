@@ -4,20 +4,17 @@ import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.CharacterEscape;
-import io.utility.validate.annotation.IsInteger;
 
 public class UdtServerPara extends CommonPara {
 
-    @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(min = 1, max = 50 ,message = "serverHost must not exceed {max} characters")
 	private String msysKind;
 
-    @CharacterEscape(message = "parameter.error.escape.character.message")
+	@CharacterEscape(message = "parameter.error.escape.password.message")
     @Size(min = 1, max = 100 ,message = "serverHost must not exceed {max} characters")
 	private String serverHost;
 
-    @IsInteger(message = "parameter.error.integer.message")
-    @Size(min = 1, max = 45 ,message = "serverPort must not exceed {max} characters")
+	@CharacterEscape(message = "parameter.error.integer.message")
+    @Size(min = 1, max = 10 ,message = "serverPort must not exceed {max} characters")
 	private String serverPort;
 
 	public String getMsysKind() {

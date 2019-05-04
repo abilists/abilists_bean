@@ -4,25 +4,24 @@ import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.CharacterEscape;
-import io.utility.validate.annotation.EscapePassword;
 
 public class UdtDbPara extends CommonPara {
 
 	private String dbDatabase;
 
 	@CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(min = 1, max = 100 ,message = "dbName must not exceed {max} characters")
+    @Size(min = 1, max = 100 ,message = "username must not exceed {max} characters")
 	private String username;
 
-    @Size(min = 1, max = 100 ,message = "dbPassword must not exceed {max} characters")
+    @Size(min = 0, max = 100 ,message = "currentPassword must not exceed {max} characters")
 	private String currentPassword;
 
-	@EscapePassword(message = "parameter.error.escape.character.message")
-    @Size(min = 1, max = 100 ,message = "dbPassword must not exceed {max} characters")
+    @CharacterEscape(message = "parameter.error.escape.character.message")
+	@Size(min = 1, max = 100 ,message = "newPassword must not exceed {max} characters")
 	private String newPassword;
 
-	@EscapePassword(message = "parameter.error.escape.character.message")
-    @Size(min = 1, max = 100 ,message = "dbPassword must not exceed {max} characters")
+    @CharacterEscape(message = "parameter.error.escape.character.message")
+	@Size(min = 1, max = 100 ,message = "newPassword2 must not exceed {max} characters")
 	private String newPassword2;
 
 	public String getDbDatabase() {

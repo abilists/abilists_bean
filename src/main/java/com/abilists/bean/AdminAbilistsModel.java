@@ -4,7 +4,9 @@ import java.util.HashMap;
 import java.util.List;
 
 import com.abilists.bean.admin.SkillsLevelBean;
+import com.abilists.bean.admin.plugins.PluginBean;
 import com.abilists.bean.admin.system.DbUserBean;
+import com.abilists.bean.admin.system.SysLdapBean;
 import com.abilists.bean.admin.ReportsBean;
 import com.abilists.bean.model.admin.MSystemModel;
 import com.abilists.bean.model.admin.sum.AdminUserReportsSumModel;
@@ -34,11 +36,15 @@ public class AdminAbilistsModel extends CommonModel {
 	private int notiSum;
 	// Sum Group user skill level
 	private SkillsLevelBean skillsLevelBean;
-	
+
+	// Plugins
+	private List<PluginBean> pluginBeanList;
+
 	// System
 	private DbUserBean dbUserBean;
 	private SmtpBean smtpBean;
-	
+	private SysLdapBean sysLdapBean;
+
 	private MSystemModel mSystem;
 
 	public List<AdminUsersSumByYearModel> getAdminUsersSumByYearList() {
@@ -121,6 +127,14 @@ public class AdminAbilistsModel extends CommonModel {
 		this.skillsLevelBean = skillsLevelBean;
 	}
 
+	public List<PluginBean> getPluginBeanList() {
+		return pluginBeanList;
+	}
+
+	public void setPluginBeanList(List<PluginBean> pluginBeanList) {
+		this.pluginBeanList = pluginBeanList;
+	}
+
 	public DbUserBean getDbUserBean() {
 		return dbUserBean;
 	}
@@ -135,6 +149,14 @@ public class AdminAbilistsModel extends CommonModel {
 
 	public void setSmtpBean(SmtpBean smtpBean) {
 		this.smtpBean = smtpBean;
+	}
+
+	public SysLdapBean getSysLdapBean() {
+		return sysLdapBean;
+	}
+
+	public void setSysLdapBean(SysLdapBean sysLdapBean) {
+		this.sysLdapBean = sysLdapBean;
 	}
 
 	public MSystemModel getmSystem() {

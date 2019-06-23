@@ -46,7 +46,7 @@ dependencies {
 configure(install.repositories.mavenInstaller) {
     pom.project {
 		group = 'com.abilists'
-		artifactId 'bean'
+		artifactId 'abilists_bean'
         inceptionYear '2017'
         packaging 'jar'
         licenses {

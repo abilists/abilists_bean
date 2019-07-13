@@ -19,7 +19,7 @@ public class UdtPluginPara extends CommonPara {
 	@NotNull(message = "parameter.error.null.message")
 	@ByteString(charset = "UTF-8", min = 1, max = 2900, message = "parameter.error.size.max2900.message") // 100
 	private String mpExplain;
-	
+
 	@UploadFiles(message = "parameter.error.null.message")
 	private MultipartFile mpFileName;
 

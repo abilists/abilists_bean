@@ -4,6 +4,7 @@ import base.bean.BasicBean;
 
 public class PluginBean extends BasicBean {
 
+	public static final String NO = "mpNo";
 	public static final String PARTNER_ID = "partnerId";
 	public static final String NAME = "mpName";
 	public static final String EXPLAIN = "mpExplain";
@@ -16,6 +17,7 @@ public class PluginBean extends BasicBean {
 	public static final String UPDATED_TIME = "updateTime";
 
 	// Master Plugin
+	private int mpNo;
 	private String partnerId;
 	private String mpName;
 	private String mpExplain;
@@ -29,12 +31,19 @@ public class PluginBean extends BasicBean {
 	private String insertTime;
 	private String updateTime;
 
+	public int getMpNo() {
+		return mpNo;
+	}
+	public void setMpNo(int mpNo) {
+		this.mpNo = mpNo;
+	}
 	public String getPartnerId() {
 		return partnerId;
 	}
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
+
 	public String getMpName() {
 		return mpName;
 	}

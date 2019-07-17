@@ -11,6 +11,9 @@ import io.utility.validate.annotation.UploadFiles;
 public class UdtPluginPara extends CommonPara {
 
 	@NotNull(message = "parameter.error.null.message")
+	private String mpNo;
+
+	@NotNull(message = "parameter.error.null.message")
 	private String partnerId;
 
 	@NotNull(message = "parameter.error.null.message")
@@ -25,6 +28,8 @@ public class UdtPluginPara extends CommonPara {
 
 	@NotNull(message = "parameter.error.null.message")
 	private String mpImgName;
+
+	private String mpImgUrl;
 	
 	@NotNull(message = "parameter.error.null.message")
 	private String mpVersion;
@@ -32,6 +37,12 @@ public class UdtPluginPara extends CommonPara {
 	@NotNull(message = "parameter.error.null.message")
 	private String mpStatus;
 
+	public String getMpNo() {
+		return mpNo;
+	}
+	public void setMpNo(String mpNo) {
+		this.mpNo = mpNo;
+	}
 	public String getPartnerId() {
 		return partnerId;
 	}
@@ -61,6 +72,12 @@ public class UdtPluginPara extends CommonPara {
 	}
 	public void setMpImgName(String mpImgName) {
 		this.mpImgName = mpImgName;
+	}
+	public String getMpImgUrl() {
+		return mpImgUrl;
+	}
+	public void setMpImgUrl(String mpImgUrl) {
+		this.mpImgUrl = mpImgUrl;
 	}
 	public String getMpVersion() {
 		return mpVersion;

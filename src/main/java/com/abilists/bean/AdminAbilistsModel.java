@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.List;
 
 import com.abilists.bean.admin.SkillsLevelBean;
+import com.abilists.bean.admin.plugins.PartnerBean;
 import com.abilists.bean.admin.plugins.PluginBean;
 import com.abilists.bean.admin.system.DbUserBean;
 import com.abilists.bean.admin.system.SysLdapBean;
@@ -39,6 +40,7 @@ public class AdminAbilistsModel extends CommonModel {
 
 	// Plugins
 	private List<PluginBean> pluginBeanList;
+	private PartnerBean partnerBean;
 
 	// System
 	private DbUserBean dbUserBean;
@@ -133,6 +135,14 @@ public class AdminAbilistsModel extends CommonModel {
 
 	public void setPluginBeanList(List<PluginBean> pluginBeanList) {
 		this.pluginBeanList = pluginBeanList;
+	}
+
+	public PartnerBean getPartnerBean() {
+		return partnerBean;
+	}
+
+	public void setPartnerBean(PartnerBean partnerBean) {
+		this.partnerBean = partnerBean;
 	}
 
 	public DbUserBean getDbUserBean() {

@@ -9,21 +9,16 @@ public class IstPartnerPara extends CommonPara {
 	@NotNull(message = "parameter.error.null.message")
 	private String partnerId;
 
-	@NotNull(message = "parameter.error.null.message")
 	private String partnerPwd;
 
 	private String partnerAuth;
 
-	@NotNull(message = "parameter.error.null.message")
 	private String partnerFirstName;
 
-	@NotNull(message = "parameter.error.null.message")
 	private String partnerLastName;
 
-	@NotNull(message = "parameter.error.null.message")
 	private String partnerName;
 
-	@NotNull(message = "parameter.error.null.message")
 	private String partnerEmail;
 
 	private String companyNo;

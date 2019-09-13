@@ -1,36 +1,36 @@
 package com.abilists.bean.para.admin.partner;
 
-import javax.validation.constraints.NotNull;
+import org.hibernate.validator.constraints.Email;
 
 import base.bean.para.CommonPara;
 
 public class UdtPartnerPara extends CommonPara {
 
-	@NotNull(message = "parameter.error.null.message")
 	private String partnerNo;
 
-	@NotNull(message = "parameter.error.null.message")
 	private String partnerId;
 
-	@NotNull(message = "parameter.error.null.message")
 	private String partnerPwd;
 
 	private String partnerAuth;
 
-	@NotNull(message = "parameter.error.null.message")
 	private String partnerFirstName;
 
-	@NotNull(message = "parameter.error.null.message")
 	private String partnerLastName;
 
-	@NotNull(message = "parameter.error.null.message")
 	private String partnerName;
 
-	@NotNull(message = "parameter.error.null.message")
+	@Email(message = "login.signup.email.text1")
 	private String partnerEmail;
 
 	private String companyNo;
 
+	public String getPartnerNo() {
+		return partnerNo;
+	}
+	public void setPartnerNo(String partnerNo) {
+		this.partnerNo = partnerNo;
+	}
 	public String getPartnerId() {
 		return partnerId;
 	}

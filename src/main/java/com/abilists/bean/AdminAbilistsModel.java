@@ -3,12 +3,12 @@ package com.abilists.bean;
 import java.util.HashMap;
 import java.util.List;
 
+import com.abilists.bean.admin.ReportsBean;
 import com.abilists.bean.admin.SkillsLevelBean;
+import com.abilists.bean.admin.plugins.ApiPluginBean;
 import com.abilists.bean.admin.plugins.PartnerBean;
-import com.abilists.bean.admin.plugins.PluginBean;
 import com.abilists.bean.admin.system.DbUserBean;
 import com.abilists.bean.admin.system.SysLdapBean;
-import com.abilists.bean.admin.ReportsBean;
 import com.abilists.bean.model.admin.MSystemModel;
 import com.abilists.bean.model.admin.sum.AdminUserReportsSumModel;
 import com.abilists.bean.model.sum.AdminUsersSumByYearModel;
@@ -39,8 +39,8 @@ public class AdminAbilistsModel extends CommonModel {
 	private SkillsLevelBean skillsLevelBean;
 
 	// Plugins
-	private List<PluginBean> pluginBeanList;
 	private PartnerBean partnerBean;
+	private ApiPluginBean apiPluginBean;
 
 	// System
 	private DbUserBean dbUserBean;
@@ -129,20 +129,20 @@ public class AdminAbilistsModel extends CommonModel {
 		this.skillsLevelBean = skillsLevelBean;
 	}
 
-	public List<PluginBean> getPluginBeanList() {
-		return pluginBeanList;
-	}
-
-	public void setPluginBeanList(List<PluginBean> pluginBeanList) {
-		this.pluginBeanList = pluginBeanList;
-	}
-
 	public PartnerBean getPartnerBean() {
 		return partnerBean;
 	}
 
 	public void setPartnerBean(PartnerBean partnerBean) {
 		this.partnerBean = partnerBean;
+	}
+
+	public ApiPluginBean getApiPluginBean() {
+		return apiPluginBean;
+	}
+
+	public void setApiPluginBean(ApiPluginBean apiPluginBean) {
+		this.apiPluginBean = apiPluginBean;
 	}
 
 	public DbUserBean getDbUserBean() {

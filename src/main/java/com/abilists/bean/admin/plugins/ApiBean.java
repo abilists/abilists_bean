@@ -1,4 +1,4 @@
-package com.abilists.bean;
+package com.abilists.bean.admin.plugins;
 
 public class ApiBean {
 

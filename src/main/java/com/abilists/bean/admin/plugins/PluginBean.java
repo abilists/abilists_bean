@@ -13,6 +13,7 @@ public class PluginBean extends BasicBean {
 	public static final String IMG_NAME = "mpImgName";
 	public static final String IMG_URL = "mpImgUrl";
 	public static final String VERSION = "mpVersion";
+	public static final String STATUS = "mpStatus";
 	public static final String CREATED_TIME = "insertTime";
 	public static final String UPDATED_TIME = "updateTime";
 

@@ -26,7 +26,6 @@ public class UdtPluginPara extends CommonPara {
 	@UploadFiles(message = "parameter.error.null.message")
 	private MultipartFile mpFileName;
 
-	@NotNull(message = "parameter.error.null.message")
 	private String mpImgName;
 
 	private String mpImgUrl;

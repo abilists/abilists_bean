@@ -2,7 +2,6 @@ package com.abilists.bean.para.admin.plugins;
 
 import javax.validation.constraints.NotNull;
 
-import org.hibernate.validator.constraints.NotEmpty;
 import org.springframework.web.multipart.MultipartFile;
 
 import base.bean.para.CommonPara;
@@ -24,7 +23,6 @@ public class IstPluginPara extends CommonPara {
 	@UploadFiles(message = "parameter.error.null.message")
 	private MultipartFile mpFileName;
 
-	@NotEmpty(message = "parameter.error.null.message")
 	private String mpImgName;
 
 	private String mpImgUrl;

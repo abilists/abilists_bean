@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.abilists.bean.model.NotificationModel;
 import com.abilists.bean.model.account.UsersModel;
+import com.abilists.bean.model.admin.plugins.MPluginsModel;
 import com.abilists.bean.model.join.MIndustryJoinUserCareerModel;
 import com.abilists.bean.model.join.MTechJoinUserSkillsModel;
 import com.abilists.bean.model.join.UserProjectsJoinMindustryModel;
@@ -74,7 +75,7 @@ public class AbilistsModel extends CommonModel {
 	private List<UserTasksModel> userTasksList;
 	private UserTasksModel userTasks;
 	private List<UserTasksBean> userTasksBeanList;
-	
+
 	private List<UserReportsModel> userReportsList;
 	private UserReportsModel userReports;
 
@@ -113,6 +114,8 @@ public class AbilistsModel extends CommonModel {
 	private UserCareerModel userCareer;
 	private List<UserCareerModel> userCareerList;
 	private List<UserCareerChartBean> userCareerChartBeanList;
+
+	private List<MPluginsModel> mPluginsList;
 
 	public UserTemp getUserTemp() {
 		return userTemp;
@@ -520,6 +523,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserCareerChartBeanList(List<UserCareerChartBean> userCareerChartBeanList) {
 		this.userCareerChartBeanList = userCareerChartBeanList;
+	}
+
+	public List<MPluginsModel> getmPluginsList() {
+		return mPluginsList;
+	}
+
+	public void setmPluginsList(List<MPluginsModel> mPluginsList) {
+		this.mPluginsList = mPluginsList;
 	}
 
 }

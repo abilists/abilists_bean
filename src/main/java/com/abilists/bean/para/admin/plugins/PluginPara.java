@@ -1,26 +1,35 @@
 package com.abilists.bean.para.admin.plugins;
 
+import javax.validation.constraints.NotNull;
+
 import base.bean.para.CommonPara;
 
 public class PluginPara extends CommonPara {
 
-	private String name;
-	private String fileName;
+	@NotNull(message = "parameter.error.null.message")
+	private String mpNo;
+	@NotNull(message = "parameter.error.null.message")
+	private String mpName;
+
+	private String mpFileName;
+
+	public String getMpNo() {
+		return mpNo;
+	}
+	public void setMpNo(String mpNo) {
+		this.mpNo = mpNo;
+	}
+	public String getMpName() {
+		return mpName;
+	}
+	public void setMpName(String mpName) {
+		this.mpName = mpName;
+	}
+	public String getMpFileName() {
+		return mpFileName;
+	}
+	public void setMpFileName(String mpFileName) {
+		this.mpFileName = mpFileName;
+	}
 	
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getFileName() {
-		return fileName;
-	}
-
-	public void setFileName(String fileName) {
-		this.fileName = fileName;
-	}
-
 }

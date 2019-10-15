@@ -1,8 +1,5 @@
 package com.abilists.bean.admin.system;
 
-import org.springframework.stereotype.Component;
-
-@Component
 public class SysLdapBean {
 
 	private String ldapEnable;

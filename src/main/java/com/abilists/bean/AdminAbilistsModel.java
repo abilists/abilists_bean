@@ -9,6 +9,7 @@ import com.abilists.bean.admin.plugins.ApiPluginBean;
 import com.abilists.bean.admin.plugins.PartnerBean;
 import com.abilists.bean.admin.system.DbUserBean;
 import com.abilists.bean.admin.system.SysLdapBean;
+import com.abilists.bean.admin.system.SysTomcatBean;
 import com.abilists.bean.model.admin.MSystemModel;
 import com.abilists.bean.model.admin.sum.AdminUserReportsSumModel;
 import com.abilists.bean.model.sum.AdminUsersSumByYearModel;
@@ -46,6 +47,7 @@ public class AdminAbilistsModel extends CommonModel {
 	private DbUserBean dbUserBean;
 	private SmtpBean smtpBean;
 	private SysLdapBean sysLdapBean;
+	private SysTomcatBean sysTomcatBean;
 
 	private MSystemModel mSystem;
 
@@ -167,6 +169,14 @@ public class AdminAbilistsModel extends CommonModel {
 
 	public void setSysLdapBean(SysLdapBean sysLdapBean) {
 		this.sysLdapBean = sysLdapBean;
+	}
+
+	public SysTomcatBean getSysTomcatBean() {
+		return sysTomcatBean;
+	}
+
+	public void setSysTomcatBean(SysTomcatBean sysTomcatBean) {
+		this.sysTomcatBean = sysTomcatBean;
 	}
 
 	public MSystemModel getmSystem() {

@@ -10,8 +10,8 @@ public class PluginPara extends CommonPara {
 	private String mpNo;
 	@NotNull(message = "parameter.error.null.message")
 	private String mpName;
-
 	private String mpFileName;
+	private String forceOption;
 
 	public String getMpNo() {
 		return mpNo;
@@ -31,5 +31,11 @@ public class PluginPara extends CommonPara {
 	public void setMpFileName(String mpFileName) {
 		this.mpFileName = mpFileName;
 	}
-	
+	public String getForceOption() {
+		return forceOption;
+	}
+	public void setForceOption(String forceOption) {
+		this.forceOption = forceOption;
+	}
+
 }

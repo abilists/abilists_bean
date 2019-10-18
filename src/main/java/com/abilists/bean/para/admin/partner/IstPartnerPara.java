@@ -3,11 +3,13 @@ package com.abilists.bean.para.admin.partner;
 import javax.validation.constraints.NotNull;
 
 import base.bean.para.CommonPara;
+import io.utility.validate.annotation.EscapeString;
 
 public class IstPartnerPara extends CommonPara {
 
 	@NotNull(message = "parameter.error.null.message")
-	private String partnerId;
+	@EscapeString(message = "There is a special character.")
+	private String partnerId; // Only allow to input Alphabet and number
 
 	private String partnerPwd;
 

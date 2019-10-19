@@ -2,4 +2,3 @@ language: java
 script: gradle
 jdk:
 - oraclejdk8
-- oraclejdk7

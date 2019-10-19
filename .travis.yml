@@ -1,4 +1,10 @@
 language: java
-script: gradle
+install: false
+
+os: linux
+dist: trusty
 jdk:
 - oraclejdk8
+
+script:
+  - ./gradle build

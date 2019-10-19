@@ -37,9 +37,6 @@ ext {
 dependencies {
 	compile "org.hibernate:hibernate-validator:5.4.1.Final"
 	compile "org.apache.commons:commons-pool2:2.5.0"
-	compile "io.utility:validate:0.0.5"
-	compile "io.utility:email:0.0.3"
-	compile "io.base:base-bean:0.2.0"
 	compile fileTree(dir: 'libs', include: '*.jar')
 }
 

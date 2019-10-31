@@ -13,7 +13,7 @@ public class IstMTechDetailPara  extends CommonPara {
 
 	@NotNull(message = "parameter.error.null.message")
 	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
-	private String mtKind;
+	private String msKind;
 
 	@NotNull(message = "parameter.error.null.message")
 	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
@@ -36,11 +36,11 @@ public class IstMTechDetailPara  extends CommonPara {
 	public void setMsNo(String msNo) {
 		this.msNo = msNo;
 	}
-	public String getMtKind() {
-		return mtKind;
+	public String getMsKind() {
+		return msKind;
 	}
-	public void setMtKind(String mtKind) {
-		this.mtKind = mtKind;
+	public void setMsKind(String msKind) {
+		this.msKind = msKind;
 	}
 	public String getMtdLevel() {
 		return mtdLevel;

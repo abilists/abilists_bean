@@ -1,11 +1,12 @@
-package com.abilists.bean.para.users;
+package com.abilists.bean.para.posts;
 
 import javax.validation.constraints.NotNull;
 
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.ByteString;
 
-public class IstUserPostsPara extends CommonPara {
+
+public class IstPostsPara extends CommonPara {
 
 	private String upsserviceNo;
 	private String upsServiceName;
@@ -65,6 +66,4 @@ public class IstUserPostsPara extends CommonPara {
 		this.upsFilePath = upsFilePath;
 	}
 
-	
-	
 }

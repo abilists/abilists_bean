@@ -16,6 +16,8 @@ import com.abilists.bean.model.list.UserMyListModel;
 import com.abilists.bean.model.master.MIndustryModel;
 import com.abilists.bean.model.master.MRoleModel;
 import com.abilists.bean.model.master.MTechDetailModel;
+import com.abilists.bean.model.profile.UserHashtagsChartModel;
+import com.abilists.bean.model.profile.UserHashtagsModel;
 import com.abilists.bean.model.master.MSkillsModel;
 import com.abilists.bean.model.sum.UserMemoSumByMonthModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
@@ -37,6 +39,7 @@ import com.abilists.bean.para.admin.SltMRolePara;
 import com.abilists.bean.para.admin.SltMTechDetailPara;
 import com.abilists.bean.para.admin.SltMSkillsPara;
 import com.abilists.bean.para.list.SltMyListPara;
+import com.abilists.bean.profile.UserHashtagsBean;
 import com.abilists.bean.user.UserCareerChartBean;
 import com.abilists.bean.user.UserCareerRoleSumBean;
 import com.abilists.bean.user.UserSkillsSumBean;
@@ -66,7 +69,9 @@ public class AbilistsModel extends CommonModel {
 	private List<PostsBean> postsBeanList;
 	private List<UserPostsModel> userPostsList;
 	private List<UserChartModel> userChartList;
-	
+	private List<UserHashtagsBean> userHashtagsBeanList;
+	private List<UserHashtagsChartModel> userHashtagsChartList;
+
 	private UserProjectsModel userProjects;
 	private List<UserProjectsModel> userProjectsList;
 	private List<UserProjectsFilesModel> userProjectsFilesList;
@@ -235,6 +240,22 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserChartList(List<UserChartModel> userChartList) {
 		this.userChartList = userChartList;
+	}
+
+	public List<UserHashtagsBean> getUserHashtagsBeanList() {
+		return userHashtagsBeanList;
+	}
+
+	public void setUserHashtagsBeanList(List<UserHashtagsBean> userHashtagsBeanList) {
+		this.userHashtagsBeanList = userHashtagsBeanList;
+	}
+
+	public List<UserHashtagsChartModel> getUserHashtagsChartList() {
+		return userHashtagsChartList;
+	}
+
+	public void setUserHashtagsChartList(List<UserHashtagsChartModel> userHashtagsChartList) {
+		this.userHashtagsChartList = userHashtagsChartList;
 	}
 
 	public UserProjectsModel getUserProjects() {

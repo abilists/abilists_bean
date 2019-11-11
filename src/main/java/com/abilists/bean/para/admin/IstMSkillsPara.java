@@ -18,7 +18,7 @@ public class IstMSkillsPara extends CommonPara {
 	private String msVersion;
 	private String msExplain;
 	private String msRelation;
-	private String msTrend;
+	private String msCriterion;
 	private String msStatus;
 	private String msDelete;
 
@@ -64,11 +64,11 @@ public class IstMSkillsPara extends CommonPara {
 	public void setMsRelation(String msRelation) {
 		this.msRelation = msRelation;
 	}
-	public String getMsTrend() {
-		return msTrend;
+	public String getMsCriterion() {
+		return msCriterion;
 	}
-	public void setMsTrend(String msTrend) {
-		this.msTrend = msTrend;
+	public void setMsCriterion(String msCriterion) {
+		this.msCriterion = msCriterion;
 	}
 	public String getMsStatus() {
 		return msStatus;

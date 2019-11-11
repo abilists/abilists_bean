@@ -17,7 +17,7 @@ public class MSkillsModel extends BasicModel implements Serializable {
 	private String msExplain;
 	private String msRelation;
 	private String msStatus;
-	private String msTrend;
+	private String msCriterion;
 	private String msDelete;
 	private Date insertTime;
 	private Date updateTime;
@@ -70,11 +70,11 @@ public class MSkillsModel extends BasicModel implements Serializable {
 	public void setMsStatus(String msStatus) {
 		this.msStatus = msStatus;
 	}
-	public String getMsTrend() {
-		return msTrend;
+	public String getMsCriterion() {
+		return msCriterion;
 	}
-	public void setMsTrend(String msTrend) {
-		this.msTrend = msTrend;
+	public void setMsCriterion(String msCriterion) {
+		this.msCriterion = msCriterion;
 	}
 	public String getMsDelete() {
 		return msDelete;

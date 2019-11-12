@@ -2,16 +2,16 @@ package com.abilists.bean.model.admin.join;
 
 public class MTechJoinUserSkillsLevelModel {
 
-	private String mtName;
+	private String msName;
 	private int sumLevel;
 	private int totalLevel;
 	private int skillLevel;
 
-	public String getMtName() {
-		return mtName;
+	public String getMsName() {
+		return msName;
 	}
-	public void setMtName(String mtName) {
-		this.mtName = mtName;
+	public void setMsName(String msName) {
+		this.msName = msName;
 	}
 	public int getSumLevel() {
 		return sumLevel;

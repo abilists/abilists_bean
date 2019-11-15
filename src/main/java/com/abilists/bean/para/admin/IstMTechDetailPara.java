@@ -4,6 +4,8 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
+import io.utility.validate.annotation.ByteString;
+import io.utility.validate.annotation.CharacterEscape;
 
 public class IstMTechDetailPara  extends CommonPara {
 
@@ -20,7 +22,8 @@ public class IstMTechDetailPara  extends CommonPara {
 	private String mtdLevel;
 
 	@NotNull(message = "parameter.error.null.message")
-	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
+	@CharacterEscape(message = "parameter.error.escape.character.message")
+	@ByteString(charset = "UTF-8", min = 1, max = 150, message = "parameter.error.size.max150.message") // 200
 	private String mtdLevelExplain;
 
 	@NotNull(message = "parameter.error.null.message")

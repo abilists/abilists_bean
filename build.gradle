@@ -15,7 +15,16 @@ buildscript {
 	}
 }
 
-version = '0.3.5'
+// gradle install -Pmversion=0.3.5
+final String DEFAULT_MVERSION = '0.3.5'
+allprojects {
+	if (!project.hasProperty('mversion') || !mversion) {
+		ext.mversion = DEFAULT_MVERSION
+	}
+}
+
+// Set master version
+version = mversion
 
 jar {
 	manifest {

@@ -119,6 +119,7 @@ public class AbilistsModel extends CommonModel {
 	private UserCareerModel userCareer;
 	private List<UserCareerModel> userCareerList;
 	private List<UserCareerChartBean> userCareerChartBeanList;
+	private List<String> yearsList;
 
 	private List<MPluginsModel> mPluginsList;
 
@@ -544,6 +545,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserCareerChartBeanList(List<UserCareerChartBean> userCareerChartBeanList) {
 		this.userCareerChartBeanList = userCareerChartBeanList;
+	}
+
+	public List<String> getYearsList() {
+		return yearsList;
+	}
+
+	public void setYearsList(List<String> yearsList) {
+		this.yearsList = yearsList;
 	}
 
 	public List<MPluginsModel> getmPluginsList() {

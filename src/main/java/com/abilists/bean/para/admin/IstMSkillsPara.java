@@ -9,10 +9,10 @@ public class IstMSkillsPara extends CommonPara {
 
 	private String msNo;
 	@NotNull(message = "parameter.error.null.message")
-	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
+	@Size(min = 1, max = 30 ,message = "parameter.error.size.max30.message")
 	private String msSkill;
 	@NotNull(message = "parameter.error.null.message")
-	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
+	@Size(min = 1, max = 30 ,message = "parameter.error.size.max30.message")
 	private String msKind;
 	private String msName;
 	private String msVersion;

@@ -1,14 +1,15 @@
 package com.abilists.bean;
 
-import com.abilists.bean.model.works.UserPostsModel;
+import com.abilists.bean.model.posts.UserUbPostsModel;
 
-public class PostsBean extends UserPostsModel {
+// UserPostsModel
+public class PostsBean extends UserUbPostsModel {
 
 	private static final long serialVersionUID = 1L;
 
 	private String urlPath;
 
-	public PostsBean(UserPostsModel userPosts) {
+	public PostsBean(UserUbPostsModel userPosts) {
 		super(userPosts);
 	}
 

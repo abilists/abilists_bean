@@ -16,7 +16,7 @@ buildscript {
 }
 
 // gradle install -Pmversion=0.3.9
-final String DEFAULT_MVERSION = '0.3.9'
+final String DEFAULT_MVERSION = '0.4.1'
 allprojects {
 	if (!project.hasProperty('mversion') || !mversion) {
 		ext.mversion = DEFAULT_MVERSION

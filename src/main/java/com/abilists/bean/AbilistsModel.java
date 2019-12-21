@@ -5,6 +5,7 @@ import java.util.List;
 import com.abilists.bean.model.NotificationModel;
 import com.abilists.bean.model.account.UsersModel;
 import com.abilists.bean.model.admin.plugins.MPluginsModel;
+import com.abilists.bean.model.admin.works.UserMemoOptionsModel;
 import com.abilists.bean.model.join.MIndustryJoinUserCareerModel;
 import com.abilists.bean.model.join.MTechJoinUserSkillsModel;
 import com.abilists.bean.model.join.UserProjectsJoinMindustryModel;
@@ -83,6 +84,7 @@ public class AbilistsModel extends CommonModel {
 	private List<UserReportsModel> userReportsList;
 	private UserReportsModel userReports;
 
+	private List<UserMemoOptionsModel> userMemoOptionsList;
 	private List<UserMemoModel> userMemoList;
 	private List<UserMemoSumByMonthModel> userMemoSumByMonthList;
 
@@ -316,6 +318,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserMemoList(List<UserMemoModel> userMemoList) {
 		this.userMemoList = userMemoList;
+	}
+
+	public List<UserMemoOptionsModel> getUserMemoOptionsList() {
+		return userMemoOptionsList;
+	}
+
+	public void setUserMemoOptionsList(List<UserMemoOptionsModel> userMemoOptionsList) {
+		this.userMemoOptionsList = userMemoOptionsList;
 	}
 
 	public List<UserMemoSumByMonthModel> getUserMemoSumByMonthList() {

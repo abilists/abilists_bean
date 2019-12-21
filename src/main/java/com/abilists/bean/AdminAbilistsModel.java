@@ -1,6 +1,5 @@
 package com.abilists.bean;
 
-import java.util.HashMap;
 import java.util.List;
 
 import com.abilists.bean.admin.ReportsBean;
@@ -11,7 +10,6 @@ import com.abilists.bean.admin.system.DbUserBean;
 import com.abilists.bean.admin.system.SysLdapBean;
 import com.abilists.bean.admin.system.SysTomcatBean;
 import com.abilists.bean.model.admin.MSystemModel;
-import com.abilists.bean.model.admin.sum.AdminUserReportsSumModel;
 import com.abilists.bean.model.sum.AdminUsersSumByYearModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.works.UserReportsModel;
@@ -26,7 +24,7 @@ public class AdminAbilistsModel extends CommonModel {
 
 	private List<ReportsBean> reportsBeanList;
 	private List<UserReportsModel> userReportsList;
-	private HashMap<String, List<AdminUserReportsSumModel>> adminUserReportsSumMap;
+	List<ReportsBean> userReportsSumList;
 
 	// Sum Techs
 	private int techsSum;
@@ -83,12 +81,12 @@ public class AdminAbilistsModel extends CommonModel {
 		this.userReportsList = userReportsList;
 	}
 
-	public HashMap<String, List<AdminUserReportsSumModel>> getAdminUserReportsSumMap() {
-		return adminUserReportsSumMap;
+	public List<ReportsBean> getUserReportsSumList() {
+		return userReportsSumList;
 	}
 
-	public void setAdminUserReportsSumMap(HashMap<String, List<AdminUserReportsSumModel>> adminUserReportsSumMap) {
-		this.adminUserReportsSumMap = adminUserReportsSumMap;
+	public void setUserReportsSumList(List<ReportsBean> userReportsSumList) {
+		this.userReportsSumList = userReportsSumList;
 	}
 
 	public int getTechsSum() {

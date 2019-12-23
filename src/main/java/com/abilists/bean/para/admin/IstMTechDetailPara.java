@@ -22,8 +22,9 @@ public class IstMTechDetailPara  extends CommonPara {
 	private String mtdLevel;
 
 	@NotNull(message = "parameter.error.null.message")
-	@CharacterEscape(message = "parameter.error.escape.character.message")
-	@ByteString(charset = "UTF-8", min = 1, max = 150, message = "parameter.error.size.max150.message") // 200
+	// @CharacterEscape(message = "parameter.error.escape.character.message")
+	// @ByteString(charset = "UTF-8", min = 1, max = 200, message = "parameter.error.size.max200.message") // 200
+	@Size(min = 1, max = 100 ,message = "parameter.error.size.max100.message")
 	private String mtdLevelExplain;
 
 	@NotNull(message = "parameter.error.null.message")

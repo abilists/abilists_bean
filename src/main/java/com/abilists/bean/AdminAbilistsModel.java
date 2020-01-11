@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.abilists.bean.admin.ReportsBean;
 import com.abilists.bean.admin.SkillsLevelBean;
+import com.abilists.bean.admin.license.LicenseBean;
 import com.abilists.bean.admin.plugins.ApiPluginBean;
 import com.abilists.bean.admin.plugins.PartnerBean;
 import com.abilists.bean.admin.system.DbUserBean;
@@ -49,6 +50,8 @@ public class AdminAbilistsModel extends CommonModel {
 
 	private MSystemModel mSystem;
 
+	private LicenseBean licenseBean;
+	
 	public List<AdminUsersSumByYearModel> getAdminUsersSumByYearList() {
 		return adminUsersSumByYearList;
 	}
@@ -183,6 +186,14 @@ public class AdminAbilistsModel extends CommonModel {
 
 	public void setmSystem(MSystemModel mSystem) {
 		this.mSystem = mSystem;
+	}
+
+	public LicenseBean getLicenseBean() {
+		return licenseBean;
+	}
+
+	public void setLicenseBean(LicenseBean licenseBean) {
+		this.licenseBean = licenseBean;
 	}
 
 }

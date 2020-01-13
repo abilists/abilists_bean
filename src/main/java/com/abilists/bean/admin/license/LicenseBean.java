@@ -6,7 +6,26 @@ public class LicenseBean {
 
 	private String serverName;
 	private String serverId;
+	private String serverLicence;
+	private long serverUserCount;
+
 	private IstLicensePara istLicensePara;
+
+	public String getServerLicence() {
+		return serverLicence;
+	}
+
+	public void setServerLicence(String serverLicence) {
+		this.serverLicence = serverLicence;
+	}
+
+	public long getServerUserCount() {
+		return serverUserCount;
+	}
+
+	public void setServerUserCount(long serverUserCount) {
+		this.serverUserCount = serverUserCount;
+	}
 
 	public String getServerName() {
 		return serverName;

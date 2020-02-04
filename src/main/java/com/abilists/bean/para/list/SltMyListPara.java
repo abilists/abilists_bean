@@ -9,6 +9,11 @@ public class SltMyListPara extends CommonPara {
     private String umlStatus;
     private String usSkill;
 
+    // Icon in the Ascending and Descending
+    private String cssClassName;
+    // Flag in the Ascending and Descending
+    private String flagSort;
+
 	public String getUmlNo() {
 		return umlNo;
 	}
@@ -39,6 +44,22 @@ public class SltMyListPara extends CommonPara {
 
 	public void setUsSkill(String usSkill) {
 		this.usSkill = usSkill;
+	}
+
+	public String getCssClassName() {
+		return cssClassName;
+	}
+
+	public void setCssClassName(String cssClassName) {
+		this.cssClassName = cssClassName;
+	}
+
+	public String getFlagSort() {
+		return flagSort;
+	}
+
+	public void setFlagSort(String flagSort) {
+		this.flagSort = flagSort;
 	}
 
 }

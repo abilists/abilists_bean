@@ -12,8 +12,10 @@ import com.abilists.bean.model.join.UserProjectsJoinMindustryModel;
 import com.abilists.bean.model.join.UserProjectsJoinMroleModel;
 import com.abilists.bean.model.join.UserProjectsJoinTechModel;
 import com.abilists.bean.model.join.UserProjectsTechJoinTechModel;
+import com.abilists.bean.model.list.ProfileListModel;
 import com.abilists.bean.model.list.UserMyListJoinUsersModel;
 import com.abilists.bean.model.list.UserMyListModel;
+import com.abilists.bean.model.list.WorksListModel;
 import com.abilists.bean.model.master.MIndustryModel;
 import com.abilists.bean.model.master.MRoleModel;
 import com.abilists.bean.model.master.MSkillsModel;
@@ -39,6 +41,9 @@ import com.abilists.bean.para.admin.SltMRolePara;
 import com.abilists.bean.para.admin.SltMSkillsPara;
 import com.abilists.bean.para.admin.SltMTechDetailPara;
 import com.abilists.bean.para.list.SltMyListPara;
+import com.abilists.bean.para.list.SrhMyListPara;
+import com.abilists.bean.para.list.SrhProfileListPara;
+import com.abilists.bean.para.list.SrhWorksListPara;
 import com.abilists.bean.profile.UserHashtagsBean;
 import com.abilists.bean.user.UserCareerChartBean;
 import com.abilists.bean.user.UserCareerRoleSumBean;
@@ -60,6 +65,11 @@ public class AbilistsModel extends CommonModel {
 	private UserMyListModel userMyList;
 	private List<UserMyListJoinUsersModel> userMyListList;
 	private SltMyListPara sltMyListPara;
+	private SrhMyListPara srhMyListPara;
+	private List<ProfileListModel> profileListList;
+	private SrhProfileListPara srhProfileListPara;
+	private List<WorksListModel> worksListList;
+	private SrhWorksListPara srhWorksListPara;
 
 	private UserSkillsModel userSkills;
 	private List<UserSkillsModel> userSkillsList;
@@ -186,6 +196,46 @@ public class AbilistsModel extends CommonModel {
 
 	public void setSltMyListPara(SltMyListPara sltMyListPara) {
 		this.sltMyListPara = sltMyListPara;
+	}
+
+	public SrhMyListPara getSrhMyListPara() {
+		return srhMyListPara;
+	}
+
+	public void setSrhMyListPara(SrhMyListPara srhMyListPara) {
+		this.srhMyListPara = srhMyListPara;
+	}
+
+	public List<ProfileListModel> getProfileListList() {
+		return profileListList;
+	}
+
+	public void setProfileListList(List<ProfileListModel> profileListList) {
+		this.profileListList = profileListList;
+	}
+
+	public SrhProfileListPara getSrhProfileListPara() {
+		return srhProfileListPara;
+	}
+
+	public void setSrhProfileListPara(SrhProfileListPara srhProfileListPara) {
+		this.srhProfileListPara = srhProfileListPara;
+	}
+
+	public List<WorksListModel> getWorksListList() {
+		return worksListList;
+	}
+
+	public void setWorksListList(List<WorksListModel> worksListList) {
+		this.worksListList = worksListList;
+	}
+
+	public SrhWorksListPara getSrhWorksListPara() {
+		return srhWorksListPara;
+	}
+
+	public void setSrhWorksListPara(SrhWorksListPara srhWorksListPara) {
+		this.srhWorksListPara = srhWorksListPara;
 	}
 
 	public UserSkillsModel getUserSkills() {

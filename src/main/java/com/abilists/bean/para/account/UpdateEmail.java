@@ -16,7 +16,7 @@ public class UpdateEmail extends CommonPara {
 	private String newUserEmail;
 
 	@NotNull(message = "parameter.error.null.message")
-    @EscapePassword(message = "The userPwd is wrong.")
+    @EscapePassword(message = "parameter.error.escape.password.message")
     @Size(min = 1, max = 45 ,message = "userPwd must not exceed {max} characters")
 	private String userPwd;
 

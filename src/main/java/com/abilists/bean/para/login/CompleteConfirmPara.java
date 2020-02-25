@@ -13,12 +13,12 @@ public class CompleteConfirmPara extends CommonPara {
 	private String userId;
 
     @NotNull(message = "password.")
-    @EscapePassword(message = "There is not good password1.")
+    @EscapePassword(message = "parameter.error.escape.password.message")
     @Size(min = 1, max = 45 ,message = "password must not exceed {max} characters")
 	private String password;
 
     @NotNull(message = "password2.")
-    @EscapePassword(message = "There is not good password2.")
+    @EscapePassword(message = "parameter.error.escape.password.message")
     @Size(min = 1, max = 45 ,message = "password2 must not exceed {max} characters")
 	private String password2;
 

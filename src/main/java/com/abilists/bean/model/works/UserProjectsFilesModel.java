@@ -1,9 +1,12 @@
 package com.abilists.bean.model.works;
 
+import java.io.Serializable;
 import java.util.Date;
 import java.util.List;
 
-public class UserProjectsFilesModel {
+public class UserProjectsFilesModel implements Serializable {
+
+	private static final long serialVersionUID = 1L;
 
 	private long upNo;
 	private String upName;

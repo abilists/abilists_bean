@@ -9,21 +9,22 @@ public class UserSkillsModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private int usNo;
+	private long usNo;
 	private String usSkill;
 	private String usKind;
 	private int usLevel;
 	private String usDetail;
 	private String usStatus;
 	private String usDelete;
-	private int msNo;
+	private long msNo;
 	private String userId;
 	private Date insertTime;
 	private Date updateTime;
-	public int getUsNo() {
+
+	public long getUsNo() {
 		return usNo;
 	}
-	public void setUsNo(int usNo) {
+	public void setUsNo(long usNo) {
 		this.usNo = usNo;
 	}
 	public String getUsSkill() {
@@ -62,10 +63,10 @@ public class UserSkillsModel extends BasicModel implements Serializable {
 	public void setUsDelete(String usDelete) {
 		this.usDelete = usDelete;
 	}
-	public int getMsNo() {
+	public long getMsNo() {
 		return msNo;
 	}
-	public void setMsNo(int msNo) {
+	public void setMsNo(long msNo) {
 		this.msNo = msNo;
 	}
 	public String getUserId() {

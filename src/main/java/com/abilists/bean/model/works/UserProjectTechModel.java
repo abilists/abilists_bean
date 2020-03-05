@@ -9,7 +9,7 @@ public class UserProjectTechModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private int uptNo;
+	private long uptNo;
 	private String uptKind;
 	private int uptLevel;
 	private String uptDetail;
@@ -21,10 +21,10 @@ public class UserProjectTechModel extends BasicModel implements Serializable {
 	private int upNo;
 	private String userId;
 
-	public int getUptNo() {
+	public long getUptNo() {
 		return uptNo;
 	}
-	public void setUptNo(int uptNo) {
+	public void setUptNo(long uptNo) {
 		this.uptNo = uptNo;
 	}
 	public String getUptKind() {

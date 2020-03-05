@@ -9,7 +9,7 @@ public class UserMyListJoinUsersModel extends BasicModel implements Serializable
 
 	private static final long serialVersionUID = 1L;
 
-	private int umlNo;
+	private long umlNo;
 	private String umlUserId;
 	private String umlStatus;
 	private String umlDelete;
@@ -20,10 +20,10 @@ public class UserMyListJoinUsersModel extends BasicModel implements Serializable
 	private String userName;
 	private String userProfile;
 
-	public int getUmlNo() {
+	public long getUmlNo() {
 		return umlNo;
 	}
-	public void setUmlNo(int umlNo) {
+	public void setUmlNo(long umlNo) {
 		this.umlNo = umlNo;
 	}
 	public String getUmlUserId() {

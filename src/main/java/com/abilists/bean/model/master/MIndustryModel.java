@@ -9,7 +9,7 @@ public class MIndustryModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private int miNo;
+	private long miNo;
 	private String miLargeCategory;
 	private String miMiddleCategory;
 	private String miImgCode;
@@ -20,10 +20,10 @@ public class MIndustryModel extends BasicModel implements Serializable {
 	private Date insertTime;
 	private Date updateTime;
 
-	public int getMiNo() {
+	public long getMiNo() {
 		return miNo;
 	}
-	public void setMiNo(int miNo) {
+	public void setMiNo(long miNo) {
 		this.miNo = miNo;
 	}
 	public String getMiLargeCategory() {

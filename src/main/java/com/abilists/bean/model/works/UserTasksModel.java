@@ -9,8 +9,8 @@ public class UserTasksModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private int utNo;
-	private int utSort;
+	private long utNo;
+	private long utSort;
 	private String utTitle;
 	private String utTask;
 	private String utKind;
@@ -26,20 +26,20 @@ public class UserTasksModel extends BasicModel implements Serializable {
 	private Date insertTime;
 	private Date updateTime;
 
-	public int getUtNo() {
+	public long getUtNo() {
 		return utNo;
 	}
-	public void setUtNo(int utNo) {
+	public void setUtNo(long utNo) {
 		this.utNo = utNo;
+	}
+	public long getUtSort() {
+		return utSort;
+	}
+	public void setUtSort(long utSort) {
+		this.utSort = utSort;
 	}
 	public String getUtTitle() {
 		return utTitle;
-	}
-	public int getUtSort() {
-		return utSort;
-	}
-	public void setUtSort(int utSort) {
-		this.utSort = utSort;
 	}
 	public void setUtTitle(String utTitle) {
 		this.utTitle = utTitle;

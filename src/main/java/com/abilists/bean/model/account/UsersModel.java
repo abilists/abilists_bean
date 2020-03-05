@@ -9,7 +9,7 @@ public class UsersModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private int userNo;
+	private long userNo;
 	private String userId;
 	private String userAuth;
 	private String userName;
@@ -28,10 +28,10 @@ public class UsersModel extends BasicModel implements Serializable {
 	private Date insertTime;
 	private Date updateTime;
 
-	public int getUserNo() {
+	public long getUserNo() {
 		return userNo;
 	}
-	public void setUserNo(int userNo) {
+	public void setUserNo(long userNo) {
 		this.userNo = userNo;
 	}
 	public String getUserId() {

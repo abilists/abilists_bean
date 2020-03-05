@@ -9,7 +9,7 @@ public class UserReportsModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private int urNo;
+	private long urNo;
 	private Date urWorkDay;
 	private int urWorkHour;
 	private String urReport;
@@ -19,10 +19,10 @@ public class UserReportsModel extends BasicModel implements Serializable {
 	private Date insertTime;
 	private Date updateTime;
 
-	public int getUrNo() {
+	public long getUrNo() {
 		return urNo;
 	}
-	public void setUrNo(int urNo) {
+	public void setUrNo(long urNo) {
 		this.urNo = urNo;
 	}
 	public Date getUrWorkDay() {

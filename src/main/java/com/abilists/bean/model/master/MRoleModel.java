@@ -9,7 +9,7 @@ public class MRoleModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private int mrNo;
+	private long mrNo;
 	private String mrName;
 	private String mrCode;
 	private String mrExplain;
@@ -21,10 +21,10 @@ public class MRoleModel extends BasicModel implements Serializable {
 	private Date insertTime;
 	private Date updateTime;
 
-	public int getMrNo() {
+	public long getMrNo() {
 		return mrNo;
 	}
-	public void setMrNo(int mrNo) {
+	public void setMrNo(long mrNo) {
 		this.mrNo = mrNo;
 	}
 	public String getMrName() {

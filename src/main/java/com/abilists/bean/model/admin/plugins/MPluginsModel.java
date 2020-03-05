@@ -4,9 +4,11 @@ import base.bean.BasicBean;
 
 public class MPluginsModel extends BasicBean {
 
-	private int mpNo;
+	private long mpNo;
 	private String partnerId;
+	private String mpMemuMain;
 	private String mpName;
+	private String mpMenuName;
 	private String mpExplain;
 	private String mpFileName;
 	private String mpFileUrl;
@@ -18,10 +20,10 @@ public class MPluginsModel extends BasicBean {
 	private String insertTime;
 	private String updateTime;
 
-	public int getMpNo() {
+	public long getMpNo() {
 		return mpNo;
 	}
-	public void setMpNo(int mpNo) {
+	public void setMpNo(long mpNo) {
 		this.mpNo = mpNo;
 	}
 	public String getPartnerId() {
@@ -30,12 +32,23 @@ public class MPluginsModel extends BasicBean {
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
-
+	public String getMpMemuMain() {
+		return mpMemuMain;
+	}
+	public void setMpMemuMain(String mpMemuMain) {
+		this.mpMemuMain = mpMemuMain;
+	}
 	public String getMpName() {
 		return mpName;
 	}
 	public void setMpName(String mpName) {
 		this.mpName = mpName;
+	}
+	public String getMpMenuName() {
+		return mpMenuName;
+	}
+	public void setMpMenuName(String mpMenuName) {
+		this.mpMenuName = mpMenuName;
 	}
 	public String getMpExplain() {
 		return mpExplain;

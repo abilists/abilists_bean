@@ -9,8 +9,10 @@ public class UserProjectsModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private int upNo;
+	private long upNo;
+	private long upSort;
 	private String upName;
+	private String upProgress;
 	private String upExplain;
 	private String upMembers;
 	private String upCodeIndustry;
@@ -22,17 +24,29 @@ public class UserProjectsModel extends BasicModel implements Serializable {
 	private Date insertTime;
 	private Date updateTime;
 
-	public int getUpNo() {
+	public long getUpNo() {
 		return upNo;
 	}
-	public void setUpNo(int upNo) {
+	public void setUpNo(long upNo) {
 		this.upNo = upNo;
+	}
+	public long getUpSort() {
+		return upSort;
+	}
+	public void setUpSort(long upSort) {
+		this.upSort = upSort;
 	}
 	public String getUpName() {
 		return upName;
 	}
 	public void setUpName(String upName) {
 		this.upName = upName;
+	}
+	public String getUpProgress() {
+		return upProgress;
+	}
+	public void setUpProgress(String upProgress) {
+		this.upProgress = upProgress;
 	}
 	public String getUpExplain() {
 		return upExplain;

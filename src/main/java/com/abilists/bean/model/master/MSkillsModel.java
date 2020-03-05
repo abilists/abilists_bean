@@ -9,7 +9,7 @@ public class MSkillsModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private int msNo;
+	private long msNo;
 	private String msSkill;
 	private String msKind;
 	private String msName;
@@ -22,10 +22,10 @@ public class MSkillsModel extends BasicModel implements Serializable {
 	private Date insertTime;
 	private Date updateTime;
 
-	public int getMsNo() {
+	public long getMsNo() {
 		return msNo;
 	}
-	public void setMsNo(int msNo) {
+	public void setMsNo(long msNo) {
 		this.msNo = msNo;
 	}
 	public String getMsSkill() {

@@ -18,6 +18,8 @@ public class UdtProjectsPara extends CommonPara {
 	@ByteString(charset = "UTF-8", min = 1, max = 100, message = "parameter.error.size.max100.message") // 100
 	private String upName;
 
+	private String upProgress;
+
 	@NotNull(message = "parameter.error.null.message")
 	@ByteString(charset = "UTF-8", min = 1, max = 4900, message = "parameter.error.size.max4900.message") // 5000
     private String upExplain;
@@ -44,6 +46,14 @@ public class UdtProjectsPara extends CommonPara {
 
 	public void setUpName(String upName) {
 		this.upName = upName;
+	}
+
+	public String getUpProgress() {
+		return upProgress;
+	}
+
+	public void setUpProgress(String upProgress) {
+		this.upProgress = upProgress;
 	}
 
 	public String getUpExplain() {

@@ -9,8 +9,8 @@ public class MTechDetailModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private int mtdNo;
-	private int msNo;
+	private long mtdNo;
+	private long msNo;
 	private String msKind;
 	private int mtdLevel;
 	private String mtdLevelExplain;
@@ -20,16 +20,16 @@ public class MTechDetailModel extends BasicModel implements Serializable {
 	private Date insertTime;
 	private Date updateTime;
 
-	public int getMtdNo() {
+	public long getMtdNo() {
 		return mtdNo;
 	}
-	public void setMtdNo(int mtdNo) {
+	public void setMtdNo(long mtdNo) {
 		this.mtdNo = mtdNo;
 	}
-	public int getMsNo() {
+	public long getMsNo() {
 		return msNo;
 	}
-	public void setMsNo(int msNo) {
+	public void setMsNo(long msNo) {
 		this.msNo = msNo;
 	}
 	public String getMsKind() {

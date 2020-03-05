@@ -16,18 +16,19 @@ import base.bean.model.BasicModel;
 public class UsersNotiModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	private int unNo;
+
+	private long unNo;
 	private String userId;
-	private int notiNo;
+	private long notiNo;
 	private String unStatus;
 	private String unDelete;
 	private Date insertTime;
 	private Date updateTime;
 
-	public int getUnNo() {
+	public long getUnNo() {
 		return unNo;
 	}
-	public void setUnNo(int unNo) {
+	public void setUnNo(long unNo) {
 		this.unNo = unNo;
 	}
 	public String getUserId() {
@@ -36,10 +37,10 @@ public class UsersNotiModel extends BasicModel implements Serializable {
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public int getNotiNo() {
+	public long getNotiNo() {
 		return notiNo;
 	}
-	public void setNotiNo(int notiNo) {
+	public void setNotiNo(long notiNo) {
 		this.notiNo = notiNo;
 	}
 	public String getUnStatus() {
@@ -67,5 +68,4 @@ public class UsersNotiModel extends BasicModel implements Serializable {
 		this.updateTime = updateTime;
 	}
 
-	
 }

@@ -9,7 +9,7 @@ public class MLanguageModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private int mlNo;
+	private long mlNo;
 	private String mlCode;
 	private String mlName;
 	private String mlEnglishName;
@@ -18,10 +18,10 @@ public class MLanguageModel extends BasicModel implements Serializable {
 	private Date insertTime;
 	private Date updateTime;
 
-	public int getMlNo() {
+	public long getMlNo() {
 		return mlNo;
 	}
-	public void setMlNo(int mlNo) {
+	public void setMlNo(long mlNo) {
 		this.mlNo = mlNo;
 	}
 	public String getMlCode() {

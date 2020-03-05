@@ -9,7 +9,7 @@ public class UserCareerModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private int ucNo;
+	private long ucNo;
 	private String ucCompanyName;
 	private String ucPresent;
 	private String ucStartMonth;
@@ -28,10 +28,10 @@ public class UserCareerModel extends BasicModel implements Serializable {
 	private Date insertTime;
 	private Date updateTime;
 
-	public int getUcNo() {
+	public long getUcNo() {
 		return ucNo;
 	}
-	public void setUcNo(int ucNo) {
+	public void setUcNo(long ucNo) {
 		this.ucNo = ucNo;
 	}
 	public String getUcCompanyName() {

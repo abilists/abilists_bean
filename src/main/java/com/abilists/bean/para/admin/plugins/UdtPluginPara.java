@@ -16,8 +16,12 @@ public class UdtPluginPara extends CommonPara {
 	@NotNull(message = "parameter.error.null.message")
 	private String partnerId;
 
+	private String mpMemuMain;
+
 	@NotNull(message = "parameter.error.null.message")
 	private String mpName;
+
+	private String mpMenuName;
 
 	@NotNull(message = "parameter.error.null.message")
 	@ByteString(charset = "UTF-8", min = 1, max = 2900, message = "parameter.error.size.max2900.message") // 100
@@ -48,11 +52,23 @@ public class UdtPluginPara extends CommonPara {
 	public void setPartnerId(String partnerId) {
 		this.partnerId = partnerId;
 	}
+	public String getMpMemuMain() {
+		return mpMemuMain;
+	}
+	public void setMpMemuMain(String mpMemuMain) {
+		this.mpMemuMain = mpMemuMain;
+	}
 	public String getMpName() {
 		return mpName;
 	}
 	public void setMpName(String mpName) {
 		this.mpName = mpName;
+	}
+	public String getMpMenuName() {
+		return mpMenuName;
+	}
+	public void setMpMenuName(String mpMenuName) {
+		this.mpMenuName = mpMenuName;
 	}
 	public String getMpExplain() {
 		return mpExplain;

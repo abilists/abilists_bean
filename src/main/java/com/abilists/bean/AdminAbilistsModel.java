@@ -11,6 +11,7 @@ import com.abilists.bean.admin.system.DbUserBean;
 import com.abilists.bean.admin.system.SysLdapBean;
 import com.abilists.bean.admin.system.SysTomcatBean;
 import com.abilists.bean.model.admin.MSystemModel;
+import com.abilists.bean.model.admin.plugins.MPluginsModel;
 import com.abilists.bean.model.sum.AdminUsersSumByYearModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.works.UserReportsModel;
@@ -41,6 +42,7 @@ public class AdminAbilistsModel extends CommonModel {
 	// Plugins
 	private PartnerBean partnerBean;
 	private ApiPluginBean apiPluginBean;
+	private List<MPluginsModel> pluginsList;
 
 	// System
 	private DbUserBean dbUserBean;
@@ -146,6 +148,14 @@ public class AdminAbilistsModel extends CommonModel {
 
 	public void setApiPluginBean(ApiPluginBean apiPluginBean) {
 		this.apiPluginBean = apiPluginBean;
+	}
+
+	public List<MPluginsModel> getPluginsList() {
+		return pluginsList;
+	}
+
+	public void setPluginsList(List<MPluginsModel> pluginsList) {
+		this.pluginsList = pluginsList;
 	}
 
 	public DbUserBean getDbUserBean() {

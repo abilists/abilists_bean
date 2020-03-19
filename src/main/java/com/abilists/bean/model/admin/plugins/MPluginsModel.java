@@ -1,5 +1,7 @@
 package com.abilists.bean.model.admin.plugins;
 
+import java.util.Date;
+
 import base.bean.BasicBean;
 
 public class MPluginsModel extends BasicBean {
@@ -17,8 +19,8 @@ public class MPluginsModel extends BasicBean {
 	private String mpVersion;
 	private String mpFlagInstall;
 	private String mpStatus;
-	private String insertTime;
-	private String updateTime;
+	private Date insertTime;
+	private Date updateTime;
 
 	public long getMpNo() {
 		return mpNo;
@@ -98,16 +100,16 @@ public class MPluginsModel extends BasicBean {
 	public void setMpStatus(String mpStatus) {
 		this.mpStatus = mpStatus;
 	}
-	public String getInsertTime() {
+	public Date getInsertTime() {
 		return insertTime;
 	}
-	public void setInsertTime(String insertTime) {
+	public void setInsertTime(Date insertTime) {
 		this.insertTime = insertTime;
 	}
-	public String getUpdateTime() {
+	public Date getUpdateTime() {
 		return updateTime;
 	}
-	public void setUpdateTime(String updateTime) {
+	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
 	}
 

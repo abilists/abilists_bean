@@ -6,20 +6,20 @@ public class UserProjectsTechJoinTechModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private String mtName;
-	private int cntMtNo;
+	private String msName;
+	private int cntMsNo;
 
-	public String getMtName() {
-		return mtName;
+	public String getMsName() {
+		return msName;
 	}
-	public void setMtName(String mtName) {
-		this.mtName = mtName;
+	public void setMsName(String msName) {
+		this.msName = msName;
 	}
-	public int getCntMtNo() {
-		return cntMtNo;
+	public int getCntMsNo() {
+		return cntMsNo;
 	}
-	public void setCntMtNo(int cntMtNo) {
-		this.cntMtNo = cntMtNo;
+	public void setCntMsNo(int cntMsNo) {
+		this.cntMsNo = cntMsNo;
 	}
 
 }

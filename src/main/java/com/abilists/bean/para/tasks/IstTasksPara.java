@@ -13,7 +13,7 @@ public class IstTasksPara extends CommonPara {
     @ByteString(charset = "UTF-8", min = 1, max = 100, message = "parameter.error.size.max100.message") // 100
 	private String utTitle;
 
-	@CharacterEscape(message = "parameter.error.escape.character.message")
+	// @CharacterEscape(message = "parameter.error.escape.character.message")
     @ByteString(charset = "UTF-8", min = 1, max = 4900, message = "parameter.error.size.max4900.message") // 5000
 	private String utTask;
 

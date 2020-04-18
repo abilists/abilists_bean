@@ -8,6 +8,7 @@ public class PostsBean extends UserUbPostsModel {
 	private static final long serialVersionUID = 1L;
 
 	private String urlPath;
+	private String upsFileData;
 
 	public PostsBean(UserUbPostsModel userPosts) {
 		super(userPosts);
@@ -19,6 +20,14 @@ public class PostsBean extends UserUbPostsModel {
 
 	public void setUrlPath(String urlPath) {
 		this.urlPath = urlPath;
+	}
+
+	public String getUpsFileData() {
+		return upsFileData;
+	}
+
+	public void setUpsFileData(String upsFileData) {
+		this.upsFileData = upsFileData;
 	}
 
 }

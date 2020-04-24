@@ -9,6 +9,8 @@ public class PostsBean extends UserUbPostsModel {
 
 	private String urlPath;
 	private String upsFileData;
+	// For the show more button on web
+	private int cntNewLine;
 
 	public PostsBean(UserUbPostsModel userPosts) {
 		super(userPosts);
@@ -28,6 +30,14 @@ public class PostsBean extends UserUbPostsModel {
 
 	public void setUpsFileData(String upsFileData) {
 		this.upsFileData = upsFileData;
+	}
+
+	public int getCntNewLine() {
+		return cntNewLine;
+	}
+
+	public void setCntNewLine(int cntNewLine) {
+		this.cntNewLine = cntNewLine;
 	}
 
 }

@@ -18,6 +18,7 @@ public class UdtPostsPara extends CommonPara {
 	private String upsPost;
 	private String upsFileName;
 	private String upsFilePath;
+	private String upsStatus;
 
 	public String getUpsNo() {
 		return upsNo;
@@ -73,6 +74,14 @@ public class UdtPostsPara extends CommonPara {
 
 	public void setUpsFilePath(String upsFilePath) {
 		this.upsFilePath = upsFilePath;
+	}
+
+	public String getUpsStatus() {
+		return upsStatus;
+	}
+
+	public void setUpsStatus(String upsStatus) {
+		this.upsStatus = upsStatus;
 	}
 
 }

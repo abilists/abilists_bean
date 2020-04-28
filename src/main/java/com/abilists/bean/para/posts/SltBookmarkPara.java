@@ -1,15 +1,12 @@
 package com.abilists.bean.para.posts;
 
-import base.bean.para.CommonPara;
-
-
-public class SltBookmarkPara extends CommonPara {
+public class SltBookmarkPara extends SltPostsPara {
 
 	private String ubServiceName;
 	private String ubNo;
 	private String upsNo;
 	private String margin;
-	
+
 	public String getUbServiceName() {
 		return ubServiceName;
 	}

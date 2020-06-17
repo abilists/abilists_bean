@@ -1,7 +1,5 @@
 package com.abilists.bean.para.posts;
 
-import javax.validation.constraints.NotNull;
-
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.ByteString;
 
@@ -14,8 +12,7 @@ public class IstCommentsPostsPara extends CommonPara {
 	private String ucpDepth;
 	private String ucpTitle;
 
-	@NotNull(message = "upsPost")
-	@ByteString(charset = "UTF-8", min = 1, max = 1000, message = "parameter.error.size.max4900.message") // 5000
+	@ByteString(charset = "UTF-8", min = 1, max = 1000, message = "parameter.error.size.max950.message") // 1000
 	private String ucpComment;
 	private String ucpStatus;
 

@@ -44,6 +44,7 @@ import com.abilists.bean.para.list.SltMyListPara;
 import com.abilists.bean.para.list.SrhMyListPara;
 import com.abilists.bean.para.list.SrhProfileListPara;
 import com.abilists.bean.para.list.SrhWorksListPara;
+import com.abilists.bean.posts.PostsBean;
 import com.abilists.bean.profile.UserHashtagsBean;
 import com.abilists.bean.user.UserCareerChartBean;
 import com.abilists.bean.user.UserCareerRoleSumBean;

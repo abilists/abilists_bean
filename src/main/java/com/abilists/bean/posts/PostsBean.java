@@ -1,4 +1,4 @@
-package com.abilists.bean;
+package com.abilists.bean.posts;
 
 import java.util.List;
 
@@ -16,6 +16,9 @@ public class PostsBean extends UserUbPostsModel {
 	private int cntNewLine;
 
 	private List<UserCommentsTargetUserModel> userCommentsTargetUserList;
+
+	private int gapTime;
+	private String timeStatus;
 
 	public PostsBean(UserUbPostsModel userPosts) {
 		super(userPosts);
@@ -51,6 +54,22 @@ public class PostsBean extends UserUbPostsModel {
 
 	public void setUserCommentsTargetUserList(List<UserCommentsTargetUserModel> userCommentsTargetUserList) {
 		this.userCommentsTargetUserList = userCommentsTargetUserList;
+	}
+
+	public int getGapTime() {
+		return gapTime;
+	}
+
+	public void setGapTime(int gapTime) {
+		this.gapTime = gapTime;
+	}
+
+	public String getTimeStatus() {
+		return timeStatus;
+	}
+
+	public void setTimeStatus(String timeStatus) {
+		this.timeStatus = timeStatus;
 	}
 
 }

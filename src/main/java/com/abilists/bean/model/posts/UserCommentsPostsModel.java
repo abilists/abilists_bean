@@ -20,6 +20,7 @@ public class UserCommentsPostsModel extends BasicModel implements Serializable {
 	private String userId;
 	private Date insertTime;
 	private Date updateTime;
+	private int cnt;
 
 	UserCommentsPostsModel(){
 	}
@@ -37,6 +38,7 @@ public class UserCommentsPostsModel extends BasicModel implements Serializable {
 		this.insertTime = userCommentsPosts.getInsertTime();
 		this.updateTime = userCommentsPosts.getUpdateTime();
 		this.setToken(userCommentsPosts.getToken());
+		this.setCnt(userCommentsPosts.getCnt());
 	}
 
 	public long getUcpNo() {
@@ -125,6 +127,14 @@ public class UserCommentsPostsModel extends BasicModel implements Serializable {
 
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
+	}
+
+	public int getCnt() {
+		return cnt;
+	}
+
+	public void setCnt(int cnt) {
+		this.cnt = cnt;
 	}
 
 }

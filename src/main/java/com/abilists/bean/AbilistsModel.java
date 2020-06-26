@@ -44,7 +44,9 @@ import com.abilists.bean.para.list.SltMyListPara;
 import com.abilists.bean.para.list.SrhMyListPara;
 import com.abilists.bean.para.list.SrhProfileListPara;
 import com.abilists.bean.para.list.SrhWorksListPara;
+import com.abilists.bean.para.posts.SltPostsPara;
 import com.abilists.bean.posts.PostsBean;
+import com.abilists.bean.posts.UserCommentsPostsBean;
 import com.abilists.bean.profile.UserHashtagsBean;
 import com.abilists.bean.user.UserCareerChartBean;
 import com.abilists.bean.user.UserCareerRoleSumBean;
@@ -79,6 +81,9 @@ public class AbilistsModel extends CommonModel {
 
 	private List<PostsBean> postsBeanList;
 	private List<UserPostsModel> userPostsList;
+	private List<UserCommentsPostsBean> userCommentsPostsBeanList;
+	private SltPostsPara sltPostsPara; 
+	
 	private List<UserChartModel> userChartList;
 	private List<UserHashtagsBean> userHashtagsBeanList;
 	private List<UserHashtagsChartModel> userHashtagsChartList;
@@ -285,6 +290,22 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserPostsList(List<UserPostsModel> userPostsList) {
 		this.userPostsList = userPostsList;
+	}
+
+	public List<UserCommentsPostsBean> getUserCommentsPostsBeanList() {
+		return userCommentsPostsBeanList;
+	}
+
+	public void setUserCommentsPostsBeanList(List<UserCommentsPostsBean> userCommentsPostsBeanList) {
+		this.userCommentsPostsBeanList = userCommentsPostsBeanList;
+	}
+
+	public SltPostsPara getSltPostsPara() {
+		return sltPostsPara;
+	}
+
+	public void setSltPostsPara(SltPostsPara sltPostsPara) {
+		this.sltPostsPara = sltPostsPara;
 	}
 
 	public List<UserChartModel> getUserChartList() {

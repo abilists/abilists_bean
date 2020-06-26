@@ -10,6 +10,7 @@ public class UserCommentsTargetUserModel extends BasicModel implements Serializa
 
 	private long ucpNo;
 	private String userId;
+	private int cnt;
 
 	UserCommentsTargetUserModel(){
 	}
@@ -17,6 +18,7 @@ public class UserCommentsTargetUserModel extends BasicModel implements Serializa
 	public UserCommentsTargetUserModel(UserCommentsTargetUserModel userCommentsPosts){
 		this.ucpNo = userCommentsPosts.getUcpNo();
 		this.userId = userCommentsPosts.getUserId();
+		this.cnt = userCommentsPosts.getCnt();
 	}
 
 	public long getUcpNo() {
@@ -33,6 +35,14 @@ public class UserCommentsTargetUserModel extends BasicModel implements Serializa
 
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+
+	public int getCnt() {
+		return cnt;
+	}
+
+	public void setCnt(int cnt) {
+		this.cnt = cnt;
 	}
 
 }

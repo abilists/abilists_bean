@@ -8,7 +8,7 @@ public class SltPostsPara extends CommonPara {
 	private String targetUserId;
 	private String targetUpsNo;
 	private String targetUcpNo;
-	
+
 	public String getTargetUserId() {
 		return targetUserId;
 	}

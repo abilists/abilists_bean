@@ -9,6 +9,8 @@ public class SltCommentsPostsPara extends CommonPara {
 	private String ucpNo;
 	private String ucpParentNo;
 	private String ucpDepth;
+	
+	private String unoNo;
 
 	public String getUpsNo() {
 		return upsNo;
@@ -33,6 +35,13 @@ public class SltCommentsPostsPara extends CommonPara {
 	}
 	public void setUcpDepth(String ucpDepth) {
 		this.ucpDepth = ucpDepth;
+	}
+
+	public String getUnoNo() {
+		return unoNo;
+	}
+	public void setUnoNo(String unoNo) {
+		this.unoNo = unoNo;
 	}
 
 }

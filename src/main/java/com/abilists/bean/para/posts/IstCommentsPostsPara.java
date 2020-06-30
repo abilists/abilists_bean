@@ -1,5 +1,7 @@
 package com.abilists.bean.para.posts;
 
+import javax.validation.constraints.NotNull;
+
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.ByteString;
 
@@ -7,6 +9,9 @@ import io.utility.validate.annotation.ByteString;
 public class IstCommentsPostsPara extends CommonPara {
 
 	private String upsNo;
+
+	@NotNull(message = "parameter.error.null.message")
+	private String targetUserId;
 
 	private String ucpParentNo;
 	private String ucpDepth;
@@ -21,6 +26,12 @@ public class IstCommentsPostsPara extends CommonPara {
 	}
 	public void setUpsNo(String upsNo) {
 		this.upsNo = upsNo;
+	}
+	public String getTargetUserId() {
+		return targetUserId;
+	}
+	public void setTargetUserId(String targetUserId) {
+		this.targetUserId = targetUserId;
 	}
 	public String getUcpParentNo() {
 		return ucpParentNo;

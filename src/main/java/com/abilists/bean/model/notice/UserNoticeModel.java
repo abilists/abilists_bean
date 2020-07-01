@@ -12,7 +12,6 @@ public class UserNoticeModel extends BasicModel implements Serializable {
 	private long unoNo;
 	private String unoTitle;
 	private String unoUrl;
-	private String unoContents;
 	private String unoKind;
 	private String unoStatus;
 	private String unoDelete;
@@ -37,12 +36,6 @@ public class UserNoticeModel extends BasicModel implements Serializable {
 	}
 	public void setUnoUrl(String unoUrl) {
 		this.unoUrl = unoUrl;
-	}
-	public String getUnoContents() {
-		return unoContents;
-	}
-	public void setUnoContents(String unoContents) {
-		this.unoContents = unoContents;
 	}
 	public String getUnoKind() {
 		return unoKind;

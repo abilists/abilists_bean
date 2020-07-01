@@ -6,7 +6,6 @@ public class IstNoticePara extends CommonPara {
 
 	private String unoTitle;
 	private String unoUrl;
-	private String unoContents;
 	private String unoKind;
 	private String unoStatus;
 
@@ -21,12 +20,6 @@ public class IstNoticePara extends CommonPara {
 	}
 	public void setUnoUrl(String unoUrl) {
 		this.unoUrl = unoUrl;
-	}
-	public String getUnoContents() {
-		return unoContents;
-	}
-	public void setUnoContents(String unoContents) {
-		this.unoContents = unoContents;
 	}
 	public String getUnoKind() {
 		return unoKind;

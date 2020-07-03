@@ -41,7 +41,7 @@ repositories {
 
 ext {
 	logbackVersion = '1.1.3'
-	springVersion = '4.3.24.RELEASE'
+	springVersion = '4.3.27.RELEASE'
 	pagingVersion = '0.2'
 }
 

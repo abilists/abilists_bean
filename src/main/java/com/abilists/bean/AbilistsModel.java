@@ -20,6 +20,7 @@ import com.abilists.bean.model.master.MIndustryModel;
 import com.abilists.bean.model.master.MRoleModel;
 import com.abilists.bean.model.master.MSkillsModel;
 import com.abilists.bean.model.master.MTechDetailModel;
+import com.abilists.bean.model.notice.UserNoticeModel;
 import com.abilists.bean.model.posts.UserPostsModel;
 import com.abilists.bean.model.profile.UserHashtagsChartModel;
 import com.abilists.bean.model.sum.UserMemoSumByMonthModel;
@@ -124,6 +125,8 @@ public class AbilistsModel extends CommonModel {
 
 	private NotificationModel notification;
 	private List<NotificationModel> notificationList;
+	private List<UserNoticeModel> userNoticeList;
+	private UserNoticeModel userNotice;
 
 	private List<MTechJoinUserSkillsModel> mTechJoinUserSkillsList;
 	private List<UserProjectsJoinMroleModel> userProjectsJoinMroleList;
@@ -546,6 +549,22 @@ public class AbilistsModel extends CommonModel {
 
 	public void setNotificationList(List<NotificationModel> notificationList) {
 		this.notificationList = notificationList;
+	}
+
+	public List<UserNoticeModel> getUserNoticeList() {
+		return userNoticeList;
+	}
+
+	public void setUserNoticeList(List<UserNoticeModel> userNoticeList) {
+		this.userNoticeList = userNoticeList;
+	}
+
+	public UserNoticeModel getUserNotice() {
+		return userNotice;
+	}
+
+	public void setUserNotice(UserNoticeModel userNotice) {
+		this.userNotice = userNotice;
 	}
 
 	public List<MTechJoinUserSkillsModel> getmTechJoinUserSkillsList() {

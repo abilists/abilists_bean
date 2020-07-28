@@ -5,7 +5,6 @@ import javax.validation.constraints.NotNull;
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.ByteString;
 
-
 public class IstPostsPara extends CommonPara {
 
 	private String upsserviceNo;
@@ -18,6 +17,7 @@ public class IstPostsPara extends CommonPara {
 	private String upsFileName;
 	private String upsFilePath;
 	private String upsStatus;
+	private String mcpDomain;
 
 	public String getUpsserviceNo() {
 		return upsserviceNo;
@@ -73,6 +73,14 @@ public class IstPostsPara extends CommonPara {
 
 	public void setUpsStatus(String upsStatus) {
 		this.upsStatus = upsStatus;
+	}
+
+	public String getMcpDomain() {
+		return mcpDomain;
+	}
+
+	public void setMcpDomain(String mcpDomain) {
+		this.mcpDomain = mcpDomain;
 	}
 
 }

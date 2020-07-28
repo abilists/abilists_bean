@@ -24,6 +24,9 @@ public class UsersModel extends BasicModel implements Serializable {
 	private String userSummary;
 	private String userStatus;
 	private String userDelete;
+	private long mdtNo;
+	private long mcpNo;
+	private String mcpDomain;
 	private String userPwd;
 	private Date insertTime;
 	private Date updateTime;
@@ -105,6 +108,24 @@ public class UsersModel extends BasicModel implements Serializable {
 	}
 	public void setUserDelete(String userDelete) {
 		this.userDelete = userDelete;
+	}
+	public long getMdtNo() {
+		return mdtNo;
+	}
+	public void setMdtNo(long mdtNo) {
+		this.mdtNo = mdtNo;
+	}
+	public long getMcpNo() {
+		return mcpNo;
+	}
+	public void setMcpNo(long mcpNo) {
+		this.mcpNo = mcpNo;
+	}
+	public String getMcpDomain() {
+		return mcpDomain;
+	}
+	public void setMcpDomain(String mcpDomain) {
+		this.mcpDomain = mcpDomain;
 	}
 	public String getUserPwd() {
 		return userPwd;

@@ -36,6 +36,9 @@ public class IstUsersPara {
     private String userEmail;
 
     @CharacterEscape(message = "parameter.error.escape.character.message")
+    private String mcpDomain;
+    
+    @CharacterEscape(message = "parameter.error.escape.character.message")
     @ByteString(charset = "UTF-8", min = 1, max = 250, message = "parameter.error.size.max250.message") // 300
     private String userProfile;
 
@@ -93,6 +96,14 @@ public class IstUsersPara {
 
 	public void setUserEmail(String userEmail) {
 		this.userEmail = userEmail;
+	}
+
+	public String getMcpDomain() {
+		return mcpDomain;
+	}
+
+	public void setMcpDomain(String mcpDomain) {
+		this.mcpDomain = mcpDomain;
 	}
 
 	public String getUserProfile() {

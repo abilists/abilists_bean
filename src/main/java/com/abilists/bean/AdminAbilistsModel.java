@@ -12,6 +12,8 @@ import com.abilists.bean.admin.system.SysLdapBean;
 import com.abilists.bean.admin.system.SysTomcatBean;
 import com.abilists.bean.model.admin.MSystemModel;
 import com.abilists.bean.model.admin.plugins.MPluginsModel;
+import com.abilists.bean.model.admin.users.MCompanyModel;
+import com.abilists.bean.model.admin.users.MDepartmentModel;
 import com.abilists.bean.model.sum.AdminUsersSumByYearModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.works.UserReportsModel;
@@ -26,7 +28,11 @@ public class AdminAbilistsModel extends CommonModel {
 
 	private List<ReportsBean> reportsBeanList;
 	private List<UserReportsModel> userReportsList;
-	List<ReportsBean> userReportsSumList;
+	private List<ReportsBean> userReportsSumList;
+
+	private List<MCompanyModel> mCompanyList;
+	private MCompanyModel mCompany;
+	private List<MDepartmentModel> mDepartmentList;
 
 	// Sum Techs
 	private int techsSum;
@@ -92,6 +98,30 @@ public class AdminAbilistsModel extends CommonModel {
 
 	public void setUserReportsSumList(List<ReportsBean> userReportsSumList) {
 		this.userReportsSumList = userReportsSumList;
+	}
+
+	public List<MCompanyModel> getmCompanyList() {
+		return mCompanyList;
+	}
+
+	public void setmCompanyList(List<MCompanyModel> mCompanyList) {
+		this.mCompanyList = mCompanyList;
+	}
+
+	public MCompanyModel getmCompany() {
+		return mCompany;
+	}
+
+	public void setmCompany(MCompanyModel mCompany) {
+		this.mCompany = mCompany;
+	}
+
+	public List<MDepartmentModel> getmDepartmentList() {
+		return mDepartmentList;
+	}
+
+	public void setmDepartmentList(List<MDepartmentModel> mDepartmentList) {
+		this.mDepartmentList = mDepartmentList;
 	}
 
 	public int getTechsSum() {

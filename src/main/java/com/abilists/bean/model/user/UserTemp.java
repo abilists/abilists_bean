@@ -9,6 +9,7 @@ public class UserTemp implements Serializable {
 
 	private long userTempNum;
 	private String userTempEmail;
+	private String userTempDomain;
 	private String userTempToken;
 	private String userTempStatus;
 	private Date insertDate;
@@ -25,6 +26,12 @@ public class UserTemp implements Serializable {
 	}
 	public void setUserTempEmail(String userTempEmail) {
 		this.userTempEmail = userTempEmail;
+	}
+	public String getUserTempDomain() {
+		return userTempDomain;
+	}
+	public void setUserTempDomain(String userTempDomain) {
+		this.userTempDomain = userTempDomain;
 	}
 	public String getUserTempToken() {
 		return userTempToken;

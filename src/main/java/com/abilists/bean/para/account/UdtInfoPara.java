@@ -9,11 +9,11 @@ import io.utility.validate.annotation.CharacterEscape;
 public class UdtInfoPara extends CommonPara {
 
     @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(min = 1, max = 45 ,message = "userName must not exceed {max} characters")
+    @Size(min = 1, max = 45 ,message = "parameter.error.size.max50.message")
 	private String userFirstName;
 
     @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(min = 1, max = 45 ,message = "userName must not exceed {max} characters")
+    @Size(min = 1, max = 45 ,message = "parameter.error.size.max50.message")
 	private String userLastName;
 
     @CharacterEscape(message = "parameter.error.escape.character.message")

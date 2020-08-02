@@ -8,6 +8,8 @@ public class UdtUsersPara extends CommonPara {
 	private String userAuth;
 	private String userStatus;
 	private String userDelete;
+	private String mcpNo;
+	private String mcpDomain;
 
 	@ByteString(min=1, max=7900, charset="UTF-8", message="parameter.error.size.max7900.message") // 8000
 	private String userSummary;
@@ -35,6 +37,18 @@ public class UdtUsersPara extends CommonPara {
 	}
 	public void setUserSummary(String userSummary) {
 		this.userSummary = userSummary;
+	}
+	public String getMcpNo() {
+		return mcpNo;
+	}
+	public void setMcpNo(String mcpNo) {
+		this.mcpNo = mcpNo;
+	}
+	public String getMcpDomain() {
+		return mcpDomain;
+	}
+	public void setMcpDomain(String mcpDomain) {
+		this.mcpDomain = mcpDomain;
 	}
 
 }

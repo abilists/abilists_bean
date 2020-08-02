@@ -10,30 +10,32 @@ public class IstUsersPara {
 
 	@NotNull(message = "userId")
 	@CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(min = 1, max = 90 ,message = "userId must not exceed {max} characters")
+    @Size(min = 1, max = 100 ,message = "parameter.error.size.max100.message")
 	private String userId;
 
     @NotNull(message = "userPwd")
     @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(min = 1, max = 150 ,message = "userPwd must not exceed {max} characters")
+    @Size(min = 1, max = 150 ,message = "parameter.error.size.max150.message")
     private String userPwd;
 
     @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(min = 1, max = 45 ,message = "userName must not exceed {max} characters")
+    @ByteString(charset = "UTF-8", min = 1, max = 50, message = "parameter.error.size.max50.message") // 50
 	private String userFirstName;
 
     @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(min = 1, max = 45 ,message = "userName must not exceed {max} characters")
+    @ByteString(charset = "UTF-8", min = 1, max = 50, message = "parameter.error.size.max50.message") // 50
 	private String userLastName;
 
     @CharacterEscape(message = "parameter.error.escape.character.message")
-    @Size(min = 1, max = 90 ,message = "userName must not exceed {max} characters")
+    @ByteString(charset = "UTF-8", min = 1, max = 100, message = "parameter.error.size.max100.message")
 	private String userName;
 
     private String userSex;
 
     @CharacterEscape(message = "parameter.error.escape.character.message")
     private String userEmail;
+
+    private long mcpNo;
 
     @CharacterEscape(message = "parameter.error.escape.character.message")
     private String mcpDomain;
@@ -96,6 +98,14 @@ public class IstUsersPara {
 
 	public void setUserEmail(String userEmail) {
 		this.userEmail = userEmail;
+	}
+
+	public long getMcpNo() {
+		return mcpNo;
+	}
+
+	public void setMcpNo(long mcpNo) {
+		this.mcpNo = mcpNo;
 	}
 
 	public String getMcpDomain() {

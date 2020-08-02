@@ -3,6 +3,7 @@ package com.abilists.bean;
 import java.util.List;
 
 import com.abilists.bean.model.NotificationModel;
+import com.abilists.bean.model.account.UsersInfoModel;
 import com.abilists.bean.model.account.UsersModel;
 import com.abilists.bean.model.admin.plugins.MPluginsModel;
 import com.abilists.bean.model.admin.works.UserMemoOptionsModel;
@@ -62,6 +63,7 @@ public class AbilistsModel extends CommonModel {
 
 	private UserTemp userTemp;
 	private UsersModel users;
+	private UsersInfoModel usersInfo;
 	private UserOptionsModel userOptions;
 	private List<UserOptionsModel> userOptionsList;
 	private List<UsersModel> usersList;
@@ -157,6 +159,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUsers(UsersModel users) {
 		this.users = users;
+	}
+
+	public UsersInfoModel getUsersInfo() {
+		return usersInfo;
+	}
+
+	public void setUsersInfo(UsersInfoModel usersInfo) {
+		this.usersInfo = usersInfo;
 	}
 
 	public UserOptionsModel getUserOptions() {

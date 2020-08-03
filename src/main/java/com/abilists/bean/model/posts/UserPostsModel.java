@@ -20,6 +20,9 @@ public class UserPostsModel extends BasicModel implements Serializable {
 	private String upsDelete;
 	private String userId;
 	private String userName;
+	private long mcpNo;
+	private String mcpDomain;
+	private long mdtNo;
 	private Date insertTime;
 	private Date updateTime;
 
@@ -38,9 +41,11 @@ public class UserPostsModel extends BasicModel implements Serializable {
 		this.upsDelete = userPosts.getUpsDelete();
 		this.userId = userPosts.getUserId();
 		this.userName = userPosts.getUserName();
+		this.mcpNo = userPosts.getMcpNo();
+		this.mcpDomain = userPosts.getMcpDomain();
+		this.mdtNo = userPosts.getMdtNo();
 		this.insertTime = userPosts.getInsertTime();
 		this.updateTime = userPosts.getUpdateTime();
-
 		this.setUserImgAvatar(userPosts.getUserImgAvatar());
 		this.setToken(userPosts.getToken());
 	}
@@ -111,6 +116,30 @@ public class UserPostsModel extends BasicModel implements Serializable {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
+	public long getMcpNo() {
+		return mcpNo;
+	}
+
+	public void setMcpNo(long mcpNo) {
+		this.mcpNo = mcpNo;
+	}
+
+	public String getMcpDomain() {
+		return mcpDomain;
+	}
+
+	public void setMcpDomain(String mcpDomain) {
+		this.mcpDomain = mcpDomain;
+	}
+
+	public long getMdtNo() {
+		return mdtNo;
+	}
+
+	public void setMdtNo(long mdtNo) {
+		this.mdtNo = mdtNo;
+	}
+
 	public Date getInsertTime() {
 		return insertTime;
 	}

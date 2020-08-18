@@ -1,103 +1,124 @@
-package com.abilists.bean.model.admin;
+package com.abilists.bean.para.admin.users;
 
-import java.io.Serializable;
-import java.util.Date;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
-public class AdminModel implements Serializable {
+import io.utility.validate.annotation.CharacterEscape;
 
-	private static final long serialVersionUID = 1L;
+public class UdtAdminPara extends IstMCompanyPara {
 
-	private int adminNo;
+	@NotNull(message = "parameter.error.null.message")
+	@Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
+	private String adminNo;
+
+	@NotNull(message = "parameter.error.null.message")
+	@CharacterEscape(message = "parameter.error.escape.character.message")
+    @Size(min = 1, max = 100 ,message = "parameter.error.size.max100.message")
 	private String adminId;
+
 	private String adminName;
+
+    @NotNull(message = "parameter.error.null.message")
+    @CharacterEscape(message = "parameter.error.escape.character.message")
+    @Size(min = 1, max = 150 ,message = "parameter.error.size.max150.message")
 	private String adminPwd;
 	private String adminAuth;
 	private String adminStatus;
 	private String adminDelete;
 	private String userId;
-	private long mcpNo;
+	private String mcpNo;
+	
+	@CharacterEscape(message = "parameter.error.escape.character.message")
 	private String mcpDomain;
-	private long mdtNo;
-	private Date insertTime;
-	private Date updateTime;
 
-	public int getAdminNo() {
+	private String mdtNo;
+
+	public String getAdminNo() {
 		return adminNo;
 	}
-	public void setAdminNo(int adminNo) {
+
+	public void setAdminNo(String adminNo) {
 		this.adminNo = adminNo;
 	}
+
 	public String getAdminId() {
 		return adminId;
 	}
+
 	public void setAdminId(String adminId) {
 		this.adminId = adminId;
 	}
+
 	public String getAdminName() {
 		return adminName;
 	}
+
 	public void setAdminName(String adminName) {
 		this.adminName = adminName;
 	}
+
 	public String getAdminPwd() {
 		return adminPwd;
 	}
+
 	public void setAdminPwd(String adminPwd) {
 		this.adminPwd = adminPwd;
 	}
+
 	public String getAdminAuth() {
 		return adminAuth;
 	}
+
 	public void setAdminAuth(String adminAuth) {
 		this.adminAuth = adminAuth;
 	}
+
 	public String getAdminStatus() {
 		return adminStatus;
 	}
+
 	public void setAdminStatus(String adminStatus) {
 		this.adminStatus = adminStatus;
 	}
+
 	public String getAdminDelete() {
 		return adminDelete;
 	}
+
 	public void setAdminDelete(String adminDelete) {
 		this.adminDelete = adminDelete;
 	}
+
 	public String getUserId() {
 		return userId;
 	}
+
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public long getMcpNo() {
+
+	public String getMcpNo() {
 		return mcpNo;
 	}
-	public void setMcpNo(long mcpNo) {
+
+	public void setMcpNo(String mcpNo) {
 		this.mcpNo = mcpNo;
 	}
+
 	public String getMcpDomain() {
 		return mcpDomain;
 	}
+
 	public void setMcpDomain(String mcpDomain) {
 		this.mcpDomain = mcpDomain;
 	}
-	public long getMdtNo() {
+
+	public String getMdtNo() {
 		return mdtNo;
 	}
-	public void setMdtNo(long mdtNo) {
+
+	public void setMdtNo(String mdtNo) {
 		this.mdtNo = mdtNo;
-	}
-	public Date getInsertTime() {
-		return insertTime;
-	}
-	public void setInsertTime(Date insertTime) {
-		this.insertTime = insertTime;
-	}
-	public Date getUpdateTime() {
-		return updateTime;
-	}
-	public void setUpdateTime(Date updateTime) {
-		this.updateTime = updateTime;
 	}
 
 }

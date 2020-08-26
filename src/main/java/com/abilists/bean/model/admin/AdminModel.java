@@ -3,7 +3,9 @@ package com.abilists.bean.model.admin;
 import java.io.Serializable;
 import java.util.Date;
 
-public class AdminModel implements Serializable {
+import base.bean.model.BasicModel;
+
+public class AdminModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -11,7 +13,7 @@ public class AdminModel implements Serializable {
 	private String adminId;
 	private String adminName;
 	private String adminPwd;
-	private String adminAuth;
+	private int adminAuth;
 	private String adminStatus;
 	private String adminDelete;
 	private String userId;
@@ -45,10 +47,10 @@ public class AdminModel implements Serializable {
 	public void setAdminPwd(String adminPwd) {
 		this.adminPwd = adminPwd;
 	}
-	public String getAdminAuth() {
+	public int getAdminAuth() {
 		return adminAuth;
 	}
-	public void setAdminAuth(String adminAuth) {
+	public void setAdminAuth(int adminAuth) {
 		this.adminAuth = adminAuth;
 	}
 	public String getAdminStatus() {

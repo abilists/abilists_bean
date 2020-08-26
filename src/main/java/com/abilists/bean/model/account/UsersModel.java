@@ -11,7 +11,7 @@ public class UsersModel extends BasicModel implements Serializable {
 
 	private long userNo;
 	private String userId;
-	private String userAuth;
+	private int userAuth;
 	private String userName;
 	private String userLastName;
 	private String userFirstName;
@@ -43,10 +43,10 @@ public class UsersModel extends BasicModel implements Serializable {
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUserAuth() {
+	public int getUserAuth() {
 		return userAuth;
 	}
-	public void setUserAuth(String userAuth) {
+	public void setUserAuth(int userAuth) {
 		this.userAuth = userAuth;
 	}
 	public String getUserName() {

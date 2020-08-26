@@ -10,6 +10,7 @@ import com.abilists.bean.admin.plugins.PartnerBean;
 import com.abilists.bean.admin.system.DbUserBean;
 import com.abilists.bean.admin.system.SysLdapBean;
 import com.abilists.bean.admin.system.SysTomcatBean;
+import com.abilists.bean.model.admin.AdminModel;
 import com.abilists.bean.model.admin.MSystemModel;
 import com.abilists.bean.model.admin.plugins.MPluginsModel;
 import com.abilists.bean.model.admin.users.MCompanyModel;
@@ -22,6 +23,9 @@ import base.bean.model.CommonModel;
 import io.utility.email.SmtpBean;
 
 public class AdminAbilistsModel extends CommonModel {
+
+	private AdminModel admin;
+	private List<AdminModel> adminList;
 
 	private List<AdminUsersSumByYearModel> adminUsersSumByYearList;
 	private List<UserProjectsSumByYearModel> userProjectsSumByYearList;
@@ -59,7 +63,23 @@ public class AdminAbilistsModel extends CommonModel {
 	private MSystemModel mSystem;
 
 	private LicenseBean licenseBean;
-	
+
+	public AdminModel getAdmin() {
+		return admin;
+	}
+
+	public void setAdmin(AdminModel admin) {
+		this.admin = admin;
+	}
+
+	public List<AdminModel> getAdminList() {
+		return adminList;
+	}
+
+	public void setAdminList(List<AdminModel> adminList) {
+		this.adminList = adminList;
+	}
+
 	public List<AdminUsersSumByYearModel> getAdminUsersSumByYearList() {
 		return adminUsersSumByYearList;
 	}

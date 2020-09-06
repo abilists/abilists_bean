@@ -12,7 +12,7 @@ public class UserCommentsTargetUserModel extends BasicModel implements Serializa
 	private String userId;
 	private int cnt;
 
-	UserCommentsTargetUserModel(){
+	public UserCommentsTargetUserModel(){
 	}
 
 	public UserCommentsTargetUserModel(UserCommentsTargetUserModel userCommentsPosts){

@@ -10,7 +10,7 @@ import io.utility.validate.annotation.UploadFiles;
 
 public class IstPluginPara extends CommonPara {
 
-	private String partnerId;
+	private String serverName;
 
 	@NotNull(message = "parameter.error.null.message")
 	private String mpName;
@@ -34,11 +34,11 @@ public class IstPluginPara extends CommonPara {
 	@NotNull(message = "parameter.error.null.message")
 	private String mpStatus;
 
-	public String getPartnerId() {
-		return partnerId;
+	public String getServerName() {
+		return serverName;
 	}
-	public void setPartnerId(String partnerId) {
-		this.partnerId = partnerId;
+	public void setServerName(String serverName) {
+		this.serverName = serverName;
 	}
 	public String getMpName() {
 		return mpName;

@@ -1,83 +1,85 @@
 package com.abilists.bean.para.admin.partner;
 
+import javax.validation.constraints.NotNull;
+
 import org.hibernate.validator.constraints.Email;
 
 import base.bean.para.CommonPara;
+import io.utility.validate.annotation.EscapeString;
 
 public class UdtPartnerPara extends CommonPara {
 
+	@NotNull(message = "parameter.error.null.message")
+	@EscapeString(message = "parameter.error.escape.character.message")
+	private String serverName; // Only allow to input Alphabet and number
+
 	private String partnerNo;
-
-	private String partnerId;
-
-	private String partnerPwd;
-
-	private String partnerAuth;
-
-	private String partnerFirstName;
-
-	private String partnerLastName;
 
 	private String partnerName;
 
+	private String partnerTelephone;
+
 	@Email(message = "login.signup.email.text1")
 	private String partnerEmail;
+	
+	private String partnerCompany;
 
-	private String companyNo;
+	private String partnerDepartment;
+
+	public String getServerName() {
+		return serverName;
+	}
+
+	public void setServerName(String serverName) {
+		this.serverName = serverName;
+	}
 
 	public String getPartnerNo() {
 		return partnerNo;
 	}
+
 	public void setPartnerNo(String partnerNo) {
 		this.partnerNo = partnerNo;
 	}
-	public String getPartnerId() {
-		return partnerId;
-	}
-	public void setPartnerId(String partnerId) {
-		this.partnerId = partnerId;
-	}
-	public String getPartnerPwd() {
-		return partnerPwd;
-	}
-	public void setPartnerPwd(String partnerPwd) {
-		this.partnerPwd = partnerPwd;
-	}
-	public String getPartnerAuth() {
-		return partnerAuth;
-	}
-	public void setPartnerAuth(String partnerAuth) {
-		this.partnerAuth = partnerAuth;
-	}
-	public String getPartnerFirstName() {
-		return partnerFirstName;
-	}
-	public void setPartnerFirstName(String partnerFirstName) {
-		this.partnerFirstName = partnerFirstName;
-	}
-	public String getPartnerLastName() {
-		return partnerLastName;
-	}
-	public void setPartnerLastName(String partnerLastName) {
-		this.partnerLastName = partnerLastName;
-	}
+
 	public String getPartnerName() {
 		return partnerName;
 	}
+
 	public void setPartnerName(String partnerName) {
 		this.partnerName = partnerName;
 	}
+
+	public String getPartnerTelephone() {
+		return partnerTelephone;
+	}
+
+	public void setPartnerTelephone(String partnerTelephone) {
+		this.partnerTelephone = partnerTelephone;
+	}
+
 	public String getPartnerEmail() {
 		return partnerEmail;
 	}
+
 	public void setPartnerEmail(String partnerEmail) {
 		this.partnerEmail = partnerEmail;
 	}
-	public String getCompanyNo() {
-		return companyNo;
+
+	public String getPartnerCompany() {
+		return partnerCompany;
 	}
-	public void setCompanyNo(String companyNo) {
-		this.companyNo = companyNo;
+
+	public void setPartnerCompany(String partnerCompany) {
+		this.partnerCompany = partnerCompany;
+	}
+
+	public String getPartnerDepartment() {
+		return partnerDepartment;
+	}
+
+	public void setPartnerDepartment(String partnerDepartment) {
+		this.partnerDepartment = partnerDepartment;
 	}
 
 }

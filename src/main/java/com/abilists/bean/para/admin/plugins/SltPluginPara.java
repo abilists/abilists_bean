@@ -5,7 +5,7 @@ import base.bean.para.CommonPara;
 public class SltPluginPara extends CommonPara {
 
 	private String mpNo;
-	private String partnerId;
+	private String serverName;
 	private String mpName;
 	private String mpExplain;
 	private String mpFileName;
@@ -21,12 +21,12 @@ public class SltPluginPara extends CommonPara {
 		this.mpNo = mpNo;
 	}
 
-	public String getPartnerId() {
-		return partnerId;
+	public String getServerName() {
+		return serverName;
 	}
 
-	public void setPartnerId(String partnerId) {
-		this.partnerId = partnerId;
+	public void setServerName(String serverName) {
+		this.serverName = serverName;
 	}
 
 	public String getMpName() {

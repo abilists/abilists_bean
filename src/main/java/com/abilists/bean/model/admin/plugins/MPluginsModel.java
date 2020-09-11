@@ -7,7 +7,7 @@ import base.bean.BasicBean;
 public class MPluginsModel extends BasicBean {
 
 	private long mpNo;
-	private String partnerId;
+	private String serverName;
 	private String mpMemuMain;
 	private String mpName;
 	private String mpMenuName;
@@ -28,11 +28,11 @@ public class MPluginsModel extends BasicBean {
 	public void setMpNo(long mpNo) {
 		this.mpNo = mpNo;
 	}
-	public String getPartnerId() {
-		return partnerId;
+	public String getServerName() {
+		return serverName;
 	}
-	public void setPartnerId(String partnerId) {
-		this.partnerId = partnerId;
+	public void setServerName(String serverName) {
+		this.serverName = serverName;
 	}
 	public String getMpMemuMain() {
 		return mpMemuMain;

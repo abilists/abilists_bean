@@ -2,76 +2,84 @@ package com.abilists.bean.para.admin.partner;
 
 import javax.validation.constraints.NotNull;
 
+import org.hibernate.validator.constraints.Email;
+
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.EscapeString;
 
 public class IstPartnerPara extends CommonPara {
 
 	@NotNull(message = "parameter.error.null.message")
-	@EscapeString(message = "There is a special character.")
-	private String partnerId; // Only allow to input Alphabet and number
+	@EscapeString(message = "parameter.error.escape.character.message")
+	private String serverName; // Only allow to input Alphabet and number
 
-	private String partnerPwd;
-
-	private String partnerAuth;
-
-	private String partnerFirstName;
-
-	private String partnerLastName;
+	private String partnerNo;
 
 	private String partnerName;
 
+	private String partnerTelephone;
+
+	@Email(message = "login.signup.email.text1")
 	private String partnerEmail;
+	
+	private String partnerCompany;
 
-	private String companyNo;
+	private String partnerDepartment;
 
-	public String getPartnerId() {
-		return partnerId;
+	public String getServerName() {
+		return serverName;
 	}
-	public void setPartnerId(String partnerId) {
-		this.partnerId = partnerId;
+
+	public void setServerName(String serverName) {
+		this.serverName = serverName;
 	}
-	public String getPartnerPwd() {
-		return partnerPwd;
+
+	public String getPartnerNo() {
+		return partnerNo;
 	}
-	public void setPartnerPwd(String partnerPwd) {
-		this.partnerPwd = partnerPwd;
+
+	public void setPartnerNo(String partnerNo) {
+		this.partnerNo = partnerNo;
 	}
-	public String getPartnerAuth() {
-		return partnerAuth;
-	}
-	public void setPartnerAuth(String partnerAuth) {
-		this.partnerAuth = partnerAuth;
-	}
-	public String getPartnerFirstName() {
-		return partnerFirstName;
-	}
-	public void setPartnerFirstName(String partnerFirstName) {
-		this.partnerFirstName = partnerFirstName;
-	}
-	public String getPartnerLastName() {
-		return partnerLastName;
-	}
-	public void setPartnerLastName(String partnerLastName) {
-		this.partnerLastName = partnerLastName;
-	}
+
 	public String getPartnerName() {
 		return partnerName;
 	}
+
 	public void setPartnerName(String partnerName) {
 		this.partnerName = partnerName;
 	}
+
+	public String getPartnerTelephone() {
+		return partnerTelephone;
+	}
+
+	public void setPartnerTelephone(String partnerTelephone) {
+		this.partnerTelephone = partnerTelephone;
+	}
+
 	public String getPartnerEmail() {
 		return partnerEmail;
 	}
+
 	public void setPartnerEmail(String partnerEmail) {
 		this.partnerEmail = partnerEmail;
 	}
-	public String getCompanyNo() {
-		return companyNo;
+
+	public String getPartnerCompany() {
+		return partnerCompany;
 	}
-	public void setCompanyNo(String companyNo) {
-		this.companyNo = companyNo;
+
+	public void setPartnerCompany(String partnerCompany) {
+		this.partnerCompany = partnerCompany;
+	}
+
+	public String getPartnerDepartment() {
+		return partnerDepartment;
+	}
+
+	public void setPartnerDepartment(String partnerDepartment) {
+		this.partnerDepartment = partnerDepartment;
 	}
 
 }

@@ -4,18 +4,18 @@ import java.util.List;
 
 public class ApiPluginBean {
 
-	private String partnerId;
+	private String serverName;
 	private PartnerBean partnerBean;
 	private List<PluginBean> pluginBeanList;
 
 	private MessageBean messageBean;
 
-	public String getPartnerId() {
-		return partnerId;
+	public String getServerName() {
+		return serverName;
 	}
 
-	public void setPartnerId(String partnerId) {
-		this.partnerId = partnerId;
+	public void setServerName(String serverName) {
+		this.serverName = serverName;
 	}
 
 	public PartnerBean getPartnerBean() {

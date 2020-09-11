@@ -2,22 +2,15 @@ package com.abilists.bean.admin.plugins;
 
 public class ApiBean {
 
-	private String partnerId;
-	private String partnerIdEncoded;
+	private String serverName;
 	private String mpImgName;
 	private MessageBean messageBean;
 
-	public String getPartnerId() {
-		return partnerId;
+	public String getServerName() {
+		return serverName;
 	}
-	public void setPartnerId(String partnerId) {
-		this.partnerId = partnerId;
-	}
-	public String getPartnerIdEncoded() {
-		return partnerIdEncoded;
-	}
-	public void setPartnerIdEncoded(String partnerIdEncoded) {
-		this.partnerIdEncoded = partnerIdEncoded;
+	public void setServerName(String serverName) {
+		this.serverName = serverName;
 	}
 	public String getMpImgName() {
 		return mpImgName;

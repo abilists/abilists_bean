@@ -5,7 +5,7 @@ import base.bean.BasicBean;
 public class PluginBean extends BasicBean {
 
 	public static final String NO = "mpNo";
-	public static final String PARTNER_ID = "partnerId";
+	public static final String SERVER_NAME = "serverName";
 	public static final String NAME = "mpName";
 	public static final String EXPLAIN = "mpExplain";
 	public static final String FILE_NAME = "mpFileName";
@@ -19,7 +19,7 @@ public class PluginBean extends BasicBean {
 
 	// Master Plugin
 	private int mpNo;
-	private String partnerId;
+	private String serverName;
 	private String mpName;
 	private String mpExplain;
 	private String mpFileName;
@@ -38,13 +38,12 @@ public class PluginBean extends BasicBean {
 	public void setMpNo(int mpNo) {
 		this.mpNo = mpNo;
 	}
-	public String getPartnerId() {
-		return partnerId;
+	public String getServerName() {
+		return serverName;
 	}
-	public void setPartnerId(String partnerId) {
-		this.partnerId = partnerId;
+	public void setServerName(String serverName) {
+		this.serverName = serverName;
 	}
-
 	public String getMpName() {
 		return mpName;
 	}

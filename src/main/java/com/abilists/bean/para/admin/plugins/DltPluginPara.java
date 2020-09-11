@@ -10,7 +10,7 @@ public class DltPluginPara extends CommonPara {
 	private String mpNo;
 
 	@NotNull(message = "parameter.error.null.message")
-	private String partnerId;
+	private String serverName;
 
 	private String mpName;
 
@@ -20,11 +20,11 @@ public class DltPluginPara extends CommonPara {
 	public void setMpNo(String mpNo) {
 		this.mpNo = mpNo;
 	}
-	public String getPartnerId() {
-		return partnerId;
+	public String getServerName() {
+		return serverName;
 	}
-	public void setPartnerId(String partnerId) {
-		this.partnerId = partnerId;
+	public void setServerName(String serverName) {
+		this.serverName = serverName;
 	}
 	public String getMpName() {
 		return mpName;

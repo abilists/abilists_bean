@@ -8,7 +8,7 @@ import io.utility.validate.annotation.EscapeString;
 public class UserIdPara {
 
     @NotNull(message = "userId")
-    @EscapeString(message = "There is a special character.")
+    @EscapeString(message = "parameter.error.escape.character.message")
     @Size(min = 3, max = 20 ,message = "userId must not exceed {max} characters")
 	private String userId;
     private String result;

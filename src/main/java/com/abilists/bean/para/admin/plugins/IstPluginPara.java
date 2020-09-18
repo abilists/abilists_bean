@@ -34,6 +34,9 @@ public class IstPluginPara extends CommonPara {
 	@NotNull(message = "parameter.error.null.message")
 	private String mpStatus;
 
+	@NotNull(message = "parameter.error.null.message")
+	private String mpTarget;
+
 	public String getServerName() {
 		return serverName;
 	}
@@ -88,6 +91,11 @@ public class IstPluginPara extends CommonPara {
 	public void setMpStatus(String mpStatus) {
 		this.mpStatus = mpStatus;
 	}
-	
+	public String getMpTarget() {
+		return mpTarget;
+	}
+	public void setMpTarget(String mpTarget) {
+		this.mpTarget = mpTarget;
+	}
 
 }

@@ -27,6 +27,8 @@ public class IstPluginsPara extends CommonPara {
 
 	private String mpStatus;
 
+	private String mpTarget;
+
 	public String getMpName() {
 		return mpName;
 	}
@@ -89,6 +91,14 @@ public class IstPluginsPara extends CommonPara {
 
 	public void setMpStatus(String mpStatus) {
 		this.mpStatus = mpStatus;
+	}
+
+	public String getMpTarget() {
+		return mpTarget;
+	}
+
+	public void setMpTarget(String mpTarget) {
+		this.mpTarget = mpTarget;
 	}
 
 }

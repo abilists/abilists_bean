@@ -6,6 +6,7 @@ import base.bean.BasicBean;
 
 public class MPluginsModel extends BasicBean {
 
+	private long no;
 	private long mpNo;
 	private String serverName;
 	private String mpMemuMain;
@@ -22,6 +23,12 @@ public class MPluginsModel extends BasicBean {
 	private Date insertTime;
 	private Date updateTime;
 
+	public long getNo() {
+		return no;
+	}
+	public void setNo(long no) {
+		this.no = no;
+	}
 	public long getMpNo() {
 		return mpNo;
 	}

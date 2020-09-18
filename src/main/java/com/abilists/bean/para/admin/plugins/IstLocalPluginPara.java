@@ -2,12 +2,16 @@ package com.abilists.bean.para.admin.plugins;
 
 import javax.validation.constraints.NotNull;
 
-import base.bean.para.CommonPara;
+import org.springframework.web.multipart.MultipartFile;
 
-public class UdtLocalPluginPara extends CommonPara {
+import base.bean.para.CommonPara;
+import io.utility.validate.annotation.UploadFiles;
+
+public class IstLocalPluginPara extends CommonPara {
+
 
 	@NotNull(message = "parameter.error.null.message")
-	private String no;
+	private String serverName;
 
 	private String mpNo;
 
@@ -16,12 +20,23 @@ public class UdtLocalPluginPara extends CommonPara {
 
 	private String mpMenuName;
 
-	private String mpFileName;
+	@UploadFiles(message = "parameter.error.null.message")
+	private MultipartFile mpFileName;
 	
+	private String mpImgName;
+
+	private String mpVersion;
+
 	private String mpStatus;
 	
 	private String mpExplain;
 
+	public String getServerName() {
+		return serverName;
+	}
+	public void setServerName(String serverName) {
+		this.serverName = serverName;
+	}
 	public String getMpNo() {
 		return mpNo;
 	}
@@ -40,11 +55,23 @@ public class UdtLocalPluginPara extends CommonPara {
 	public void setMpMenuName(String mpMenuName) {
 		this.mpMenuName = mpMenuName;
 	}
-	public String getMpFileName() {
+	public MultipartFile getMpFileName() {
 		return mpFileName;
 	}
-	public void setMpFileName(String mpFileName) {
+	public void setMpFileName(MultipartFile mpFileName) {
 		this.mpFileName = mpFileName;
+	}
+	public String getMpImgName() {
+		return mpImgName;
+	}
+	public void setMpImgName(String mpImgName) {
+		this.mpImgName = mpImgName;
+	}
+	public String getMpVersion() {
+		return mpVersion;
+	}
+	public void setMpVersion(String mpVersion) {
+		this.mpVersion = mpVersion;
 	}
 	public String getMpStatus() {
 		return mpStatus;

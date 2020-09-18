@@ -2,10 +2,14 @@ package com.abilists.bean.para.admin.plugins;
 
 import javax.validation.constraints.NotNull;
 
+import org.springframework.web.multipart.MultipartFile;
+
 import base.bean.para.CommonPara;
 
 public class PluginPara extends CommonPara {
 
+	private String no;
+	
 	@NotNull(message = "parameter.error.null.message")
 	private String mpNo;
 	
@@ -22,8 +26,20 @@ public class PluginPara extends CommonPara {
 	
 	private String mpExplain;
 
+	private String mpImgName;
+	
+	private String mpStatus;
+
 	private String forceOption;
 
+	private MultipartFile mpFile;
+
+	public String getNo() {
+		return no;
+	}
+	public void setNo(String no) {
+		this.no = no;
+	}
 	public String getMpNo() {
 		return mpNo;
 	}
@@ -66,11 +82,29 @@ public class PluginPara extends CommonPara {
 	public void setMpExplain(String mpExplain) {
 		this.mpExplain = mpExplain;
 	}
+	public String getMpImgName() {
+		return mpImgName;
+	}
+	public void setMpImgName(String mpImgName) {
+		this.mpImgName = mpImgName;
+	}
+	public String getMpStatus() {
+		return mpStatus;
+	}
+	public void setMpStatus(String mpStatus) {
+		this.mpStatus = mpStatus;
+	}
 	public String getForceOption() {
 		return forceOption;
 	}
 	public void setForceOption(String forceOption) {
 		this.forceOption = forceOption;
+	}
+	public MultipartFile getMpFile() {
+		return mpFile;
+	}
+	public void setMpFile(MultipartFile mpFile) {
+		this.mpFile = mpFile;
 	}
 
 }

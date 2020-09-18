@@ -6,6 +6,8 @@ import base.bean.para.CommonPara;
 
 public class DltPluginPara extends CommonPara {
 
+	private String no;
+	
 	@NotNull(message = "parameter.error.null.message")
 	private String mpNo;
 
@@ -14,6 +16,12 @@ public class DltPluginPara extends CommonPara {
 
 	private String mpName;
 
+	public String getNo() {
+		return no;
+	}
+	public void setNo(String no) {
+		this.no = no;
+	}
 	public String getMpNo() {
 		return mpNo;
 	}

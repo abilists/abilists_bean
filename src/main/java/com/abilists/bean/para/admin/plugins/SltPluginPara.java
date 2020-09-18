@@ -4,6 +4,7 @@ import base.bean.para.CommonPara;
 
 public class SltPluginPara extends CommonPara {
 
+	private String no;
 	private String mpNo;
 	private String serverName;
 	private String mpName;
@@ -12,6 +13,14 @@ public class SltPluginPara extends CommonPara {
 	private String mpImgName;
 	private String mpVersion;
 	private String mpStatus;
+
+	public String getNo() {
+		return no;
+	}
+
+	public void setNo(String no) {
+		this.no = no;
+	}
 
 	public String getMpNo() {
 		return mpNo;

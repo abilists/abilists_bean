@@ -29,8 +29,6 @@ public class UdtPluginsPara extends CommonPara {
 
 	private String mpStatus;
 
-	private String mpTarget;
-
 	public String getMpNo() {
 		return mpNo;
 	}
@@ -101,14 +99,6 @@ public class UdtPluginsPara extends CommonPara {
 
 	public void setMpStatus(String mpStatus) {
 		this.mpStatus = mpStatus;
-	}
-
-	public String getMpTarget() {
-		return mpTarget;
-	}
-
-	public void setMpTarget(String mpTarget) {
-		this.mpTarget = mpTarget;
 	}
 
 }

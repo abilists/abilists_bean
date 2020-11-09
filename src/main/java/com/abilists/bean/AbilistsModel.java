@@ -49,6 +49,7 @@ import com.abilists.bean.para.list.SrhWorksListPara;
 import com.abilists.bean.para.posts.SltPostsPara;
 import com.abilists.bean.posts.PostsBean;
 import com.abilists.bean.posts.UserCommentsPostsBean;
+import com.abilists.bean.posts.UserCommentsPostsNoticeBean;
 import com.abilists.bean.profile.UserHashtagsBean;
 import com.abilists.bean.user.UserCareerChartBean;
 import com.abilists.bean.user.UserCareerRoleSumBean;
@@ -85,6 +86,7 @@ public class AbilistsModel extends CommonModel {
 	private List<PostsBean> postsBeanList;
 	private List<UserPostsModel> userPostsList;
 	private List<UserCommentsPostsBean> userCommentsPostsBeanList;
+	private List<UserCommentsPostsNoticeBean> userCommentsPostsNoticeBeanList;
 	private SltPostsPara sltPostsPara; 
 	
 	private List<UserChartModel> userChartList;
@@ -311,6 +313,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setUserCommentsPostsBeanList(List<UserCommentsPostsBean> userCommentsPostsBeanList) {
 		this.userCommentsPostsBeanList = userCommentsPostsBeanList;
+	}
+
+	public List<UserCommentsPostsNoticeBean> getUserCommentsPostsNoticeBeanList() {
+		return userCommentsPostsNoticeBeanList;
+	}
+
+	public void setUserCommentsPostsNoticeBeanList(List<UserCommentsPostsNoticeBean> userCommentsPostsNoticeBeanList) {
+		this.userCommentsPostsNoticeBeanList = userCommentsPostsNoticeBeanList;
 	}
 
 	public SltPostsPara getSltPostsPara() {

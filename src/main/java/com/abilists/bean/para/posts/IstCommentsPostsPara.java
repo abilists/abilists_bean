@@ -15,6 +15,7 @@ public class IstCommentsPostsPara extends CommonPara {
 
 	private String ucpParentNo;
 	private String ucpDepth;
+	private String ucpOrder;
 	private String ucpTitle;
 
 	@ByteString(charset = "UTF-8", min = 1, max = 1000, message = "parameter.error.size.max950.message") // 1000
@@ -44,6 +45,12 @@ public class IstCommentsPostsPara extends CommonPara {
 	}
 	public void setUcpDepth(String ucpDepth) {
 		this.ucpDepth = ucpDepth;
+	}
+	public String getUcpOrder() {
+		return ucpOrder;
+	}
+	public void setUcpOrder(String ucpOrder) {
+		this.ucpOrder = ucpOrder;
 	}
 	public String getUcpTitle() {
 		return ucpTitle;

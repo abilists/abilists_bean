@@ -10,6 +10,8 @@ public class UserCommentsPostsNoticeBean extends UserCommentsPostsModel {
 
 	private int gapTime;
 	private String timeStatus;
+	
+	// Not used
 	private List<UserCcommentsPostsBean> userCcommentsPostsBeanList;
 	private boolean blnLast;
 

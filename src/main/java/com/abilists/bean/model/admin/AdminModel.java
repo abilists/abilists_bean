@@ -22,6 +22,9 @@ public class AdminModel extends BasicModel implements Serializable {
 	private long mdtNo;
 	private Date insertTime;
 	private Date updateTime;
+	
+	private String mcName;
+	private String mcValue;
 
 	public int getAdminNo() {
 		return adminNo;
@@ -100,6 +103,18 @@ public class AdminModel extends BasicModel implements Serializable {
 	}
 	public void setUpdateTime(Date updateTime) {
 		this.updateTime = updateTime;
+	}
+	public String getMcName() {
+		return mcName;
+	}
+	public void setMcName(String mcName) {
+		this.mcName = mcName;
+	}
+	public String getMcValue() {
+		return mcValue;
+	}
+	public void setMcValue(String mcValue) {
+		this.mcValue = mcValue;
 	}
 
 }

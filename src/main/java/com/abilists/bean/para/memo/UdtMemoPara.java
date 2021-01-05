@@ -6,11 +6,6 @@ import javax.validation.constraints.Size;
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.ByteString;
 
-/**
- * 
- * @author Joon Kim
- *
- */
 public class UdtMemoPara extends CommonPara {
 
 	@NotNull(message = "parameter.error.null.message")

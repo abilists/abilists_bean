@@ -15,6 +15,8 @@ public class LoginPara extends CommonPara {
     @Size(min = 1, max = 100 ,message = "parameter.error.size.max100.message")
 	private String userPwd;
 
+	private String loginSession;
+
 	public String getUserId() {
 		return userId;
 	}
@@ -29,6 +31,14 @@ public class LoginPara extends CommonPara {
 
 	public void setUserPwd(String userPwd) {
 		this.userPwd = userPwd;
+	}
+
+	public String getLoginSession() {
+		return loginSession;
+	}
+
+	public void setLoginSession(String loginSession) {
+		this.loginSession = loginSession;
 	}
 
 }

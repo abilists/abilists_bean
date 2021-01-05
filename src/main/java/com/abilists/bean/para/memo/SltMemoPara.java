@@ -5,11 +5,6 @@ import javax.validation.constraints.Size;
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.CharacterEscape;
 
-/**
- * 
- * @author Joon Kim
- *
- */
 public class SltMemoPara extends CommonPara {
 
 	@CharacterEscape(message = "parameter.error.escape.character.message")

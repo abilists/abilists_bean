@@ -28,6 +28,12 @@ public class UsersModel extends BasicModel implements Serializable {
 	private long mcpNo;
 	private String mcpDomain;
 	private String userPwd;
+	private String userSessionId;
+	private String userSessionIp;
+	private String userSessionKey;
+	private String userSessionToken;
+	private Date userSessionTime;
+	private String userSessionDelete;
 	private Date insertTime;
 	private Date updateTime;
 
@@ -156,6 +162,42 @@ public class UsersModel extends BasicModel implements Serializable {
 	}
 	public void setUserImg(byte[] userImg) {
 		this.userImg = userImg;
+	}
+	public String getUserSessionId() {
+		return userSessionId;
+	}
+	public void setUserSessionId(String userSessionId) {
+		this.userSessionId = userSessionId;
+	}
+	public String getUserSessionIp() {
+		return userSessionIp;
+	}
+	public void setUserSessionIp(String userSessionIp) {
+		this.userSessionIp = userSessionIp;
+	}
+	public String getUserSessionKey() {
+		return userSessionKey;
+	}
+	public void setUserSessionKey(String userSessionKey) {
+		this.userSessionKey = userSessionKey;
+	}
+	public String getUserSessionToken() {
+		return userSessionToken;
+	}
+	public void setUserSessionToken(String userSessionToken) {
+		this.userSessionToken = userSessionToken;
+	}
+	public Date getUserSessionTime() {
+		return userSessionTime;
+	}
+	public void setUserSessionTime(Date userSessionTime) {
+		this.userSessionTime = userSessionTime;
+	}
+	public String getUserSessionDelete() {
+		return userSessionDelete;
+	}
+	public void setUserSessionDelete(String userSessionDelete) {
+		this.userSessionDelete = userSessionDelete;
 	}
 
 }

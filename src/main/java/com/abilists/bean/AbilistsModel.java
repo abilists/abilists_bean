@@ -32,6 +32,7 @@ import com.abilists.bean.model.user.UserChartModel;
 import com.abilists.bean.model.user.UserOptionsModel;
 import com.abilists.bean.model.user.UserSkillsModel;
 import com.abilists.bean.model.user.UserTemp;
+import com.abilists.bean.model.works.UserFilesModel;
 import com.abilists.bean.model.works.UserMemoModel;
 import com.abilists.bean.model.works.UserProjectTechModel;
 import com.abilists.bean.model.works.UserProjectsFilesModel;
@@ -144,6 +145,7 @@ public class AbilistsModel extends CommonModel {
 	private List<UserCareerModel> userCareerList;
 	private List<UserCareerChartBean> userCareerChartBeanList;
 	private List<String> yearsList;
+	private UserFilesModel userResume;
 
 	private List<MPluginsModel> mPluginsList;
 
@@ -673,6 +675,14 @@ public class AbilistsModel extends CommonModel {
 
 	public void setYearsList(List<String> yearsList) {
 		this.yearsList = yearsList;
+	}
+
+	public UserFilesModel getUserResume() {
+		return userResume;
+	}
+
+	public void setUserResume(UserFilesModel userResume) {
+		this.userResume = userResume;
 	}
 
 	public List<MPluginsModel> getmPluginsList() {

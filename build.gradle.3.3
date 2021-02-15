@@ -1,6 +1,8 @@
 apply plugin: 'java'
+apply plugin: 'eclipse'
 apply plugin: 'maven'
 
+// OpenJava 1.8
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
@@ -70,7 +72,7 @@ configure(install.repositories.mavenInstaller) {
     }
 }
 
-task buildJar {
+task buildJar << {
 	copy {
 		from "build/libs/abilists_bean-" + version + ".jar"
 		into "${System.getProperty( 'user.dir' )}" + "/../abilists_client/libs"
@@ -80,3 +82,8 @@ task buildJar {
 
 // $ gradle buildJar
 buildJar.dependsOn(install)
+
+// $ gradle wrapper
+task wrapper(type: Wrapper) {
+	gradleVersion = '2.3'
+}

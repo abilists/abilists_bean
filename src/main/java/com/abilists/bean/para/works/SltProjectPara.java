@@ -9,6 +9,7 @@ public class SltProjectPara extends CommonPara {
 	private String upMembers;
 	private String upCodeIndustry;
 	private String upCodeRole;
+	private String upTop;
 	private String upStatus;
 
 	public String getUpNo() {
@@ -49,6 +50,14 @@ public class SltProjectPara extends CommonPara {
 
 	public void setUpCodeRole(String upCodeRole) {
 		this.upCodeRole = upCodeRole;
+	}
+
+	public String getUpTop() {
+		return upTop;
+	}
+
+	public void setUpTop(String upTop) {
+		this.upTop = upTop;
 	}
 
 	public String getUpStatus() {

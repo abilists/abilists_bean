@@ -32,6 +32,8 @@ public class UdtProjectsPara extends CommonPara {
 
     private String upStatus;
 
+    private String upTop;
+
 	public String getUpNo() {
 		return upNo;
 	}
@@ -94,6 +96,14 @@ public class UdtProjectsPara extends CommonPara {
 
 	public void setUpStatus(String upStatus) {
 		this.upStatus = upStatus;
+	}
+
+	public String getUpTop() {
+		return upTop;
+	}
+
+	public void setUpTop(String upTop) {
+		this.upTop = upTop;
 	}
 
 }

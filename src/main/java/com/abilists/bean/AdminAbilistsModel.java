@@ -15,6 +15,7 @@ import com.abilists.bean.model.admin.MSystemModel;
 import com.abilists.bean.model.admin.plugins.MPluginsModel;
 import com.abilists.bean.model.admin.users.MCompanyModel;
 import com.abilists.bean.model.admin.users.MDepartmentModel;
+import com.abilists.bean.model.admin.users.MTeamModel;
 import com.abilists.bean.model.sum.AdminUsersSumByYearModel;
 import com.abilists.bean.model.sum.UserProjectsSumByYearModel;
 import com.abilists.bean.model.works.UserReportsModel;
@@ -37,6 +38,8 @@ public class AdminAbilistsModel extends CommonModel {
 	private List<MCompanyModel> mCompanyList;
 	private MCompanyModel mCompany;
 	private List<MDepartmentModel> mDepartmentList;
+	private List<MTeamModel> mTeamList;
+	private int mTeamSum;
 
 	// Sum Techs
 	private int techsSum;
@@ -142,6 +145,22 @@ public class AdminAbilistsModel extends CommonModel {
 
 	public void setmDepartmentList(List<MDepartmentModel> mDepartmentList) {
 		this.mDepartmentList = mDepartmentList;
+	}
+
+	public List<MTeamModel> getmTeamList() {
+		return mTeamList;
+	}
+
+	public void setmTeamList(List<MTeamModel> mTeamList) {
+		this.mTeamList = mTeamList;
+	}
+
+	public int getmTeamSum() {
+		return mTeamSum;
+	}
+
+	public void setmTeamSum(int mTeamSum) {
+		this.mTeamSum = mTeamSum;
 	}
 
 	public int getTechsSum() {

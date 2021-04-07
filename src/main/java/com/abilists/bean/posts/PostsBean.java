@@ -2,7 +2,7 @@ package com.abilists.bean.posts;
 
 import java.util.List;
 
-import com.abilists.bean.model.posts.UserCommentsTargetUserModel;
+import com.abilists.bean.model.posts.UserCommentedUsersModel;
 import com.abilists.bean.model.posts.UserUbPostsModel;
 
 // UserPostsModel
@@ -15,7 +15,7 @@ public class PostsBean extends UserUbPostsModel {
 	// For the show more button on web
 	private int cntNewLine;
 
-	private List<UserCommentsTargetUserModel> userCommentsTargetUserList;
+	private List<UserCommentedUsersModel> userCommentedUsersList;
 
 	private int gapTime;
 	private String timeStatus;
@@ -48,12 +48,12 @@ public class PostsBean extends UserUbPostsModel {
 		this.cntNewLine = cntNewLine;
 	}
 
-	public List<UserCommentsTargetUserModel> getUserCommentsTargetUserList() {
-		return userCommentsTargetUserList;
+	public List<UserCommentedUsersModel> getUserCommentedUsersList() {
+		return userCommentedUsersList;
 	}
 
-	public void setUserCommentsTargetUserList(List<UserCommentsTargetUserModel> userCommentsTargetUserList) {
-		this.userCommentsTargetUserList = userCommentsTargetUserList;
+	public void setUserCommentedUsersList(List<UserCommentedUsersModel> userCommentedUsersList) {
+		this.userCommentedUsersList = userCommentedUsersList;
 	}
 
 	public int getGapTime() {

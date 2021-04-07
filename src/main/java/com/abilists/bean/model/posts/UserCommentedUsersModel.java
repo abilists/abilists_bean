@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 import base.bean.model.BasicModel;
 
-public class UserCommentsTargetUserModel extends BasicModel implements Serializable {
+public class UserCommentedUsersModel extends BasicModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
@@ -12,10 +12,10 @@ public class UserCommentsTargetUserModel extends BasicModel implements Serializa
 	private String userId;
 	private int cnt;
 
-	public UserCommentsTargetUserModel(){
+	public UserCommentedUsersModel() {
 	}
 
-	public UserCommentsTargetUserModel(UserCommentsTargetUserModel userCommentsPosts){
+	public UserCommentedUsersModel(UserCommentedUsersModel userCommentsPosts){
 		this.ucpNo = userCommentsPosts.getUcpNo();
 		this.userId = userCommentsPosts.getUserId();
 		this.cnt = userCommentsPosts.getCnt();

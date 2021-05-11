@@ -11,7 +11,7 @@ public class UserReportsModel extends BasicModel implements Serializable {
 
 	private long urNo;
 	private Date urWorkDay;
-	private int urWorkHour;
+	private String urWorkHour;
 	private String urReport;
 	private String urStatus;
 	private String urDelete;
@@ -31,10 +31,10 @@ public class UserReportsModel extends BasicModel implements Serializable {
 	public void setUrWorkDay(Date urWorkDay) {
 		this.urWorkDay = urWorkDay;
 	}
-	public int getUrWorkHour() {
+	public String getUrWorkHour() {
 		return urWorkHour;
 	}
-	public void setUrWorkHour(int urWorkHour) {
+	public void setUrWorkHour(String urWorkHour) {
 		this.urWorkHour = urWorkHour;
 	}
 	public String getUrReport() {

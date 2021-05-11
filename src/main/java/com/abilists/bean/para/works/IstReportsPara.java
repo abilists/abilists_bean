@@ -6,7 +6,7 @@ import javax.validation.constraints.Size;
 import base.bean.para.CommonPara;
 import io.utility.validate.annotation.ByteString;
 import io.utility.validate.annotation.DateFormat;
-import io.utility.validate.annotation.IsInteger;
+import io.utility.validate.annotation.IsLong;
 
 public class IstReportsPara extends CommonPara {
 
@@ -15,7 +15,7 @@ public class IstReportsPara extends CommonPara {
 	@DateFormat(format = "yyyy-MM-dd", message = "Not right format for start of date")
 	private String urWorkDay;
 
-	@IsInteger(message = "parameter.error.integer.message")
+	@IsLong(message = "parameter.error.integer.message")
 	@Size(max = 5, message = "parameter.error.size.max5.message")
 	private String urWorkHour;
 

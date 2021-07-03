@@ -9,12 +9,12 @@ import io.utility.validate.annotation.EscapePassword;
 public class ComplateUpdatePwd extends CommonPara {
 
     @NotNull(message = "parameter.error.null.message")
-    @EscapePassword(message = "parameter.error.escape.password.message")
+    // @EscapePassword(message = "parameter.error.escape.password.message")
     @Size(min = 8, max = 30 ,message = "parameter.error.size.min8.max30.new.password.message") // 100 encrypted
 	private String password;
 
     @NotNull(message = "parameter.error.null.message")
-    @EscapePassword(message = "parameter.error.escape.password.message")
+    // @EscapePassword(message = "parameter.error.escape.password.message")
     @Size(min = 8, max = 30 ,message = "parameter.error.size.min8.max30.new.password.message") // 100 encrypted
 	private String password2;
 

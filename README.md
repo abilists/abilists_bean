@@ -4,6 +4,6 @@
 	</a>
 </p>
 
-# abilists_bean1
+# abilists_bean2
 
 	// Mybatis Prevent SQL injection attacks with using #, not $ 

@@ -40,7 +40,7 @@ jacocoTestReport {
 
 
 // gradle install -Pmversion=1.5.1
-final String DEFAULT_MVERSION = '1.5.1'
+final String DEFAULT_MVERSION = '1.5.7'
 allprojects {
 	if (!project.hasProperty('mversion') || !mversion) {
 		ext.mversion = DEFAULT_MVERSION
@@ -59,8 +59,7 @@ jar {
 }
 
 ext {
-	logbackVersion = '1.1.3'
-	springVersion = '4.3.28.RELEASE'
+	baseVersion = '0.2.7'
 	pagingVersion = '0.4'
 }
 
@@ -71,6 +70,7 @@ dependencies {
  	compile "io.utility:validate:0.0.6"
  	compile "io.utility:email:0.0.3"
  	compile "io.paging:paging:" + pagingVersion
+// 	compile 'io.base:base-base:' + baseVersion
 	compile fileTree(dir: 'libs', include: '*.jar')
 }
 

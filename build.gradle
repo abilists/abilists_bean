@@ -60,7 +60,7 @@ jar {
 
 ext {
 	baseVersion = '0.2.7'
-	pagingVersion = '0.4'
+	pagingVersion = '0.5'
 }
 
 dependencies {

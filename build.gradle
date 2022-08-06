@@ -40,7 +40,7 @@ jacocoTestReport {
 
 
 // gradle install -Pmversion=1.5.1
-final String DEFAULT_MVERSION = '1.5.7'
+final String DEFAULT_MVERSION = '1.6.0'
 allprojects {
 	if (!project.hasProperty('mversion') || !mversion) {
 		ext.mversion = DEFAULT_MVERSION

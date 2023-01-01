@@ -30,6 +30,8 @@ public class UdtProjectTechPara extends CommonPara {
 
 	private String uptStatus;
 
+	private String type;
+
 	public String getMsNo() {
 		return msNo;
 	}
@@ -85,5 +87,13 @@ public class UdtProjectTechPara extends CommonPara {
 	public void setUptStatus(String uptStatus) {
 		this.uptStatus = uptStatus;
 	}
-	
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
 }

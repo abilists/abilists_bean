@@ -11,27 +11,27 @@ public class IstProjectTechPara extends CommonPara {
 	@NotNull(message = "parameter.error.null.message")
     @Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	@Array(message = "parameter.error.array.message")
-    private String[] msNo;
+    private String msNo;
 
 	@NotNull(message = "parameter.error.null.message")
     @Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String upNo;
 
-	private String[] uptKind;
+	private String uptKind;
 
-    private String[] uptLevel;
+    private String uptLevel;
 
     // TODO:
 //	@NotNull(message = "parameter.error.null.message")
 //	@Size(min = 1, max = 300 ,message = "parameter.error.size.max300.message")
 //	@Array(message = "parameter.error.array.message")
-    private String[] uptDetail;
+    private String uptDetail;
 
-	public String[] getMsNo() {
+	public String getMsNo() {
 		return msNo;
 	}
 
-	public void setMsNo(String[] msNo) {
+	public void setMsNo(String msNo) {
 		this.msNo = msNo;
 	}
 
@@ -43,27 +43,27 @@ public class IstProjectTechPara extends CommonPara {
 		this.upNo = upNo;
 	}
 
-	public String[] getUptKind() {
+	public String getUptKind() {
 		return uptKind;
 	}
 
-	public void setUptKind(String[] uptKind) {
+	public void setUptKind(String uptKind) {
 		this.uptKind = uptKind;
 	}
 
-	public String[] getUptLevel() {
+	public String getUptLevel() {
 		return uptLevel;
 	}
 
-	public void setUptLevel(String[] uptLevel) {
+	public void setUptLevel(String uptLevel) {
 		this.uptLevel = uptLevel;
 	}
 
-	public String[] getUptDetail() {
+	public String getUptDetail() {
 		return uptDetail;
 	}
 
-	public void setUptDetail(String[] uptDetail) {
+	public void setUptDetail(String uptDetail) {
 		this.uptDetail = uptDetail;
 	}
 

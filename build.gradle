@@ -59,8 +59,8 @@ jar {
 }
 
 ext {
-	baseVersion = '0.2.7'
-	pagingVersion = '0.5'
+	baseVersion = '0.2.8'
+	pagingVersion = '0.6'
 }
 
 dependencies {
@@ -70,8 +70,9 @@ dependencies {
  	compile "io.utility:validate:0.0.6"
  	compile "io.utility:email:0.0.7"
  	compile "io.paging:paging:" + pagingVersion
-// 	compile 'io.base:base-base:' + baseVersion
-	compile fileTree(dir: 'libs', include: '*.jar')
+ 	compile 'io.base:base-bean:' + baseVersion
+  	compile 'io.base:base-core:' + baseVersion
+//	compile fileTree(dir: 'libs', include: '*.jar')
 }
 
 // $ gradle install

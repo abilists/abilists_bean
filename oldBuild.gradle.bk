@@ -1,0 +1,104 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'jacoco'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+buildscript {
+	repositories {
+		maven {
+			url "https://plugins.gradle.org/m2/"
+		}
+		jcenter()
+	}
+}
+
+repositories {
+	mavenLocal()
+    mavenCentral()
+    jcenter()
+}
+
+jacoco {
+  toolVersion = '0.8.6'
+  // reportsDirectory = file("$buildDir/customJacocoReportDir")
+}
+test {
+    finalizedBy jacocoTestReport // report is always generated after tests run
+    // useJUnitPlatform() // With Junit
+}
+jacocoTestReport {
+	dependsOn test
+	reports {
+		html.enabled true
+		xml.enabled false
+		csv.enabled false
+		html.destination file("${buildDir}/jacocoHtml")
+	}
+}
+
+
+// gradle install -Pmversion=1.5.1
+final String DEFAULT_MVERSION = '1.8.0.0'
+allprojects {
+	if (!project.hasProperty('mversion') || !mversion) {
+		ext.mversion = DEFAULT_MVERSION
+	}
+}
+
+// Set master version
+version = mversion
+
+jar {
+	manifest {
+		attributes 'Implementation-Title': 'Abilists', 'Implementation-Version': version
+	}
+	// Include source with jar
+	from sourceSets.main.allSource
+}
+
+ext {
+	baseVersion = '0.2.8'
+	pagingVersion = '0.6'
+}
+
+dependencies {
+	compile "org.hibernate:hibernate-validator:5.4.1.Final"
+	compile "org.apache.commons:commons-pool2:2.5.0"
+	compile "commons-fileupload:commons-fileupload:1.3"
+ 	compile "io.utility:validate:0.0.6"
+ 	compile "io.utility:email:0.0.7"
+ 	compile "io.paging:paging:" + pagingVersion
+ 	compile 'io.base:base-bean:' + baseVersion
+  	compile 'io.base:base-core:' + baseVersion
+//	compile fileTree(dir: 'libs', include: '*.jar')
+}
+
+// $ gradle install
+configure(install.repositories.mavenInstaller) {
+    pom.project {
+		group = 'com.abilists'
+		artifactId 'abilists_bean'
+        inceptionYear '2017'
+        packaging 'jar'
+        licenses {
+            license {
+                name 'Eclipse Public License (Version 1.0)'
+                url 'http://www.eclipse.org/legal/epl-v10.html'
+                distribution 'repo'
+            }
+        }
+    }
+}
+
+task buildJar {
+	copy {
+		from "build/libs/abilists_bean-" + version + ".jar"
+		into "${System.getProperty( 'user.dir' )}" + "/../abilists_client/libs"
+		include '**/*.jar'
+	}
+}
+
+// $ gradle buildJar
+buildJar.dependsOn(install)

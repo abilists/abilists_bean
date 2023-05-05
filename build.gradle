@@ -60,12 +60,20 @@ tasks.named('jar') {
 }
 
 ext {
+	logbackVersion = '1.2.9'
+	slf4jVersion = '1.7.32'
+
 	springVersion = '5.3.23'
 	baseVersion = '0.2.8'
 	pagingVersion = '0.7'
 }
 
 dependencies {
+	implementation "org.slf4j:slf4j-api:" + slf4jVersion
+	runtimeOnly "org.slf4j:jcl-over-slf4j:" + slf4jVersion
+	implementation 'ch.qos.logback:logback-core:' + logbackVersion
+	implementation 'ch.qos.logback:logback-classic:' + logbackVersion
+
 	implementation "org.springframework:spring-web:" + springVersion
 	implementation "org.hibernate:hibernate-validator:5.4.1.Final"
 	implementation "org.apache.commons:commons-pool2:2.5.0"

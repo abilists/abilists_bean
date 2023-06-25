@@ -62,7 +62,6 @@ tasks.named('jar') {
 ext {
 	logbackVersion = '1.2.9'
 	slf4jVersion = '1.7.32'
-
 	springVersion = '5.3.23'
 	baseVersion = '0.2.8'
 	pagingVersion = '0.7'
@@ -83,6 +82,14 @@ dependencies {
  	implementation "io.paging:paging:" + pagingVersion
  	implementation 'base.bean:base-bean:' + baseVersion
   	implementation 'base.core:base-core:' + baseVersion
+}
+
+task buildJar {
+	copy {
+		from "build/libs/abilists_bean-" + version + ".jar"
+		into "${System.getProperty( 'user.dir' )}" + "/../abilists_client/libs"
+		include '**/*.jar'
+	}
 }
 
 // To install this jar into localhost

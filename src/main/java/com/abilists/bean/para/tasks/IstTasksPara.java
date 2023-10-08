@@ -1,5 +1,6 @@
 package com.abilists.bean.para.tasks;
 
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import base.bean.para.CommonPara;
@@ -18,10 +19,14 @@ public class IstTasksPara extends CommonPara {
 	private String utTask;
 
 	private String utKind;
+	
 	private String utProgress;
 	
+	@NotNull(message = "parameter.error.null.message")
     @DateFormat(format = "yyyy-MM-dd", message = "Not right format for start of date")
 	private String utStartDay;
+	
+	@NotNull(message = "parameter.error.null.message")
     @DateFormat(format = "yyyy-MM-dd", message = "Not right format for start of date")
 	private String utEndDay;
     

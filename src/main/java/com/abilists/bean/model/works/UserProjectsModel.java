@@ -13,7 +13,8 @@ public class UserProjectsModel extends BasicModel implements Serializable {
 	private long upSort;
 	private String upName;
 	private String upProgress;
-	private String upExplain;
+	private byte[] upExplain;
+	private String strUpExplain;
 	private String upMembers;
 	private String upCodeIndustry;
 	private String upCodeRole;
@@ -49,11 +50,17 @@ public class UserProjectsModel extends BasicModel implements Serializable {
 	public void setUpProgress(String upProgress) {
 		this.upProgress = upProgress;
 	}
-	public String getUpExplain() {
+	public byte[] getUpExplain() {
 		return upExplain;
 	}
-	public void setUpExplain(String upExplain) {
+	public void setUpExplain(byte[] upExplain) {
 		this.upExplain = upExplain;
+	}
+	public String getStrUpExplain() {
+		return strUpExplain;
+	}
+	public void setStrUpExplain(String strUpExplain) {
+		this.strUpExplain = strUpExplain;
 	}
 	public String getUpMembers() {
 		return upMembers;

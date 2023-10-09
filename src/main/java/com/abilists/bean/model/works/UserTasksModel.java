@@ -12,7 +12,8 @@ public class UserTasksModel extends BasicModel implements Serializable {
 	private long utNo;
 	private long utSort;
 	private String utTitle;
-	private String utTask;
+	private byte[] utTask;
+	private String strUtTask;
 	private String utKind;
 	private String utProgress;
 	private Date utStartDay;
@@ -44,11 +45,17 @@ public class UserTasksModel extends BasicModel implements Serializable {
 	public void setUtTitle(String utTitle) {
 		this.utTitle = utTitle;
 	}
-	public String getUtTask() {
+	public byte[] getUtTask() {
 		return utTask;
 	}
-	public void setUtTask(String utTask) {
+	public void setUtTask(byte[] utTask) {
 		this.utTask = utTask;
+	}
+	public String getStrUtTask() {
+		return strUtTask;
+	}
+	public void setStrUtTask(String strUtTask) {
+		this.strUtTask = strUtTask;
 	}
 	public String getUtKind() {
 		return utKind;

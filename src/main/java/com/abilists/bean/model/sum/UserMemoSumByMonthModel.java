@@ -6,14 +6,14 @@ public class UserMemoSumByMonthModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private String month;
+	private String months;
 	private int cnt;
 
-	public String getMonth() {
-		return month;
+	public String getMonths() {
+		return months;
 	}
-	public void setMonth(String month) {
-		this.month = month;
+	public void setMonths(String months) {
+		this.months = months;
 	}
 	public int getCnt() {
 		return cnt;

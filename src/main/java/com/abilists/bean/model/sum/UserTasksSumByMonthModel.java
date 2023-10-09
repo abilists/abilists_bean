@@ -6,15 +6,15 @@ public class UserTasksSumByMonthModel implements Serializable {
 
 	private static final long serialVersionUID = 1L;
 
-	private String month;
+	private String months;
 	private String utStatus;
 	private int cnt;
 
-	public String getMonth() {
-		return month;
+	public String getMonths() {
+		return months;
 	}
-	public void setMonth(String month) {
-		this.month = month;
+	public void setMonths(String months) {
+		this.months = months;
 	}
 	public String getUtStatus() {
 		return utStatus;

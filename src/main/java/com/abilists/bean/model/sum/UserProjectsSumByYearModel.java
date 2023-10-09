@@ -7,7 +7,7 @@ public class UserProjectsSumByYearModel implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	private int cnt;
-	private String year;
+	private String years;
 
 	public int getCnt() {
 		return cnt;
@@ -15,11 +15,11 @@ public class UserProjectsSumByYearModel implements Serializable {
 	public void setCnt(int cnt) {
 		this.cnt = cnt;
 	}
-	public String getYear() {
-		return year;
+	public String getYears() {
+		return years;
 	}
-	public void setYear(String year) {
-		this.year = year;
+	public void setYears(String years) {
+		this.years = years;
 	}
 
 }

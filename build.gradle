@@ -61,10 +61,12 @@ tasks.named('jar') {
 
 ext {
 	logbackVersion = '1.2.9'
-	slf4jVersion = '1.7.32'
-	springVersion = '5.3.29'
+	slf4jVersion = '1.7.36'
+	springVersion = '5.3.30'
 	baseVersion = '0.2.8'
 	pagingVersion = '0.7'
+	emailVersion = '0.0.8'
+	validateVersion = '0.0.7'
 }
 
 dependencies {
@@ -77,8 +79,8 @@ dependencies {
 	implementation "org.hibernate:hibernate-validator:5.4.1.Final"
 	implementation "org.apache.commons:commons-pool2:2.5.0"
 	implementation 'commons-fileupload:commons-fileupload:1.5'
- 	implementation "io.utility:validate:0.0.6"
- 	implementation "io.utility:email:0.0.8"
+ 	implementation 'io.utility:validate:' + validateVersion
+ 	implementation 'io.utility:email:' + emailVersion
  	implementation "io.paging:paging:" + pagingVersion
  	implementation 'base.bean:base-bean:' + baseVersion
   	implementation 'base.core:base-core:' + baseVersion

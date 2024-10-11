@@ -51,6 +51,7 @@ publishing {
             allowInsecureProtocol = true
         }
     }
+
 }
 
 tasks.named('jar') {

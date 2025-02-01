@@ -14,8 +14,14 @@ public class UploadFilePara extends CommonPara {
     @Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
 	private String upNo;
 
+	@NotNull(message = "parameter.error.null.message")
+    @Size(min = 1, max = 10 ,message = "parameter.error.size.max10.message")
+	private String utNo;
+
 	@UploadFiles(message = "parameter.error.null.message")
 	private MultipartFile file;
+
+	private String ufKind;
 
 	public String getUpNo() {
 		return upNo;
@@ -25,12 +31,28 @@ public class UploadFilePara extends CommonPara {
 		this.upNo = upNo;
 	}
 
+	public String getUtNo() {
+		return utNo;
+	}
+
+	public void setUtNo(String utNo) {
+		this.utNo = utNo;
+	}
+
 	public MultipartFile getFile() {
 		return file;
 	}
 
 	public void setFile(MultipartFile file) {
 		this.file = file;
+	}
+
+	public String getUfKind() {
+		return ufKind;
+	}
+
+	public void setUfKind(String ufKind) {
+		this.ufKind = ufKind;
 	}
 
 }
